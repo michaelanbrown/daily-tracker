@@ -4,11 +4,11 @@ class CreateFoods < ActiveRecord::Migration[6.1]
       t.string :name
       t.references :category, null: false, foreign_key: true
       t.float :calories
-      t.float :fat
+      t.float :fats
       t.float :carbs
-      t.float :suars
+      t.float :sugars
       t.float :added_sugars
-      t.float :fat
+      t.float :protein
 
       t.timestamps
     end
