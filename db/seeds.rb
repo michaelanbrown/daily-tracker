@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-f1 = Food.create(name:, calories:, fats:, carbs:, sugars:, added_sugars:, protein:)
+f1 = Food.create(name: "Yogurt", calories: 100, fats: 0, carbs: 8, sugars: 7, added_sugars: 2, protein: 13)
 
 u1 = User.create(name:, age:, email:, username:, password)
 
