@@ -12,4 +12,4 @@ f3 = Food.create(name: "Turkey Pepperoni", brand: "Great Value", calories: 70, f
 
 u1 = User.create(name: "Michaela", age: 24, email: "michaela.brown375@gmail.com", username: "michaelanbrown", password: "owner")
 
-c1 = Date.create(date: "December 9, 2023", food_id: f1.id, user_id: u1.id)
+d1 = Date.create(date: "Today", food_id: f1.id, user_id: u1.id)
