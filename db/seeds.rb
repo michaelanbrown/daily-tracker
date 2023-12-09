@@ -14,3 +14,4 @@ u1 = User.create(name: "Michaela", age: 24, email: "michaela.brown375@gmail.com"
 
 d1 = Date.create(date: "Today", food_id: f1.id, user_id: u1.id)
 d2 = Date.create(date: "Today", food_id: f2.id, user_id: u1.id)
+d3 = Date.create(date: "Today", food_id: f3.id, user_id: u1.id)
