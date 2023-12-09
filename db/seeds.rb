@@ -8,6 +8,6 @@
 
 f1 = Food.create(name:, calories:, fats:, carbs:, sugars:, added_sugars:, protein:)
 
-u1 = User.create()
+u1 = User.create(name:, age:, email:, username:, password)
 
 c1 = Category.create()
