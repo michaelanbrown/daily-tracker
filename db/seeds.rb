@@ -10,4 +10,4 @@ f1 = Food.create(name:, calories:, fats:, carbs:, sugars:, added_sugars:, protei
 
 u1 = User.create(name:, age:, email:, username:, password)
 
-c1 = Category.create()
+c1 = Category.create(name:, food_id:, user_id:)
