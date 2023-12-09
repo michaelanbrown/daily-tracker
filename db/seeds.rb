@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 f1 = Food.create(name: "Yogurt", brand: "Friendly Farms", calories: 100, fats: 0, carbs: 8, sugars: 7, added_sugars: 2, protein: 13)
-f2 = Food.create(name: "Mashed Potatoes", calories: 110, fats: 2.5, carbs: 19, sugars: 2, added_sugars: 1, protein: 2)
+f2 = Food.create(name: "Mashed Potatoes", brand: "Idahoan", calories: 110, fats: 2.5, carbs: 19, sugars: 2, added_sugars: 1, protein: 2)
 
 u1 = User.create(name:, age:, email:, username:, password)
 
