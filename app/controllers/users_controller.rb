@@ -8,5 +8,8 @@ class UsersController < ApplicationController
         user = User.create!()
 
     end
+
+    private
+    
     
 end
