@@ -8,7 +8,7 @@ class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
   def current_user
-    
+    @current_user ||= User.find_by(id: session[:user_id])
   end
 
   private
