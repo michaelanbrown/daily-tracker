@@ -9,4 +9,8 @@ class ApplicationController < ActionController::API
 
   private
 
+  def authenticate_user
+    
+  end
+
 end
