@@ -18,7 +18,7 @@ class ApplicationController < ActionController::API
   end
 
   def find_category
-    
+    @category = Category.find(params[:id])
   end
 
   def render_unprocessable_entity_response(exception)
