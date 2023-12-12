@@ -17,6 +17,7 @@ class DatesController < ApplicationController
     private
 
     def date_params
+        params.permit(:date, :food_id, :user_id)
     end
 
 end
