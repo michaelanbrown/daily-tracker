@@ -14,4 +14,6 @@ class CategoriesController < ApplicationController
         
     end
 
+    private
+
 end
