@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
 
     def create
         category = Category.create!(category_params)
-        
+        render json: category, status: :created
     end
 
     private
