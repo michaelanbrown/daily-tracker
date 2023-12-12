@@ -5,4 +5,6 @@ class FoodsController < ApplicationController
         render json: food, status: :created
     end
 
+    private
+
 end
