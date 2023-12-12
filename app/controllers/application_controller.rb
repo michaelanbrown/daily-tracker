@@ -17,8 +17,8 @@ class ApplicationController < ActionController::API
     render json: { errors: "Not authorized" }, status: :unauthorized unless current_user
   end
 
-  def find_category
-    @category = Category.find(params[:id])
+  def date_category
+    @date = Date.find(params[:id])
   end
 
   def render_unprocessable_entity_response(exception)
