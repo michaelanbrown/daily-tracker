@@ -6,5 +6,8 @@ class FoodsController < ApplicationController
     end
 
     private
+    def food_params
+        
+    end 
 
 end
