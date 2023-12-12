@@ -5,6 +5,10 @@ class UsersController < ApplicationController
         render json: User.all, status: :ok
     end
 
+    def show
+        
+    end
+
     def create
         user = User.create!(user_params)
         session[:user_id] = user.id
