@@ -9,4 +9,8 @@ class CategoriesController < ApplicationController
         render json: @category, status: :ok
     end
 
+    def create
+        
+    end
+
 end
