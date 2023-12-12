@@ -1,3 +1,3 @@
 class DateSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :date
 end
