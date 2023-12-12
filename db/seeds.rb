@@ -12,6 +12,6 @@ f3 = Food.create(name: "Turkey Pepperoni", brand: "Great Value", calories: 70, f
 
 u1 = User.create(name: "Michaela", age: 24, email: "michaela.brown375@gmail.com", username: "michaelanbrown", password: "owner")
 
-d1 = Date.create(date: "Today", food_id: f1.id, user_id: u1.id)
-d2 = Date.create(date: "Today", food_id: f2.id, user_id: u1.id)
-d3 = Date.create(date: "Today", food_id: f3.id, user_id: u1.id)
+c1 = Category.create(date: "Today", food_id: f1.id, user_id: u1.id)
+c2 = Category.create(date: "Today", food_id: f2.id, user_id: u1.id)
+c3 = Category.create(date: "Today", food_id: f3.id, user_id: u1.id)
