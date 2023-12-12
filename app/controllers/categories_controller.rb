@@ -1,4 +1,4 @@
-class DatesController < ApplicationController
+class CategoriesController < ApplicationController
     before_action :find_date, only: [:show]
 
     def index
