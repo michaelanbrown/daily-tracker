@@ -1,22 +1,22 @@
 class CategoriesController < ApplicationController
-    before_action :find_date, only: [:show]
+    before_action :find_category, only: [:show]
 
     def index
-        render json: Date.all, status: :ok
+        render json: Category.all, status: :ok
     end
 
     def show
-        render json: @date, status: :ok
+        render json: @category, status: :ok
     end
 
     def create
-        date = Date.create!(date_params)
-        render json: date, status: :created
+        category = Category.create!(category_params)
+        render json: category, status: :created
     end
 
     private
 
-    def date_params
+    def category_params
         params.permit(:date, :food_id, :user_id)
     end
 
