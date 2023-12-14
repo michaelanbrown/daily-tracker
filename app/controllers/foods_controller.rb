@@ -20,6 +20,8 @@ class FoodsController < ApplicationController
     end
 
     def destroy
+        @food.destroy
+        head :no_content 
     end
 
     private
