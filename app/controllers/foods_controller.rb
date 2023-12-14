@@ -6,6 +6,7 @@ class FoodsController < ApplicationController
     end
 
     def show
+        render json: @food, status: :ok
     end
 
     def create
