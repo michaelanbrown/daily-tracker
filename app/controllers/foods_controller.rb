@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
 
     def index
-        
+        render json: Food.all, status: :ok
     end
 
     def create
