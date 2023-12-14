@@ -5,6 +5,9 @@ class FoodsController < ApplicationController
         render json: Food.all, status: :ok
     end
 
+    def show
+    end
+
     def create
         food = Food.create!(food_params)
         render json: food, status: :created
