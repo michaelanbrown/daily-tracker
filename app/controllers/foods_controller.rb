@@ -15,6 +15,8 @@ class FoodsController < ApplicationController
     end
 
     def update
+        @food.update!(update_food_params)
+        render json: @food, status: :accepted
     end
 
     private
