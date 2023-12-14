@@ -22,7 +22,7 @@ class ApplicationController < ActionController::API
   end
 
   def find_food
-    
+    @food = Food.find(params[:id])
   end
 
   def render_unprocessable_entity_response(exception)
