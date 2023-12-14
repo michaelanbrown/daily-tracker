@@ -25,6 +25,7 @@ class FoodsController < ApplicationController
     end
 
     def update_food_params
+        params.permit(:calories, :fats, :carbs, :sugars, :added_sugars, :protein)
     end
 
 end
