@@ -1,5 +1,5 @@
 class FoodsController < ApplicationController
-    before_action :find_food
+    before_action :find_food, only: [:show, :update]
 
     def index
         render json: Food.all, status: :ok
