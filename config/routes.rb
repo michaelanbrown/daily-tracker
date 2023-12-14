@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  resources :users
+  resources :users, only: [:index, :show, :create]
   resources :foods
   resources :categories, only: [:index, :show, :create]
 
