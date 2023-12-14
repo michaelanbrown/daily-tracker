@@ -1,5 +1,9 @@
 class FoodsController < ApplicationController
 
+    def index
+        
+    end
+
     def create
         food = Food.create!(food_params)
         render json: food, status: :created
