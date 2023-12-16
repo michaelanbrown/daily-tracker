@@ -35,6 +35,7 @@ function App() {
   }
 
   function getCategories() {
+    fetch("/categories")
     
   }
 
