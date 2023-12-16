@@ -36,7 +36,11 @@ function App() {
 
   function getCategories() {
     fetch("/categories")
-    
+    .then((res) => {
+      if(res.ok){
+        res.json().then(setCategories)
+      }
+    })
   }
 
   return (
