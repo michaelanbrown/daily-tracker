@@ -11,6 +11,7 @@ function App() {
   useEffect(() => {
     getUsers()
     getFoods()
+    getCategories()
   },[])
 
   function getUsers() {
