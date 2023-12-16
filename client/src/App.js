@@ -9,7 +9,7 @@ function App() {
   const [errors, setErrors] = useState([])
 
   useEffect(() => {
-    
+    getUsers()
   },[])
 
   function getUsers() {
