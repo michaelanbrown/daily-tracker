@@ -10,6 +10,7 @@ function App() {
 
   useEffect(() => {
     getUsers()
+    getFoods()
   },[])
 
   function getUsers() {
