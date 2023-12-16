@@ -12,6 +12,7 @@ function App() {
   },[])
 
   function getUsers() {
+    fetch("/users")
     
   }
 
