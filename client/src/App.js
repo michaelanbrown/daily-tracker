@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [users, setUsers] = useState([])
   const [foods, setFoods] = useState([])
+  const [categories, setCategories] = useState([])
 
   useEffect(() => {
     
