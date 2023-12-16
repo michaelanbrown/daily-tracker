@@ -34,6 +34,10 @@ function App() {
     })
   }
 
+  function getCategories() {
+    
+  }
+
   return (
     <div className="App">
       
