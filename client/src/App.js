@@ -25,7 +25,11 @@ function App() {
 
   function getFoods() {
     fetch("/foods")
-    
+    .then((res) => {
+      if(res.ok){
+        res.json().then(setFoods)
+      
+    })
   }
 
   return (
