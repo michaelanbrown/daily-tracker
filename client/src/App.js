@@ -6,6 +6,7 @@ function App() {
   const [users, setUsers] = useState([])
   const [foods, setFoods] = useState([])
   const [categories, setCategories] = useState([])
+  const [errors, setErrors] = useState([])
 
   useEffect(() => {
     
