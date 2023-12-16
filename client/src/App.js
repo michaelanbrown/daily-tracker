@@ -28,7 +28,9 @@ function App() {
     .then((res) => {
       if(res.ok){
         res.json().then(setFoods)
-      
+      } else {
+        res.json().then(json => setErrors([json.error]))
+      }
     })
   }
 
