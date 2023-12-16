@@ -23,6 +23,10 @@ function App() {
     })
   }
 
+  function getFoods() {
+    
+  }
+
   return (
     <div className="App">
       
