@@ -6,7 +6,7 @@ function Header({  }) {
     <div className="Header">
       <header>
         <div>
-            
+            <h1>🍪 Daily Tracker 🍪</h1>
         </div>  
       </header>
     </div>
