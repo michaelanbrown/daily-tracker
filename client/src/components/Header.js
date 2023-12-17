@@ -9,6 +9,7 @@ function Header({  }) {
         <div>
             <h1>🍪 Daily Tracker 🍪</h1>
             <h3>Track your daily food intake and macros!</h3>
+            <NavBar/>
         </div>  
       </header>
     </div>
