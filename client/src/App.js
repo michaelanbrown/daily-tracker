@@ -5,7 +5,7 @@ import { UserContext } from './components/context/User';
 import Header from './components/Header';
 
 function App() {
-  const { currentCustomer, setCurrentCustomer } = useContext(UserContext);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
   const [users, setUsers] = useState([])
   const [foods, setFoods] = useState([])
   const [categories, setCategories] = useState([])
