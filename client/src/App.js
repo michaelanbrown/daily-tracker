@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState, useContext } from 'react';
 import { UserContext } from './components/context/User';
