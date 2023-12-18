@@ -1,15 +1,19 @@
-import React, { useState } from "react"
+// import React, { useState } from "react"
 
-const UserContext = React.createContext();
+// const UserContext = React.createContext();
 
-function UserProvider({ children }) {
-    const [currentUser, setCurrentUser] = useState(false)
+// function UserProvider({ children }) {
+//     const [currentUser, setCurrentUser] = useState(false)
 
-  return (
-    <UserContext.Provider value={{ currentUser, setCurrentUser }}>
-      {children}
-    </UserContext.Provider>
-  );
-}
+//   return (
+//     <UserContext.Provider value={{ currentUser, setCurrentUser }}>
+//       {children}
+//     </UserContext.Provider>
+//   );
+// }
 
-export { UserContext, UserProvider };
+// export { UserContext, UserProvider };
+
+
+
+//come back to this
