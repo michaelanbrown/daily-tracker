@@ -1,10 +1,11 @@
 import './App.css';
-import { useEffect, useState, useContext } from 'react';
-import { UserContext } from './components/context/User';
+import { useEffect, useState } from 'react';
+// import { useContext } from 'react';
+// import { UserContext } from './components/context/User';
 import Header from './components/Header';
 
 function App() {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
+  // const { currentUser, setCurrentUser } = useContext(UserContext);
   const [users, setUsers] = useState([])
   const [foods, setFoods] = useState([])
   const [categories, setCategories] = useState([])
