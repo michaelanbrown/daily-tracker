@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 // import { useContext } from 'react';
 // import { UserContext } from './components/context/User';
 import Header from './components/Header';
+import { UserProvider } from './components/context/User';
 
 function App() {
   // const { currentUser, setCurrentUser } = useContext(UserContext);
