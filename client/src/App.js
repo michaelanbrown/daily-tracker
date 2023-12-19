@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 // import { UserContext } from './components/context/User';
 import Header from './components/Header';
 import { UserProvider } from './components/context/User';
+import { useCurrentUser } from './components/context/User';
 
 function App() {
   // const { currentUser, setCurrentUser } = useContext(UserContext);
