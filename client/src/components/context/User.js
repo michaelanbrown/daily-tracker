@@ -26,7 +26,7 @@ export const UserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = React.useState(null)
 
   const fetchCurrentUser = async () => {
-    let response = await fetch("/user/*")
+    let response = await fetch("/authorized_user")
     response = await response.json()
     setCurrentUser(response)
   }
