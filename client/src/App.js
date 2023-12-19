@@ -7,7 +7,7 @@ import { UserProvider } from './components/context/User';
 import { useCurrentUser } from './components/context/User';
 
 function App() {
-  // const { currentUser, setCurrentUser } = useContext(UserContext);
+  const { currentUser, setCurrentUser } = useCurrentUser()
   const [users, setUsers] = useState([])
   const [foods, setFoods] = useState([])
   const [categories, setCategories] = useState([])
