@@ -25,10 +25,14 @@ export const CurrentUserContext = React.createContext()
 export const CurrentUserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = React.useState(null)
 
-  const fetchCurrentUser = async () => {
-    let response = await fetch("/authorized_user")
-    response = await response.json()
-    setCurrentUser(response)
+  function fetchCurrentUser() {
+    fetch("/authorized_user")
+    fetch("/customers")
+    .then((res) => {
+      if(res.ok){
+        res.json().then(setCurrentUser)
+      }
+    })
   }
 
   return (
