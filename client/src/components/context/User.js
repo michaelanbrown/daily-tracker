@@ -17,3 +17,19 @@
 
 
 //come back to this
+
+import React from "react"
+
+export const UserContext = React.createContext()
+
+export const UserProvider = ({ children }) => {
+  const [currentUser, setCurrentUser] = React.useState(null)
+
+  return (
+    <UserContext.Provider value={{ currentUser, setCurrentUser }}>
+      {children}
+    </UserContext.Provider>
+  )
+}
+
+export const useCurrentUser = () => React.useContext(UserContext)
