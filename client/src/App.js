@@ -3,11 +3,9 @@ import { useEffect, useState } from 'react';
 // import { useContext } from 'react';
 // import { UserContext } from './components/context/User';
 import Header from './components/Header';
-import { UserProvider } from './components/context/User';
-import { useCurrentUser } from './components/context/User';
+import { CurrentUserProvider } from './components/context/User';
 
 function App() {
-  const { currentUser, setCurrentUser } = useCurrentUser()
   const [users, setUsers] = useState([])
   const [foods, setFoods] = useState([])
   const [categories, setCategories] = useState([])
@@ -54,9 +52,9 @@ function App() {
 
   return (
     <div className="App">
-      <UserProvider>
+      <CurrentUserProvider>
         <Header/>
-      </UserProvider>
+      </CurrentUserProvider>
     </div>
   );
 }

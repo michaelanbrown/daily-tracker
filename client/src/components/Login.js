@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import '../App.css'
+import { useCurrentUser } from './components/context/User';
 
 function Login({ }) {
     const [errors, setErrors] = useState([])
+    const { currentUser, fetchCurrentUser } = useCurrentUser()
 
     function onSubmit(e){
         e.preventDefault()

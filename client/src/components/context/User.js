@@ -20,9 +20,9 @@
 
 import React from "react"
 
-export const UserContext = React.createContext()
+export const CurrentUserContext = React.createContext()
 
-export const UserProvider = ({ children }) => {
+export const CurrentUserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = React.useState(null)
 
   const fetchCurrentUser = async () => {
@@ -32,10 +32,10 @@ export const UserProvider = ({ children }) => {
   }
 
   return (
-    <UserContext.Provider value={{ currentUser, fetchCurrentUser }}>
+    <CurrentUserContext.Provider value={{ currentUser, fetchCurrentUser }}>
       {children}
-    </UserContext.Provider>
+    </CurrentUserContext.Provider>
   )
 }
 
-export const useCurrentUser = () => React.useContext(UserContext)
+export const useCurrentUser = () => React.useContext(CurrentUserContext)
