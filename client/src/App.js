@@ -53,7 +53,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      <UserProvider>
+        <Header/>
+      </UserProvider>
     </div>
   );
 }
