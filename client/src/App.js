@@ -1,7 +1,5 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-// import { useContext } from 'react';
-// import { UserContext } from './components/context/User';
 import Header from './components/Header';
 import { useCurrentUser } from './components/context/User';
 
@@ -11,6 +9,7 @@ function App() {
   const [categories, setCategories] = useState([])
   const [errors, setErrors] = useState([])
   const { currentUser, fetchCurrentUser } = useCurrentUser()
+  console.log(currentUser)
 
   useEffect(() => {
     getUsers()
