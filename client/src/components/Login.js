@@ -5,7 +5,13 @@ function Login({ }) {
     const [errors, setErrors] = useState([])
 
     function onSubmit(e){
-         
+        e.preventDefault()
+        const customer = {
+            username,
+            password
+        }
+       
+        
     }
 
         return (
