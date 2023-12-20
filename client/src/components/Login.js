@@ -47,6 +47,7 @@ function Login({ }) {
                         <br/>
                     Password: <input type="password" name="password" value={password} onChange={handleChange} />
                         <br/>
+                        <input type="submit" value="Log in" />
                 </form>
             </div>
     )
