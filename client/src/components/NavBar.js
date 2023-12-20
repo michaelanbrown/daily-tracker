@@ -7,7 +7,7 @@ export default function NavBar ({ })  {
 
     return (
       <div>
-
+         <NavLink to="/login">Login</NavLink>
       </div>
     )
 }
