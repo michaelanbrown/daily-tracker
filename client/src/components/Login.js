@@ -5,6 +5,10 @@ import { useHistory } from "react-router-dom"
 
 function Login({ }) {
     const [errors, setErrors] = useState([])
+    const [formData, setFormData] = useState({
+        username: "",
+        password: "",
+    })
     const { currentUser, fetchCurrentUser } = useCurrentUser()
     const history = useHistory()
 
