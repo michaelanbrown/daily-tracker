@@ -9,6 +9,7 @@ function Login({ }) {
         username: "",
         password: "",
     })
+    const {username, password} = formData
     const { currentUser, fetchCurrentUser } = useCurrentUser()
     const history = useHistory()
 
