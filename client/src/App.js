@@ -9,7 +9,6 @@ function App() {
   const [categories, setCategories] = useState([])
   const [errors, setErrors] = useState([])
   const { currentUser, fetchCurrentUser } = useCurrentUser()
-  console.log(currentUser)
 
   useEffect(() => {
     getUsers()
