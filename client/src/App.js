@@ -57,7 +57,7 @@ function App() {
         <Header/>
         <Switch>
           <Route path='/login'>
-
+            <Login />
           </Route>
         </Switch>
       </Router>
