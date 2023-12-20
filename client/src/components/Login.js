@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../App.css'
-import { useCurrentUser } from './components/context/User';
+import { useCurrentUser } from './context/User'
 import { useHistory } from "react-router-dom"
 
 function Login({ }) {
