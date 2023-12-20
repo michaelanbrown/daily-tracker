@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import { useCurrentUser } from './components/context/User';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 function App() {
   const [users, setUsers] = useState([])
