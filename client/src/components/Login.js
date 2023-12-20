@@ -22,6 +22,9 @@ function Login({ }) {
             if (res.ok) {
                 fetchCurrentUser()
             }
+             else {
+                res.json().then(json => setErrors([json.errors]))
+             }
         })
     }
 
