@@ -23,6 +23,7 @@ function Login({ }) {
         .then(res => {
             if (res.ok) {
                 fetchCurrentUser()
+                history.push("/")
             }
              else {
                 res.json().then(json => setErrors([json.errors]))
