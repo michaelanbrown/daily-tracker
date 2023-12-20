@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom"
 function Login({ }) {
     const [errors, setErrors] = useState([])
     const { currentUser, fetchCurrentUser } = useCurrentUser()
+    const history = useHistory()
 
     function onSubmit(e){
         e.preventDefault()
