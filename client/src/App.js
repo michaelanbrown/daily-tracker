@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import { useCurrentUser } from './components/context/User';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Login from './components/Login';
 
 function App() {
   const [users, setUsers] = useState([])
@@ -56,7 +57,7 @@ function App() {
         <Header/>
         <Switch>
           <Route path='/login'>
-            
+
           </Route>
         </Switch>
       </Router>
