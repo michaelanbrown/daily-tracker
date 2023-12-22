@@ -7,7 +7,7 @@ export const CurrentUserProvider = ({ children }) => {
 
   function fetchCurrentUser() {
     fetch("/authorized_user")
-    fetch("/customers")
+    fetch("/users")
     .then((res) => {
       if(res.ok){
         res.json().then(setCurrentUser)
