@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import { useCurrentUser } from './components/context/User';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Login from './components/Login';
 
 function App() {
@@ -55,11 +55,11 @@ function App() {
     <div className="App">
       <Router>
         <Header/>
-        <Switch>
+        <Routes>
           <Route path='/login'>
             <Login />
           </Route>
-        </Switch>
+        </Routes>
       </Router>
     </div>
   );
