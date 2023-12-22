@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../App.css'
 import { useCurrentUser } from './context/User'
-import { useHistory } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function Login({ }) {
     const [errors, setErrors] = useState([])
@@ -11,7 +11,7 @@ function Login({ }) {
     })
     const {username, password} = formData
     const { currentUser, fetchCurrentUser } = useCurrentUser()
-    const history = useHistory()
+    const history = useNavigate()
 
     function onSubmit(e){
         e.preventDefault()
