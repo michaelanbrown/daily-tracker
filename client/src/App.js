@@ -17,6 +17,7 @@ function App() {
     getFoods()
     getCategories()
   },[])
+  console.log(currentUser)
 
   function getUsers() {
     fetch("/users")

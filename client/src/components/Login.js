@@ -15,7 +15,7 @@ function Login({ }) {
 
     function onSubmit(e){
         e.preventDefault()
-        const customer = {
+        const user = {
             username,
             password
         }
@@ -23,7 +23,7 @@ function Login({ }) {
         fetch("/login",{
           method:'POST',
           headers:{'Content-Type': 'application/json'},
-          body:JSON.stringify(customer)
+          body:JSON.stringify(user)
         })
         .then(res => {
             if (res.ok) {
@@ -42,8 +42,6 @@ function Login({ }) {
             [e.target.name] : e.target.value
         });
     }
-
-    console.log(currentUser)
 
         return (
             <div>
