@@ -11,7 +11,7 @@ function Login({ }) {
     })
     const {username, password} = formData
     const { currentUser, fetchCurrentUser } = useCurrentUser()
-    const history = useNavigate()
+    const navigate = useNavigate()
 
     function onSubmit(e){
         e.preventDefault()
@@ -28,7 +28,7 @@ function Login({ }) {
         .then(res => {
             if (res.ok) {
                 fetchCurrentUser()
-                history.push("/")
+                navigate("/")
             }
              else {
                 res.json().then(json => setErrors([json.errors]))
@@ -43,6 +43,7 @@ function Login({ }) {
         });
     }
 
+    console.log(currentUser)
 
         return (
             <div>
