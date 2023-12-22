@@ -56,9 +56,7 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route path='/login'>
-            <Login />
-          </Route>
+          <Route exact path='/login' element={<Login/>}/>
         </Routes>
       </Router>
     </div>
