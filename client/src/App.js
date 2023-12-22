@@ -13,6 +13,7 @@ function App() {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
   useEffect(() => {
+    fetchCurrentUser()
     getUsers()
     getFoods()
     getCategories()
