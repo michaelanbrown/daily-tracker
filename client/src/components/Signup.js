@@ -3,7 +3,7 @@ import { useCurrentUser } from './context/User';
 import '../App.css'
 
 function Signup({  }) {
-
+    const { currentUser, fetchCurrentUser } = useCurrentUser()
 
     return (
         <> 
