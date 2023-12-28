@@ -18,7 +18,14 @@ function Signup({  }) {
 
     function onSubmit(e){
         e.preventDefault()
-        
+        const user = {
+            name,
+            age,
+            username,
+            email,
+            password
+        }   
+          
     }
 
     function handleChange(e) {
