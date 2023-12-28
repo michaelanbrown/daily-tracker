@@ -12,6 +12,7 @@ function Signup({  }) {
         email:'',
         password:''
     })
+    const {name, age, username, email, password} = formData
 
     return (
         <> 
