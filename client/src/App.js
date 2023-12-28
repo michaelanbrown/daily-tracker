@@ -25,7 +25,8 @@ function App() {
     fetch("/users")
     .then((res) => {
       if(res.ok){
-        res.json().then(setUsers)
+        res.json().then(res => {
+          setUsers(res)})
       } else {
         res.json().then(json => setErrors([json.error]))
       }
