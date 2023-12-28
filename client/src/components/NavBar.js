@@ -3,7 +3,7 @@ import React from "react";
 import { NavLink } from "react-router-dom"
 import { useCurrentUser } from './context/User';
 
-export default function NavBar ({ })  {
+export default function NavBar ({ isLoading })  {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
     return (
