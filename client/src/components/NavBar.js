@@ -7,7 +7,7 @@ export default function NavBar ({ isLoading })  {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
     return (
-      isLoading ? null : <nav>
+      isLoading ? "Loading..." : <nav>
          { currentUser ? null : <NavLink className="Navelements" to="/login">Login</NavLink> }
       </nav>
     )
