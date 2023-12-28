@@ -7,8 +7,8 @@ export default function NavBar ({ isLoading })  {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
     return (
-      <div>
+      <nav>
          { currentUser ? null : <NavLink className="Navelements" to="/login">Login</NavLink> }
-      </div>
+      </nav>
     )
 }
