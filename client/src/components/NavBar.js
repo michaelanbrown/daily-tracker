@@ -6,6 +6,10 @@ import { useCurrentUser } from './context/User';
 export default function NavBar ({ isLoading })  {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
+  function handleLogout() {
+
+  }
+
     return (
       isLoading ? "Loading..." : <nav>
          { currentUser ? null : <NavLink className="Navelements" to="/login">Login</NavLink> }
