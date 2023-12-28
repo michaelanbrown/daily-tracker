@@ -33,6 +33,7 @@ function Signup({  }) {
         .then(res => {
             if(res.ok){
                 res.json().then(user => {
+                    fetchCurrentUser(user)
                     
                 })
             } else {
