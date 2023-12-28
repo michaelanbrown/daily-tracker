@@ -26,7 +26,8 @@ function App() {
     .then((res) => {
       if(res.ok){
         res.json().then(res => {
-          setUsers(res)})
+          setUsers(res)
+          setIsLoading(false)})
       } else {
         res.json().then(json => setErrors([json.error]))
       }
