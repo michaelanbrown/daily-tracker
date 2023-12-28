@@ -10,6 +10,7 @@ function App() {
   const [foods, setFoods] = useState([])
   const [categories, setCategories] = useState([])
   const [errors, setErrors] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
   useEffect(() => {
