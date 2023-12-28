@@ -7,7 +7,10 @@ export default function NavBar ({ isLoading })  {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
   function handleLogout() {
-
+    fetch(`/logout`, {
+      method:"DELETE"
+    })
+    
   }
 
     return (
