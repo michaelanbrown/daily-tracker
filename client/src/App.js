@@ -20,7 +20,6 @@ function App() {
     getCategories()
   },[])
 
-console.log(currentUser)
   function getUsers() {
     fetch("/users")
     .then((res) => {
