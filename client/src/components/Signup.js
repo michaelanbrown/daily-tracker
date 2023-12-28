@@ -4,6 +4,7 @@ import '../App.css'
 
 function Signup({  }) {
     const { currentUser, fetchCurrentUser } = useCurrentUser()
+    const [errors, setErrors] = useState([])
 
     return (
         <> 
