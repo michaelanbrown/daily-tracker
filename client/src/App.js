@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
+        <Header isLoading={isLoading}/>
         <Routes>
           <Route exact path='/login' element={<Login/>}/>
         </Routes>
