@@ -5,6 +5,13 @@ import '../App.css'
 function Signup({  }) {
     const { currentUser, fetchCurrentUser } = useCurrentUser()
     const [errors, setErrors] = useState([])
+    const [formData, setFormData] = useState({
+        name:'',
+        age: '',
+        username: '',
+        email:'',
+        password:''
+    })
 
     return (
         <> 
