@@ -17,7 +17,8 @@ function Signup({  }) {
     const navigate = useNavigate();
 
     function onSubmit(e){
-         
+        e.preventDefault()
+        
     }
 
     function handleChange(e) {
