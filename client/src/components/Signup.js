@@ -25,7 +25,12 @@ function Signup({  }) {
             email,
             password
         }   
-          
+        fetch(`/users`,{
+          method:'POST',
+          headers:{'Content-Type': 'application/json'},
+          body:JSON.stringify(user)
+        })
+         
     }
 
     function handleChange(e) {
