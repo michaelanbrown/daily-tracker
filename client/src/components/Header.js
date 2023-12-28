@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-function Header({  }) {
+function Header({ isLoading }) {
 
   return (
     <div className="Header">
