@@ -30,7 +30,15 @@ function Signup({  }) {
           headers:{'Content-Type': 'application/json'},
           body:JSON.stringify(user)
         })
-         
+        .then(res => {
+            if(res.ok){
+                res.json().then(user => {
+                    
+                })
+            } else {
+                res.json().then(json => setErrors(json.errors))
+            }
+        })  
     }
 
     function handleChange(e) {
