@@ -8,7 +8,7 @@ export default function NavBar ({ })  {
 
     return (
       <div>
-         <NavLink className="Navelements" to="/login">Login</NavLink>
+         { currentUser ? null : <NavLink className="Navelements" to="/login">Login</NavLink> }
       </div>
     )
 }
