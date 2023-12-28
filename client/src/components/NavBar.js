@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function NavBar ({ isLoading })  {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
+  const navigate = useNavigate()
 
   function handleLogout() {
     fetch(`/logout`, {
