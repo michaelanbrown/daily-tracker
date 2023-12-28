@@ -10,7 +10,12 @@ export default function NavBar ({ isLoading })  {
     fetch(`/logout`, {
       method:"DELETE"
     })
-    
+    .then(res =>{
+      if(res.ok){
+        fetchCurrentUser()
+        navigate(`/`)
+      }
+    })
   }
 
     return (
