@@ -11,6 +11,9 @@ export const CurrentUserProvider = ({ children }) => {
       if(res.ok){
         res.json().then(setCurrentUser)
       }
+      else {
+        setCurrentUser(false)
+      }
     })
   }
 
