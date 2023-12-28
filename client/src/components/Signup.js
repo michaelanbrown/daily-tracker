@@ -34,6 +34,7 @@ function Signup({  }) {
             if(res.ok){
                 res.json().then(user => {
                     fetchCurrentUser(user)
+                    setUsers([...users, user])
                     
                 })
             } else {
