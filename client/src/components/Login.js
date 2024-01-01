@@ -53,6 +53,7 @@ function Login({ getUsers, getFoods, getCategories }) {
                     <br/>
                     <input type="password" placeholder='Password' name="password" value={password} className="input" onChange={handleChange} />
                     <br/>
+                    <br/>
                     <input type="submit" className="submit" value="Log in" />
                 </form>
                 <br/>
