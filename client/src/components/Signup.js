@@ -54,7 +54,9 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
 
     return (
         <> 
-        
+            <form onSubmit={onSubmit}>
+
+            </form>
         </>
     )
 }
