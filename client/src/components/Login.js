@@ -49,9 +49,9 @@ function Login({ getUsers, getFoods, getCategories }) {
         return (
             <div>
                 <form onSubmit={onSubmit}>
-                    Username: <input type="text" name="username" value={username} onChange={handleChange} />
+                    Username: <input type="text" name="username" value={username} className="input" onChange={handleChange} />
                         <br/>
-                    Password: <input type="password" name="password" value={password} onChange={handleChange} />
+                    Password: <input type="password" name="password" value={password} className="input" onChange={handleChange} />
                         <br/>
                         <input type="submit" value="Log in" />
                 </form>
