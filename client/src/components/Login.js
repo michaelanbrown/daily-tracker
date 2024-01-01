@@ -28,6 +28,9 @@ function Login({ getUsers, getFoods, getCategories }) {
         .then(res => {
             if (res.ok) {
                 fetchCurrentUser()
+                getUsers()
+                getFoods()
+                getCategories()
                 navigate("/")
             }
              else {
