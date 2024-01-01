@@ -35,7 +35,9 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
                 res.json().then(user => {
                     fetchCurrentUser(user)
                     setUsers([...users, user])
-                    
+                    getUsers()
+                    getFoods()
+                    getCategories()
                 })
             } else {
                 res.json().then(json => setErrors(json.errors))
