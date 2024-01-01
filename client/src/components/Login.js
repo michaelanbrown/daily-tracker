@@ -53,7 +53,7 @@ function Login({ getUsers, getFoods, getCategories }) {
                         <br/>
                     Password: <input type="password" name="password" value={password} className="input" onChange={handleChange} />
                         <br/>
-                        <input type="submit" value="Log in" />
+                        <input type="submit" className="submit" value="Log in" />
                 </form>
                 <br/>
                 { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
