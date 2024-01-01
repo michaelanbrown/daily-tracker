@@ -56,5 +56,8 @@
 }
 
 .input {
-  background-color: rgb(129, 206, 167)
+  background-color: rgb(129, 206, 167);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
 }
