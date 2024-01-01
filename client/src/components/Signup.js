@@ -59,6 +59,8 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
                 <br/>
                 Age: <input type='text' name='age' value={age} onChange={handleChange} />
                 <br/>
+                Username: <input type='text' name='username' value={username} onChange={handleChange} />
+                <br/>
             </form>
         </>
     )
