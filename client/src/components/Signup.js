@@ -45,8 +45,6 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
         })  
     }
 
-    //need to pass down users, setUsers, getUsers, getFoods, getCategories
-
     function handleChange(e) {
         setFormData({
             ...formData,
