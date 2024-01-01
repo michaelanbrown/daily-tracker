@@ -63,6 +63,8 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
                 <br/>
                 Email: <input type='text' name='email' value={email} onChange={handleChange} />
                 <br/>
+                Password: <input type='password' name='password' value={password} onChange={handleChange} />
+                <br/>
             </form>
         </>
     )
