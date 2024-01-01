@@ -53,17 +53,17 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
     }
 
     return (
-        <> 
+        <>
             <form onSubmit={onSubmit}>
-                Name: <input type='text' name='name' value={name} onChange={handleChange} />
+                Name: <input type='text' name='name' value={name} className="input" onChange={handleChange} />
                 <br/>
-                Age: <input type='text' name='age' value={age} onChange={handleChange} />
+                Age: <input type='text' name='age' value={age} className="input" onChange={handleChange} />
                 <br/>
-                Username: <input type='text' name='username' value={username} onChange={handleChange} />
+                Username: <input type='text' name='username' value={username} className="input" onChange={handleChange} />
                 <br/>
-                Email: <input type='text' name='email' value={email} onChange={handleChange} />
+                Email: <input type='text' name='email' value={email} className="input" onChange={handleChange} />
                 <br/>
-                Password: <input type='password' name='password' value={password} onChange={handleChange} />
+                Password: <input type='password' name='password' value={password} className="input" onChange={handleChange} />
                 <br/>
                 <input type='submit' value='Sign up!' />
             </form>
