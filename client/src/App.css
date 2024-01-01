@@ -65,7 +65,8 @@
 }
 
 .signupSubmit {
-  background-color: rgb(129, 206, 167);
-  outline: none;
-  border: none;
+  background-color: rgb(180, 221, 201);
+  font-size: 140%;
+  border-radius: 15%;
+  padding: 10px
 }

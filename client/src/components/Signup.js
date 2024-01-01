@@ -67,6 +67,7 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
                 <br/>
                 <input placeholder='Password' type='password' name='password' value={password} className="input" onChange={handleChange} />
                 <br/>
+                <br/>
                 <input type='submit' className="signupSubmit" value='Sign up!' />
             </form>
             { errors ? <br/> : null }
