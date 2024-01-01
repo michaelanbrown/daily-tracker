@@ -61,7 +61,7 @@ function App() {
       <Router>
         <Header isLoading={isLoading}/>
         <Routes>
-          <Route exact path='/login' element={<Login/>}/>
+          <Route exact path='/login' element={<Login getUsers={getUsers}/>}/>
           <Route exact path='/signup' element={<Signup/>}/>
         </Routes>
       </Router>
