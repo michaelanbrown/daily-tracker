@@ -67,7 +67,7 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
                 <br/>
                 <input placeholder='Password' type='password' name='password' value={password} className="input" onChange={handleChange} />
                 <br/>
-                <input type='submit' value='Sign up!' />
+                <input type='submit' className="signupSubmit" value='Sign up!' />
             </form>
             { errors ? <br/> : null }
             { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
