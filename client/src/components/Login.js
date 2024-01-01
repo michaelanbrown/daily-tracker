@@ -49,11 +49,11 @@ function Login({ getUsers, getFoods, getCategories }) {
         return (
             <div>
                 <form onSubmit={onSubmit}>
-                    Username: <input type="text" name="username" value={username} className="input" onChange={handleChange} />
-                        <br/>
-                    Password: <input type="password" name="password" value={password} className="input" onChange={handleChange} />
-                        <br/>
-                        <input type="submit" className="submit" value="Log in" />
+                    <input type="text" name="username" value={username} className="input" onChange={handleChange} />
+                    <br/>
+                    <input type="password" name="password" value={password} className="input" onChange={handleChange} />
+                    <br/>
+                    <input type="submit" className="submit" value="Log in" />
                 </form>
                 <br/>
                 { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
