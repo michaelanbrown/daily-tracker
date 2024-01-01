@@ -59,7 +59,7 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
             <form onSubmit={onSubmit}>
                 <input placeholder='Name' type='text' name='name' value={name} className="input" onChange={handleChange} />
                 <br/>
-                <input placeholder='Age' type='text' name='age' value={age} className="input" onChange={handleChange} />
+                <input placeholder='Age' type='number' name='age' value={age} className="input" onChange={handleChange} />
                 <br/>
                 <input placeholder='Username' type='text' name='username' value={username} className="input" onChange={handleChange} />
                 <br/>
