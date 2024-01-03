@@ -52,7 +52,6 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
         });
     }
 
-    //make backend only take in number for age
 
     return (
         <>
