@@ -6,4 +6,5 @@ class Food < ApplicationRecord
   validates :fats, numericality: { greater_than: 0 }
   validates :carbs, numericality: { greater_than: 0 }
   validates :sugars, numericality: { greater_than: 0 }
+  validates :added_sugars, numericality: { greater_than: 0 }
 end
