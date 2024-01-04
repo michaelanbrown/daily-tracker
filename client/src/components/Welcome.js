@@ -4,7 +4,7 @@ function Welcome({  }) {
 
   return (
     <div>
-      
+      Food is fuel for life!
     </div>
   );
 }
