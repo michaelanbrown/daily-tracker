@@ -12,7 +12,6 @@ function Food({ foods, setFoods }) {
     }))
   },[foods])
 
-console.log(foods)
   return (
     <div>
       {foodsMap}
