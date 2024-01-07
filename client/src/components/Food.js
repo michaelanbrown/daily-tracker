@@ -1,6 +1,6 @@
 import React from "react";
 
-function Food({ foods }) {
+function Food({ foods, setFoods }) {
 
   return (
     <div>
