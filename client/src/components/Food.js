@@ -1,6 +1,6 @@
 import React from "react";
 
-function Food({  }) {
+function Food({ foods }) {
 
   return (
     <div>
