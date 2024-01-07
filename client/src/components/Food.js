@@ -7,7 +7,7 @@ function Food({ foods, setFoods }) {
 
   return (
     <div>
-      
+      {foodMap}
     </div>
   );
 }
