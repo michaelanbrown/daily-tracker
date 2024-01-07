@@ -74,3 +74,9 @@
 .fuel {
   border-radius: 10%;
 }
+
+.NavBar{
+  position: fixed;
+  top: 0%;
+  right: 3%
+}
