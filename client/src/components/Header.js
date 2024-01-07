@@ -8,7 +8,7 @@ function Header({ isLoading }) {
       <header>
         <div>
             <h1>🍪 Daily Tracker 🍪</h1>
-            <h3>Track your intake here for a better, healthier you.</h3>
+            <h2>Track your intake here for a better, healthier you.</h2>
             <NavBar isLoading={isLoading}/>
         </div>  
       </header>
