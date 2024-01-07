@@ -8,6 +8,10 @@ function Food({ foods, setFoods }) {
     </div>
   })
 
+  useEffect(() => {
+    
+  },[])
+
 console.log(foods)
   return (
     <div>
