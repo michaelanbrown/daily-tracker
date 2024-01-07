@@ -5,13 +5,11 @@ function Food({ foods, setFoods }) {
   const [foodsMap, setFoodsMap] = useState(foods)
 
   useEffect(() => {
-    setFoodsMap(foods.map(food => {
-      <div>
-        <h4>{food.name}</h4>
-      </div>
-    }))
+    const mapping = foods ? setFoodsMap(foods.map(food => <div>
+      <h4>{food.name}</h4>
+      </div>)) : null
   },[foods])
-
+  
   return (
     <div>
       {foodsMap}
