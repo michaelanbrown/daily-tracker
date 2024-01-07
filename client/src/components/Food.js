@@ -8,7 +8,7 @@ function Food({ foods, setFoods }) {
         <h4>{food.name}</h4>
       </div>
     })
-  },[])
+  },[foods])
 
 console.log(foods)
   return (
