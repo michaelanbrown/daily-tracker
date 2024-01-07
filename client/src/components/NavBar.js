@@ -21,7 +21,7 @@ export default function NavBar ({ isLoading })  {
   }
 
     return (
-      isLoading ? "Loading..." : <nav>
+      isLoading ? "Loading..." : <nav className='NavBar'>
         { currentUser ? null : <NavLink className="Navelements" to="/signup">Signup</NavLink> }
         { currentUser ? null : <br/> }
         { currentUser ? null : <NavLink className="Navelements" to="/login">Login</NavLink> }
