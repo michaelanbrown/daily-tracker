@@ -9,7 +9,6 @@ function Food({ foods, setFoods }) {
     const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
       <h4>{food.name}</h4>
       <p>{food.calories} calories</p>
-      <br/>
       <p>{food.fats}g fat</p>
       </div>)) : null
   },[foods])
