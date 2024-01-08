@@ -8,7 +8,7 @@ function Food({ foods, setFoods }) {
   useEffect(() => {
     const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
       <h4 className="foodName">{food.name}</h4>
-      <p>{food.calories} calories</p>
+      <h4>{food.calories} calories</h4>
       <p>{food.fats}g fat</p>
       </div>)) : null
   },[foods])
