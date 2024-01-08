@@ -5,7 +5,7 @@ function Food({ foods, setFoods }) {
   const [foodsMap, setFoodsMap] = useState(foods)
 
   useEffect(() => {
-    const mapping = foods ? setFoodsMap(foods.map(food => <div>
+    const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
       <h4>{food.name}</h4>
       </div>)) : null
   },[foods])
