@@ -2,7 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 function Food({ foods, setFoods }) {
-  const [foodsMap, setFoodsMap] = useState(foods)
+  const [foodsMap, setFoodsMap] = useState([])
+
+  console.log(foods)
 
   useEffect(() => {
     const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
