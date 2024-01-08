@@ -80,3 +80,7 @@
   top: 1%;
   right: 3%
 }
+
+.foodName {
+  text-decoration: underline;
+}
