@@ -16,7 +16,7 @@ function Food({ foods, setFoods }) {
       <br className="break"/>
       {food.sugars}g sugar
       <br className="break"/>
-      <div>{food.added_sugars}g added sugar</div>
+      <div className="addedSugar">{food.added_sugars}g added sugar</div>
       {food.protein}g protein</p>
       </div>)) : null
   },[foods])
