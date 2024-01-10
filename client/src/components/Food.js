@@ -11,6 +11,7 @@ function Food({ foods, setFoods }) {
       <h4>{food.calories} calories</h4>
       <p>{food.fats}g fat</p>
       <p>{food.carbs}g carbs</p>
+      <p>{food.sugars}g sugar</p>
       </div>)) : null
   },[foods])
   
