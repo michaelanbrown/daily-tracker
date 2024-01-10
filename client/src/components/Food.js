@@ -13,6 +13,7 @@ function Food({ foods, setFoods }) {
       <p>{food.carbs}g carbs</p>
       <p>{food.sugars}g sugar</p>
       <p className="addedSugar">{food.added_sugars}g added sugar</p>
+      <p>{food.protein}g protein</p>
       </div>)) : null
   },[foods])
   
