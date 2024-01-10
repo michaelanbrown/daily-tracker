@@ -14,8 +14,9 @@ function Food({ foods, setFoods }) {
       <br className="break"/>
       {food.carbs}g carbs
       <br className="break"/>
-      {food.sugars}g sugar</p>
-      <p className="addedSugar">{food.added_sugars}g added sugar
+      {food.sugars}g sugar
+      <br className="break"/>
+      {food.added_sugars}g added sugar
       <br className="break"/>
       {food.protein}g protein</p>
       </div>)) : null
