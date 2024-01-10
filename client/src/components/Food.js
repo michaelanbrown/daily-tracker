@@ -8,7 +8,7 @@ function Food({ foods, setFoods }) {
   useEffect(() => {
     const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
       <h4 className="foodName">{food.name}</h4>
-      <p className="brand">{food.brand}</p>
+      <div className="brand">{food.brand}</div>
       <h4>{food.calories} calories</h4>
       <p>{food.fats}g fat
       <br className="break"/>
@@ -21,6 +21,8 @@ function Food({ foods, setFoods }) {
       </div>)) : null
   },[foods])
   
+//fix spacing and div cannot be descendant of p tag
+
   return (
     <div>
       {foodsMap}

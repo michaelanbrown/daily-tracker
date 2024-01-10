@@ -93,6 +93,7 @@
 .brand {
   font-weight: bold;
   font-size: 85%;
+  text-decoration: none;
 }
 
 .break {
