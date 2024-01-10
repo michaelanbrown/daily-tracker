@@ -10,8 +10,9 @@ function Food({ foods, setFoods }) {
       <h4 className="foodName">{food.name}</h4>
       <p className="brand">{food.brand}</p>
       <h4>{food.calories} calories</h4>
-      <p>{food.fats}g fat</p>
-      <p>{food.carbs}g carbs
+      <p>{food.fats}g fat
+      <br className="break"/>
+      {food.carbs}g carbs
       <br className="break"/>
       {food.sugars}g sugar</p>
       <p className="addedSugar">{food.added_sugars}g added sugar</p>
