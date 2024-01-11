@@ -10,14 +10,14 @@ function Food({ foods, setFoods }) {
       <h4 className="foodName">{food.name}</h4>
       <div className="brand">{food.brand}</div>
       <h4>{food.calories} calories</h4>
-      <p>{food.fats}g fat
+      <div>{food.fats}g fat
       <br className="break"/>
       {food.carbs}g carbs
       <br className="break"/>
       {food.sugars}g sugar
       <br className="break"/>
       <div className="addedSugar">{food.added_sugars}g added sugar</div>
-      {food.protein}g protein</p>
+      {food.protein}g protein</div>
       </div>)) : null
   },[foods])
   
