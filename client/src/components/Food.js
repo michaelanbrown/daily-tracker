@@ -20,7 +20,7 @@ function Food({ foods, setFoods }) {
       <div className="addedSugar">{food.added_sugars}g added sugar</div>
       {food.protein}g protein</div>
       </div>)) : null
-      setFoodfilter(foods)
+      setFoodfilter(filter ? foodFilter : foods)
   },[foods, foodFilter])
 
   function handleChange(e) {
