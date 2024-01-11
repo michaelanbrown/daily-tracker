@@ -9,7 +9,7 @@ function Food({ foods, setFoods }) {
     const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
       <h4 className="foodName">{food.name}</h4>
       <div className="brand">{food.brand}</div>
-      <h4>{food.calories} calories</h4>
+      <h4 className= "food">{food.calories} calories</h4>
       <div>{food.fats}g fat
       <br className="break"/>
       {food.carbs}g carbs
