@@ -22,13 +22,9 @@ function Food({ foods, setFoods }) {
       </div>)) : null
   },[foods])
 
-  console.log(foodFilter)
-
   function handleChange(e) {
     setFilter(e.target.value); 
-    setFoodfilter([...foods].filter(food => {
-      food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1
-    }))
+    console.log(foods.filter(food => {food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1}))
   }
 
   return (
