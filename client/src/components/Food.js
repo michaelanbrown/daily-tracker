@@ -24,7 +24,7 @@ function Food({ foods, setFoods }) {
 
   function handleChange(e) {
     setFilter(e.target.value); 
-    console.log(foods.filter(food => {food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1}))
+    setFoodfilter(foods.filter(food => food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
   }
 
   return (
