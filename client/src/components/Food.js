@@ -28,7 +28,7 @@ function Food({ foods, setFoods }) {
 
   return (
     <div>
-      <input type="text" placeholder='Search' name="filter" value={filter} className="input"/>
+      <input type="text" placeholder='Search' name="filter" value={filter} className="input" onChange={handleChange} />
       <br/>
       {foodsMap}
     </div>
