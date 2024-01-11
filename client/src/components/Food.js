@@ -7,7 +7,7 @@ function Food({ foods, setFoods }) {
   const [filter, setFilter] = useState('')
 
   useEffect(() => {
-    const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
+    const mapping = foods ? setFoodsMap(foodFilter.map(food => <div key={food.id}>
       <h4 className="foodName">{food.name}</h4>
       <div className="brand">{food.brand}</div>
       <h4 className= "food">{food.calories} calories</h4>
