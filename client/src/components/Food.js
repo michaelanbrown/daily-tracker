@@ -23,8 +23,11 @@ function Food({ foods, setFoods }) {
   },[foods])
 
   function handleChange(e) {
-    setFilter(e.target.value);
-}
+    setFilter(e.target.value); 
+    setFoodfilter([...foods].filter(food => {
+      food.name.toLowerCase()
+    }))
+  }
 
   return (
     <div>
