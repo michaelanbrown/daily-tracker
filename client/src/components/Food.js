@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 function Food({ foods, setFoods }) {
   const [foodsMap, setFoodsMap] = useState([])
-  const [foodFilter, setFoodfilter] = useState([...foods])
+  const [foodFilter, setFoodfilter] = useState(foods)
   const [filter, setFilter] = useState('')
 
   useEffect(() => {
@@ -20,12 +20,15 @@ function Food({ foods, setFoods }) {
       <div className="addedSugar">{food.added_sugars}g added sugar</div>
       {food.protein}g protein</div>
       </div>)) : null
-  },[foods])
+      setFoodfilter(foods)
+  },[foods, foodFilter])
 
   function handleChange(e) {
     setFilter(e.target.value); 
     setFoodfilter(foods.filter(food => food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
   }
+
+  console.log(foodFilter)
 
   return (
     <div>
