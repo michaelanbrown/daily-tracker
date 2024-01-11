@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 function Food({ foods, setFoods }) {
   const [foodsMap, setFoodsMap] = useState([])
   const [foodFilter, setFoodfilter] = useState([...foods])
+  const [filter, setFilter] = useState('')
 
   useEffect(() => {
     const mapping = foods ? setFoodsMap(foods.map(food => <div key={food.id}>
@@ -20,6 +21,7 @@ function Food({ foods, setFoods }) {
       {food.protein}g protein</div>
       </div>)) : null
   },[foods])
+
 
 
   return (
