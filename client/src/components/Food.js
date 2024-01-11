@@ -28,8 +28,6 @@ function Food({ foods, setFoods }) {
     setFoodfilter(foods.filter(food => food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
   }
 
-  console.log(foodFilter)
-
   return (
     <div>
       <input type="text" placeholder='Search' name="filter" value={filter} className="input" onChange={handleChange} />
