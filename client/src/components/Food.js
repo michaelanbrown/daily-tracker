@@ -22,7 +22,9 @@ function Food({ foods, setFoods }) {
       </div>)) : null
   },[foods])
 
-
+  function handleChange(e) {
+    setFilter(e.target.value);
+}
 
   return (
     <div>
