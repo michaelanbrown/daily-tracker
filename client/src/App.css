@@ -83,17 +83,17 @@
 
 .foodName {
   text-decoration: underline;
-  font-size: 110%;
+  font-size: 150%;
   margin-bottom: 0
 }
 
 .addedSugar {
-  font-size: 85%;
+  font-size: 125%;
 }
 
 .brand {
   font-weight: bold;
-  font-size: 85%;
+  font-size: 125%;
   text-decoration: none;
 }
 
@@ -103,5 +103,6 @@
 }
 
 .food {
+  font-size: 125%;
   margin-bottom: 0
 }
