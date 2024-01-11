@@ -20,8 +20,7 @@ function Food({ foods, setFoods }) {
       {food.protein}g protein</div>
       </div>)) : null
   },[foods])
-  
-//fix spacing and div cannot be descendant of p tag
+
 
   return (
     <div>
