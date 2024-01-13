@@ -114,6 +114,6 @@
   border-radius: 15%;
   padding: 10px;
   float: right;
-  margin-right: 20%;
-  position: relative;
+  position: absolute;
+  margin-left: 30%;
 }
