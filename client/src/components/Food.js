@@ -5,6 +5,7 @@ function Food({ foods, setFoods }) {
   const [foodsMap, setFoodsMap] = useState([])
   const [foodFilter, setFoodfilter] = useState(foods)
   const [filter, setFilter] = useState('')
+  const navigate = useNavigate()
 
   useEffect(() => {
     const mapping = foods ? setFoodsMap(foodFilter.map(food => <div key={food.id}>
