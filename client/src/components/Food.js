@@ -30,7 +30,7 @@ function Food({ foods, setFoods }) {
   }
 
   function newFood() {
-    
+    navigate("/newfood")
   }
 
   return (
