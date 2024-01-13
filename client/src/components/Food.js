@@ -28,6 +28,10 @@ function Food({ foods, setFoods }) {
     setFoodfilter(foods.filter(food => food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
   }
 
+  function newFood() {
+
+  }
+
   return (
     <div>
       <button className="new">Add New Food</button>
