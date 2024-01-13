@@ -68,6 +68,7 @@ function App() {
           <Route exact path='/signup' element={<Signup getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} users={users} setUsers={setUsers}/>}/>
           <Route exact path='/' element={<Welcome/>}/>
           <Route exact path='/food' element={<Food foods={foods} setFoods={setFoods}/>}/>
+          <Route exact path='/newfood' element={<NewFood />}/>
         </Routes>
       </Router>
     </div>
