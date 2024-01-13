@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Welcome from './components/Welcome';
 import Food from './components/Food';
+import NewFood from './components/NewFood';
 
 function App() {
   const [users, setUsers] = useState([])
