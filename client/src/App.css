@@ -116,4 +116,5 @@
   float: right;
   position: absolute;
   margin-left: 30%;
+  cursor: pointer;
 }
