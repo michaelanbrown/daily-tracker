@@ -13,6 +13,7 @@ function NewFood({ foods, setFoods }) {
     protein: ''
   })
   const {name, brand, calories, fats, sugars, added_sugars, protein} = formData
+  const navigate = useNavigate();
 
   function handleChange(e) {
     setFormData({
