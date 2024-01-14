@@ -35,6 +35,13 @@ function NewFood({ }) {
       headers:{'Content-Type': 'application/json'},
       body:JSON.stringify(food)
     })
+    .then(res => {
+      if(res.ok) {
+        res.json().then(food => {
+          
+        })
+      }
+    })
   }
 
   return (
