@@ -21,6 +21,15 @@ function NewFood({ }) {
 
   function onSubmit(e) {
     e.preventDefault()
+    const food = {
+      name,
+      brand,
+      calories,
+      fats,
+      sugars,
+      added_sugars,
+      protein
+    }
   }
 
   return (
