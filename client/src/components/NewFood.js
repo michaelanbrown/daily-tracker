@@ -49,6 +49,8 @@ function NewFood({ }) {
           <br/>
         <input type="text" placeholder='Protein' name="protein" value={protein} className="input" onChange={handleChange}/>
           <br/>
+          <br/>
+        <input type="submit" className="submit" value="Add Food!" />
       </form>
     </div>
   );
