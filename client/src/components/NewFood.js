@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 
 function NewFood({ }) {
-  const [formData, setFormData] = useState(
-    
-  )
+  const [formData, setFormData] = useState({
+    name: '',
+    brand: '',
+    calories: '',
+    fats: '',
+    sugars: '',
+    added_sugars: '',
+    protein: ''
+  })
 
   return (
     <div>
