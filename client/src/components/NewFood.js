@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 function NewFood({ }) {
+  const [formData, setFormData] = useState(
+    
+  )
 
   return (
     <div>
