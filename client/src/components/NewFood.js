@@ -25,7 +25,7 @@ function NewFood({ }) {
 
   return (
     <div>
-      <form>
+      <form onSubmit={onSubmit}>
         <input type="text" placeholder='Food' name="name" value={name} className="input" onChange={handleChange}/>
           <br/>
         <input type="text" placeholder='Brand' name="brand" value={brand} className="input" onChange={handleChange}/>
