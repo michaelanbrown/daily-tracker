@@ -17,7 +17,11 @@ function NewFood({ }) {
         ...formData,
         [e.target.name] : e.target.value
     });
-}
+  }
+
+  function onSubmit(e) {
+
+  }
 
   return (
     <div>
