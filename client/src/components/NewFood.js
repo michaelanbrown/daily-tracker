@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewFood({ }) {
+function NewFood({ foods }) {
   const [formData, setFormData] = useState({
     name: '',
     brand: '',
@@ -38,7 +38,7 @@ function NewFood({ }) {
     .then(res => {
       if(res.ok) {
         res.json().then(food => {
-          
+
         })
       }
     })
