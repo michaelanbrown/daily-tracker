@@ -40,6 +40,8 @@ function NewFood({ foods, setFoods }) {
         res.json().then(food => {
           setFoods([...foods, food])
         })
+      } else {
+        res.json().then(json => setErrors(json.errors))
       }
     })
   }
