@@ -21,7 +21,7 @@ function NewFood({ }) {
   return (
     <div>
       <form>
-        <input type="text" placeholder='Food' name="name" value={name} className="input" />
+        <input type="text" placeholder='Food' name="name" value={name} className="input" onChange={handleChange}/>
           <br/>
       </form>
     </div>
