@@ -26,6 +26,8 @@ function NewFood({ }) {
           <br/>
         <input type="text" placeholder='Brand' name="brand" value={brand} className="input" onChange={handleChange}/>
           <br/>
+        <input type="text" placeholder='Calories' name="calories" value={calories} className="input" onChange={handleChange}/>
+          <br/>
       </form>
     </div>
   );
