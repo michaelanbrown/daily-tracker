@@ -30,6 +30,8 @@ function NewFood({ }) {
           <br/>
         <input type="text" placeholder='Fats' name="fats" value={fats} className="input" onChange={handleChange}/>
           <br/>
+        <input type="text" placeholder='Sugars' name="sugars" value={sugars} className="input" onChange={handleChange}/>
+          <br/>
       </form>
     </div>
   );
