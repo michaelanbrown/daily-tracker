@@ -8,11 +8,12 @@ function NewFood({ foods, setFoods }) {
     brand: '',
     calories: '',
     fats: '',
+    carbs: '',
     sugars: '',
     added_sugars: '',
     protein: ''
   })
-  const {name, brand, calories, fats, sugars, added_sugars, protein} = formData
+  const {name, brand, calories, fats, carbs, sugars, added_sugars, protein} = formData
   const navigate = useNavigate();
 
   function handleChange(e) {
@@ -29,6 +30,7 @@ function NewFood({ foods, setFoods }) {
       brand,
       calories,
       fats,
+      carbs,
       sugars,
       added_sugars,
       protein
@@ -49,6 +51,7 @@ function NewFood({ foods, setFoods }) {
       }
     })
   }
+  console.log(errors)
 
   return (
     <div>
@@ -60,6 +63,8 @@ function NewFood({ foods, setFoods }) {
         <input type="text" placeholder='Calories' name="calories" value={calories} className="input" onChange={handleChange}/>
           <br/>
         <input type="text" placeholder='Fats' name="fats" value={fats} className="input" onChange={handleChange}/>
+          <br/>
+        <input type="text" placeholder='Carbohydrates' name="carbs" value={carbs} className="input" onChange={handleChange}/>
           <br/>
         <input type="text" placeholder='Sugars' name="sugars" value={sugars} className="input" onChange={handleChange}/>
           <br/>
