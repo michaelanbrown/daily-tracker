@@ -11,6 +11,10 @@ function NewFood({ }) {
     protein: ''
   })
 
+  function handleChange(e) {
+    
+}
+
   return (
     <div>
       <form>
