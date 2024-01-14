@@ -38,7 +38,7 @@ function NewFood({ foods, setFoods }) {
     .then(res => {
       if(res.ok) {
         res.json().then(food => {
-
+          setFoods([...foods, food])
         })
       }
     })
