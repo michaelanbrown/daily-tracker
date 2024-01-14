@@ -10,6 +10,7 @@ function NewFood({ }) {
     added_sugars: '',
     protein: ''
   })
+  const {name, brand, calories, fats, sugars, added_sugars, protein} = formData
 
   function handleChange(e) {
     setFormData({
