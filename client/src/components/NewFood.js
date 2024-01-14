@@ -20,7 +20,7 @@ function NewFood({ }) {
   }
 
   function onSubmit(e) {
-
+    e.preventDefault()
   }
 
   return (
