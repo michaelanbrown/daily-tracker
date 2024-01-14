@@ -42,6 +42,7 @@ function NewFood({ foods, setFoods }) {
       if(res.ok) {
         res.json().then(food => {
           setFoods([...foods, food])
+          navigate('/food')
         })
       } else {
         res.json().then(json => setErrors(json.errors))
