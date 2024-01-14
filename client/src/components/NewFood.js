@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function NewFood({ foods, setFoods }) {
+  const [errors, setErrors] = useState([])
   const [formData, setFormData] = useState({
     name: '',
     brand: '',
