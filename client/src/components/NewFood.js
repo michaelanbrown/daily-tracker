@@ -14,7 +14,7 @@ function NewFood({ }) {
   return (
     <div>
       <form>
-        <input type="text" placeholder='Name' name="name" value={name} className="input" />
+        <input type="text" placeholder='Food' name="name" value={name} className="input" />
           <br/>
       </form>
     </div>
