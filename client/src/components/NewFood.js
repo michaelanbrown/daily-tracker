@@ -30,6 +30,9 @@ function NewFood({ }) {
       added_sugars,
       protein
     }
+    fetch('/foods', {
+      
+    })
   }
 
   return (
