@@ -7,6 +7,7 @@ function Today({ users, foods, categories }) {
         <h4>Breakfast</h4>
         <h4>Lunch</h4>
         <h4>Dinner</h4>
+        <h4>Snacks</h4>
     </div>
   );
 }
