@@ -1,10 +1,10 @@
 import React from "react";
 
-function Today({  }) {
+function Today({ users }) {
 
   return (
     <div>
-        
+
     </div>
   );
 }
