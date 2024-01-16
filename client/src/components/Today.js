@@ -1,6 +1,6 @@
 import React from "react";
 
-function Today({ users, foods }) {
+function Today({ users, foods, categories }) {
 
   return (
     <div>
