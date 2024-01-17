@@ -2,7 +2,7 @@ import React from "react";
 
 function Today({ users, foods, categories }) {
 
-  console.log(categories)
+  console.log(users)
 
   return (
     <div>
