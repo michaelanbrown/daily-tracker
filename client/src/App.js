@@ -60,8 +60,6 @@ function App() {
     })
   }
 
-  console.log(categories)
-
   return (
     <div className="App">
       <Router>
