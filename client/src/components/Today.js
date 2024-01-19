@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 
 function Today({ users, foods, categories }) {
+  const navigate = useNavigate()
 
   function addFood() {
 
