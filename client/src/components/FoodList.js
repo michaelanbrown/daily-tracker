@@ -1,6 +1,6 @@
 import React from "react";
 
-function FoodList({  }) {
+function FoodList({ foods }) {
 
 
   return (
