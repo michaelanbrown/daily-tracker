@@ -9,6 +9,7 @@ import Welcome from './components/Welcome';
 import Food from './components/Food';
 import NewFood from './components/NewFood';
 import Today from './components/Today';
+import FoodList from './components/FoodList';
 
 function App() {
   const [users, setUsers] = useState([])
