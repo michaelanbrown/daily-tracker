@@ -10,7 +10,7 @@ function Today({ users, foods, categories }) {
 
   return (
     <div>
-      <button className="submit" onClick={addFood}>Add Food</button>
+      <button className="addfood" onClick={addFood}>Add Food</button>
         <h2>Breakfast</h2>
         <h2>Lunch</h2>
         <h2>Dinner</h2>
