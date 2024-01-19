@@ -6,7 +6,7 @@ function Today({ users, foods, categories }) {
 
   return (
     <div>
-      <button class="submit">Add Food</button>
+      <button className="submit">Add Food</button>
         <h2>Breakfast</h2>
         <h2>Lunch</h2>
         <h2>Dinner</h2>
