@@ -7,10 +7,10 @@ function Today({ users, foods, categories }) {
   return (
     <div>
       <button class="submit">Add Food</button>
-        <h4>Breakfast</h4>
-        <h4>Lunch</h4>
-        <h4>Dinner</h4>
-        <h4>Snacks</h4>
+        <h2>Breakfast</h2>
+        <h2>Lunch</h2>
+        <h2>Dinner</h2>
+        <h2>Snacks</h2>
     </div>
   );
 }
