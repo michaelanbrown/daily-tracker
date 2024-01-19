@@ -5,7 +5,7 @@ function Today({ users, foods, categories }) {
   const navigate = useNavigate()
 
   function addFood() {
-
+    navigate('/foodlist')
   }
 
   return (
