@@ -38,6 +38,7 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
                     getUsers()
                     getFoods()
                     getCategories()
+                    navigate("/")
                 })
             } else {
                 res.json().then(json => setErrors(json.errors))
