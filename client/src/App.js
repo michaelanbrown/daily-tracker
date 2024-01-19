@@ -72,7 +72,7 @@ function App() {
           <Route exact path='/food' element={<Food foods={foods} setFoods={setFoods}/>}/>
           <Route exact path='/newfood' element={<NewFood foods={foods} setFoods={setFoods}/>}/>
           <Route exact path='/today' element={<Today users={users} foods={foods} categories={categories}/>}/>
-          <Route exact path='/foodlist' element={<FoodList/>}/>
+          <Route exact path='/foodlist' element={<FoodList foods={foods}/>}/>
         </Routes>
       </Router>
     </div>
