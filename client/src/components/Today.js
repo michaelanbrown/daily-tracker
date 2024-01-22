@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useCurrentUser } from "./context/User";
-import BreakfastMap from "./MealMap";
+import MealMap from "./MealMap";
 
 function Today({ users, foods, categories }) {
   const navigate = useNavigate()
