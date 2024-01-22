@@ -1,6 +1,6 @@
 import React from "react";
 
-function BreakfastMap({  }) {
+function BreakfastMap({ food }) {
 
   return (
     <div>
