@@ -32,6 +32,10 @@ function Today({ users, foods, categories }) {
     return <MealMap key={food.id} food={food}/>
   }) : null
 
+  const dinnerMap = dinnerFoods ? dinnerFoods.map(food => {
+    
+  }) : null
+
   return (
     <div>
         <h2>Breakfast</h2>
