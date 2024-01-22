@@ -6,6 +6,7 @@ function Today({ users, foods, categories }) {
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [currentFoods, setCurrentFoods] = useState([])
+  const [currentCategories, setCurrentCategories] = useState([])
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
@@ -14,7 +15,7 @@ function Today({ users, foods, categories }) {
   function addFood() {
     navigate('/foodlist')
   }
-
+console.log(currentUser)
 
   return (
     <div>
