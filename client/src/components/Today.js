@@ -24,7 +24,6 @@ function Today({ users, foods, categories }) {
     return <BreakfastMap food={food}/>
   }) : null
 
-  console.log(breakfastMap)
 
   return (
     <div>
