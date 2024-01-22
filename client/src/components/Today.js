@@ -16,7 +16,9 @@ function Today({ users, foods, categories }) {
   function addFood() {
     navigate('/foodlist')
   }
-console.log(currentCategories)
+
+  const breakfast = currentCategories.filter(category => category.meal === "Breakfast")
+
 
   return (
     <div>
