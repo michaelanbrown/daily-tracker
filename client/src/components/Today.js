@@ -8,17 +8,17 @@ function Today({ users, foods, categories }) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [currentFoods, setCurrentFoods] = useState([])
   const [currentCategories, setCurrentCategories] = useState([])
+  const [breakfastFoods, setBreakfastFoods] = useState([])
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
     const setCategories = currentUser ? setCurrentCategories(currentUser.categories) : null
-  },[currentUser])
+    const breakfast = currentCategories ? setBreakfastFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Breakfast").map(food => food.id).indexOf(food.id) > -1)) : null
+  },[currentUser, currentCategories])
 
   function addFood() {
     navigate('/foodlist')
   }
-
-  const breakfastFoods = currentFoods.filter(food => currentCategories.filter(category => category.meal === "Breakfast").map(food => food.id).indexOf(food.id) > -1)
 
   const breakfastMap = breakfastFoods.map(food => {
     <BreakfastMap food={food}/>
