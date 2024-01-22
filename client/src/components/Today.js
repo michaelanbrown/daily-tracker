@@ -10,12 +10,13 @@ function Today({ users, foods, categories }) {
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
+    const setCategoriess = currentUser ? setCurrentCategories(currentUser.categories) : null
   },[currentUser])
 
   function addFood() {
     navigate('/foodlist')
   }
-console.log(currentUser)
+console.log(currentCategories)
 
   return (
     <div>
