@@ -21,7 +21,6 @@ function Today({ users, foods, categories }) {
 
   const breakfastFoods = currentFoods.filter(food => breakfastCatId.indexOf(food.id) > -1)
 
-  console.log(breakfastFoods)
   return (
     <div>
         <h2>Breakfast</h2>
