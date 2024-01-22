@@ -20,11 +20,11 @@ function Today({ users, foods, categories }) {
     navigate('/foodlist')
   }
 
-  const breakfastMap = breakfastFoods.map(food => {
-    <BreakfastMap food={food}/>
-  })
+  const breakfastMap = breakfastFoods ? breakfastFoods.map(food => {
+    return <BreakfastMap food={food}/>
+  }) : null
 
-  console.log(breakfastFoods)
+  console.log(breakfastMap)
 
   return (
     <div>
