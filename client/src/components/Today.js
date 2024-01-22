@@ -8,7 +8,7 @@ function Today({ users, foods, categories }) {
 
   useEffect(() => {
     
-  },[])
+  },[currentUser])
 
   function addFood() {
     navigate('/foodlist')
