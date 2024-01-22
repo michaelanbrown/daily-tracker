@@ -17,8 +17,9 @@ function Today({ users, foods, categories }) {
     navigate('/foodlist')
   }
 
-  const breakfastCats = currentCategories.filter(category => category.meal === "Breakfast")
+  const breakfastCats = currentCategories.filter(category => category.meal === "Breakfast").map(food => food.id)
 
+  // const breakfastFoods = currentFoods.filter(food => food.id.find(breakfastCats))
 
   return (
     <div>
