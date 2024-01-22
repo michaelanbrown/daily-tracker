@@ -5,6 +5,7 @@ import { useCurrentUser } from "./context/User";
 function Today({ users, foods, categories }) {
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
+  const [currentFoods, setCurrentFoods] = useState([])
 
   useEffect(() => {
     
