@@ -6,6 +6,10 @@ function Today({ users, foods, categories }) {
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
+  useEffect(() => {
+    
+  },[])
+
   function addFood() {
     navigate('/foodlist')
   }
