@@ -8,7 +8,7 @@ function Today({ users, foods, categories }) {
   const [currentFoods, setCurrentFoods] = useState([])
 
   useEffect(() => {
-    
+    currentUser ? setCurrentFoods(currentUser.foods) : null
   },[currentUser])
 
   function addFood() {
