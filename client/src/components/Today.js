@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useCurrentUser } from "./context/User";
-import BreakfastMap from "./BreakfastMap";
+import BreakfastMap from "./MealMap";
 
 function Today({ users, foods, categories }) {
   const navigate = useNavigate()
@@ -27,7 +27,7 @@ function Today({ users, foods, categories }) {
   }) : null
 
   const lunchMap = lunchFoods ? lunchFoods.map(food => {
-
+    
   }) : null
 
   return (
@@ -39,6 +39,7 @@ function Today({ users, foods, categories }) {
         <br/>
         <h2>Lunch</h2>
         <button className="addfood" onClick={addFood}>Add Food</button>
+        {lunchMap}
         <br/>
         <br/>
         <h2>Dinner</h2>
