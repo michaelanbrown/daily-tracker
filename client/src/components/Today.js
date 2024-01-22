@@ -17,7 +17,7 @@ function Today({ users, foods, categories }) {
     navigate('/foodlist')
   }
 
-  const breakfast = currentCategories.filter(category => category.meal === "Breakfast")
+  const breakfastCats = currentCategories.filter(category => category.meal === "Breakfast")
 
 
   return (
