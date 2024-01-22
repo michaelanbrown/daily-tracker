@@ -19,8 +19,9 @@ function Today({ users, foods, categories }) {
 
   const breakfastCatId = currentCategories.filter(category => category.meal === "Breakfast").map(food => food.id)
 
-  // const breakfastFoods = currentFoods.filter(food => food.id.find(breakfastCats))
+  const breakfastFoods = currentFoods.filter(food => breakfastCatId.indexOf(food.id) > -1)
 
+  console.log(breakfastFoods)
   return (
     <div>
         <h2>Breakfast</h2>
