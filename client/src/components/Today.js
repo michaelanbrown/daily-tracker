@@ -15,6 +15,8 @@ function Today({ users, foods, categories }) {
     navigate('/foodlist')
   }
 
+  console.log(foods)
+
   return (
     <div>
         <h2>Breakfast</h2>
