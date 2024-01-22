@@ -11,20 +11,20 @@ function Today({ users, foods, categories }) {
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
-    const setCategoriess = currentUser ? setCurrentCategories(currentUser.categories) : null
+    const setCategories = currentUser ? setCurrentCategories(currentUser.categories) : null
   },[currentUser])
 
   function addFood() {
     navigate('/foodlist')
   }
 
-  const breakfastCatId = currentCategories.filter(category => category.meal === "Breakfast").map(food => food.id)
-
-  const breakfastFoods = currentFoods.filter(food => breakfastCatId.indexOf(food.id) > -1)
+  const breakfastFoods = currentFoods.filter(food => currentCategories.filter(category => category.meal === "Breakfast").map(food => food.id).indexOf(food.id) > -1)
 
   const breakfastMap = breakfastFoods.map(food => {
-    <BreakfastMap food ={food}/>
+    <BreakfastMap food={food}/>
   })
+
+  console.log(breakfastFoods)
 
   return (
     <div>
