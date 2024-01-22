@@ -4,6 +4,7 @@ import { useCurrentUser } from './components/context/User';
 
 function Today({ users, foods, categories }) {
   const navigate = useNavigate()
+  const { currentUser, fetchCurrentUser } = useCurrentUser()
 
   function addFood() {
     navigate('/foodlist')
