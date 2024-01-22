@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { useCurrentUser } from './components/context/User';
+import { useCurrentUser } from "./context/User";
 
 function Today({ users, foods, categories }) {
   const navigate = useNavigate()
