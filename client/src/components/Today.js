@@ -50,6 +50,7 @@ function Today({ users, foods, categories }) {
         <br/>
         <h2>Dinner</h2>
         <button className="addfood" onClick={addFood}>Add Food</button>
+        {dinnerMap}
         <br/>
         <br/>
         <h2>Snacks</h2>
