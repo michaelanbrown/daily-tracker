@@ -1,6 +1,8 @@
 import React from "react";
+import { NavLink } from "react-router-dom"
 
 function BreakfastMap({ food }) {
+  console.log(food)
 
   return (
     <div>
