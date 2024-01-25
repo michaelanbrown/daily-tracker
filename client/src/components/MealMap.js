@@ -4,7 +4,7 @@ function BreakfastMap({ food }) {
 
   return (
     <div>
-      <li>{ food.name }</li>
+      <li className="mealMap">{ food.name }</li>
     </div>
   );
 }
