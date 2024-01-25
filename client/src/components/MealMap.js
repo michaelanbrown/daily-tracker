@@ -4,12 +4,12 @@ function BreakfastMap({ food }) {
   console.log(food)
 
   function foodInformation() {
-    
+
   }
 
   return (
     <div>
-      <button className="logout">
+      <button className="logout" onClick={foodInformation}>
         <li className="mealMap">{ food.name }</li>
       </button>
     </div>
