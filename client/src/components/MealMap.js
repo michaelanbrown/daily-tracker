@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function BreakfastMap({ food }) {
   const [showMeal, setShowMeal] = useState(false)
-  console.log(food)
+  console.log(showMeal)
 
   function foodInformation() {
     setShowMeal(!showMeal)
@@ -11,7 +11,7 @@ function BreakfastMap({ food }) {
   return (
     <div>
       <button className="logout" onClick={foodInformation}>
-        <li className="mealMap">{ food.name }</li>
+        <li className="mealMap">{ food.name }{" "}<button className="logout" onClick={foodInformation}>+</button></li>
       </button>
     </div>
   );
