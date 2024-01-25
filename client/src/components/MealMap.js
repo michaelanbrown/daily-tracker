@@ -12,10 +12,15 @@ function BreakfastMap({ food }) {
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>+</button></div>
       { showMeal ? <div>
         Calories: { food.calories }
+        <br/>
         Fat: { food.fat }
+        <br/>
         Carbohydrates: { food.carbs }
+        <br/>
         Sugars: { food.sugars }
+        <br/>
         Added Sugars: { food.added_sugars }
+        <br/>
         Protein: { food. protein }
       </div> : null}
     </div>
