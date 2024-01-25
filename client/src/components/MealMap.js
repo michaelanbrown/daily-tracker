@@ -6,9 +6,9 @@ function BreakfastMap({ food }) {
 
   return (
     <div>
-      <NavLink>
+      <button>
         <li className="mealMap">{ food.name }</li>
-      </NavLink>
+      </button>
     </div>
   );
 }
