@@ -10,7 +10,9 @@ function BreakfastMap({ food }) {
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>+</button></div>
-      { showMeal ? <div></div> : null}
+      { showMeal ? <div>
+        Calories: { food.calories }
+      </div> : null}
     </div>
   );
 }
