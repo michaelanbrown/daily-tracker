@@ -15,6 +15,7 @@ function BreakfastMap({ food }) {
         Fat: { food.fat }
         Carbohydrates: { food.carbs }
         Sugars: { food.sugars }
+        Added Sugars: { food.added_sugars }
       </div> : null}
     </div>
   );
