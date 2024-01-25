@@ -46,21 +46,29 @@ function Today({ users, foods, categories }) {
     <div>
         <h2>Breakfast</h2>
         <button className="addfood" onClick={addFood}>Add Food</button>
+        <br/>
+        <br/>
         {breakfastMap}
         <br/>
         <br/>
         <h2>Lunch</h2>
         <button className="addfood" onClick={addFood}>Add Food</button>
+        <br/>
+        <br/>
         {lunchMap}
         <br/>
         <br/>
         <h2>Dinner</h2>
         <button className="addfood" onClick={addFood}>Add Food</button>
+        <br/>
+        <br/>
         {dinnerMap}
         <br/>
         <br/>
         <h2>Snacks</h2>
         <button className="addfood" onClick={addFood}>Add Food</button>
+        <br/>
+        <br/>
         {snackMap}
     </div>
   );
