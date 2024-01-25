@@ -13,6 +13,7 @@ function BreakfastMap({ food }) {
       { showMeal ? <div>
         Calories: { food.calories }
         Fat: { food.fat }
+        Carbohydrates: { food.carbs }
       </div> : null}
     </div>
   );
