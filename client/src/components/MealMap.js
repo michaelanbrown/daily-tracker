@@ -5,7 +5,7 @@ function BreakfastMap({ food }) {
   console.log(food)
 
   function foodInformation() {
-
+    setShowMeal(!showMeal)
   }
 
   return (
