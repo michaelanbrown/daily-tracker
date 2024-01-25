@@ -10,7 +10,7 @@ function BreakfastMap({ food }) {
 
   return (
     <div>
-      <li className="mealMap">{ food.name }{" "}<button className="plus" onClick={foodInformation}>+</button></li>
+      <li>{ food.name }</li>{" "}<button className="plus" onClick={foodInformation}>+</button>
     </div>
   );
 }
