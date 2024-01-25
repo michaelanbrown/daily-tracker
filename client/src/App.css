@@ -127,6 +127,10 @@
   cursor: pointer;
 }
 
+.mealMap {
+  font-size: 150%;
+}
+
 .plus {
   font-size: 120%;
   background-color: rgb(129, 206, 167);
