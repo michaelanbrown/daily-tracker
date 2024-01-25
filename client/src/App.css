@@ -128,5 +128,8 @@
 }
 
 .plus {
-  font-size: 150%;
+  font-size: 120%;
+  background-color: rgb(129, 206, 167);
+  border: 1px outset black;
+  cursor: pointer;
 }
