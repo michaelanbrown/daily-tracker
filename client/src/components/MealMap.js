@@ -15,14 +15,14 @@ function BreakfastMap({ food }) {
       { showMeal ? <div className= "food">
         Calories: { food.calories }
         <br/>
-        Fat: { food.fat }g
+        Fat: { food.fat } g
         <br/>
-        Carbohydrates: { food.carbs }g
+        Carbohydrates: { food.carbs } g
         <br/>
-        Sugars: { food.sugars }g
+        Sugars: { food.sugars } g
         <br/>
-        <div className="mealMapAddedSugar">Added Sugars: { food.added_sugars }g</div>
-        Protein: { food. protein }g
+        <div className="mealMapAddedSugar">Added Sugars: { food.added_sugars } g</div>
+        Protein: { food. protein } g
       </div> : null}
     </div>
   );
