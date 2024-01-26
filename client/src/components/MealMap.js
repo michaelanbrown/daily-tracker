@@ -7,20 +7,22 @@ function BreakfastMap({ food }) {
     setShowMeal(!showMeal)
   }
 
+  //fix food.fat 0grams is blank
+
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>+</button></div>
       { showMeal ? <div className= "food">
         Calories: { food.calories }
         <br/>
-        Fat: { food.fat }
+        Fat: { food.fat }g
         <br/>
-        Carbohydrates: { food.carbs }
+        Carbohydrates: { food.carbs }g
         <br/>
-        Sugars: { food.sugars }
+        Sugars: { food.sugars }g
         <br/>
-        <div className="mealMapAddedSugar">Added Sugars: { food.added_sugars }</div>
-        Protein: { food. protein }
+        <div className="mealMapAddedSugar">Added Sugars: { food.added_sugars }g</div>
+        Protein: { food. protein }g
       </div> : null}
     </div>
   );
