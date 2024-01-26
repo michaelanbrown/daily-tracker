@@ -20,7 +20,6 @@ function BreakfastMap({ food }) {
         Sugars: { food.sugars }
         <br/>
         <div className="mealMapAddedSugar">Added Sugars: { food.added_sugars }</div>
-        <br/>
         Protein: { food. protein }
       </div> : null}
     </div>
