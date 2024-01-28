@@ -7,8 +7,6 @@ function BreakfastMap({ food }) {
     setShowMeal(!showMeal)
   }
 
-  //fix food.fat 0grams is blank
-  console.log(food.fats)
 
   return (
     <div>
