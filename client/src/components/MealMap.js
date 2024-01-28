@@ -18,7 +18,7 @@ function BreakfastMap({ food }) {
         <br/>
         {food.carbs === 0 ? `Carbohydrates: 0 g` : `Carbohydrates: ${ food.carbs } g`}
         <br/>
-        {food.sugars? `Sugars: 0 g` : `Sugars: ${ food.sugars } g`}
+        {food.sugars === 0 ? `Sugars: 0 g` : `Sugars: ${ food.sugars } g`}
         <br/>
         <div className="mealMapAddedSugar">
           {food.added_sugars === 0 ? `Added Sugars: 0 g` : `Added Sugars: ${ food.added_sugars } g`}
