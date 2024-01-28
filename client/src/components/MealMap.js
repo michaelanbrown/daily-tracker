@@ -8,7 +8,7 @@ function BreakfastMap({ food }) {
   }
 
   //fix food.fat 0grams is blank
-  console.log(food.fat)
+  console.log(food.fats)
 
   return (
     <div>
@@ -16,7 +16,7 @@ function BreakfastMap({ food }) {
       { showMeal ? <div className= "food">
         Calories: { food.calories }
         <br/>
-        {food.fat = 0 ? `Fat: 0g` : `Fat: ${ food.fat } g`}
+        {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats } g`}
         <br/>
         Carbohydrates: { food.carbs } g
         <br/>
