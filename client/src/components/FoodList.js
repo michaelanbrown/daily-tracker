@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function FoodList({ foods }) {
+  const [filter, setFilter] = useState('')
 //search for food or add new food
 
 const foodsMap = foods.map(food => {
