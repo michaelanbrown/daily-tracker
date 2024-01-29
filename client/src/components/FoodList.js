@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function FoodList({ foods }) {
 //search for food or add new food
@@ -9,6 +9,7 @@ const foodsMap = foods.map(food => {
 
   return (
     <div>
+      
       {foodsMap}
     </div>
   );
