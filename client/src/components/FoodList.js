@@ -9,7 +9,7 @@ const foodsMap = foods.map(food => {
 })
 
 function handleChange(e) {
-
+  setFilter(e.target.value); 
 }
 
   return (
