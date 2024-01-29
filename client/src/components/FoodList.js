@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function FoodList({ foods }) {
   const [filter, setFilter] = useState('')
-  const [filteredFoods, setFilteredFoods] = useState([])
+  const [filteredFoods, setFilteredFoods] = useState(foods)
 //search for food or add new food
 
 const foodsMap = foods.map(food => {
