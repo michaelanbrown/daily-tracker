@@ -10,7 +10,7 @@ const foodsMap = foods.map(food => {
 
   return (
     <div>
-      
+      <input type="text" placeholder='Search' name="filter" value={filter} className="input" onChange={handleChange} />
       {foodsMap}
     </div>
   );
