@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function FoodList({ foods }) {
   const [filter, setFilter] = useState('')
   const [filteredFoods, setFilteredFoods] = useState(foods)
-//search for food or add new food
+//useeffect to set filteredfoods
 
 const foodsMap = foods.map(food => {
   return <div key={food.id}>{food.name} - {food.brand}<br/><br/></div>
