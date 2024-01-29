@@ -5,7 +5,7 @@ function FoodList({ foods }) {
 console.log(foods)
 
 const foodsMap = foods.map(food => {
-
+  <div>{foods.name} - {foods.brand}</div>
 })
 
   return (
