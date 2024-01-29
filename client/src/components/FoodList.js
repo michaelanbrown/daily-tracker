@@ -5,12 +5,12 @@ function FoodList({ foods }) {
 console.log(foods)
 
 const foodsMap = foods.map(food => {
-  
+
 })
 
   return (
     <div>
-
+      {foodsMap}
     </div>
   );
 }
