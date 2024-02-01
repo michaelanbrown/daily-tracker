@@ -19,6 +19,10 @@ function handleChange(e) {
   setFoodfilter(foods.filter(food => food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1 || food.brand.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
 }
 
+function newFood() {
+  
+}
+
   return (
     <div>
       <button className="new">Add New Food</button>
