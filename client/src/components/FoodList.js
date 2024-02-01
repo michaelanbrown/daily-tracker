@@ -19,6 +19,7 @@ function handleChange(e) {
 
   return (
     <div>
+      <button>Add New Food</button>
       <input type="text" placeholder='Search' name="filter" value={filter} className="input" onChange={handleChange} />
       {foodsMap}
     </div>
