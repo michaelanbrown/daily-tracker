@@ -7,7 +7,7 @@ function FoodList({ foods }) {
 //useeffect to set filteredfoods
 
 useEffect(() => {
-  const map = setFoodsMap(foods.map(food => {
+  const map = setFoodsMap(foodFilter.map(food => {
     return <div key={food.id}>{food.name} - {food.brand}<br/><br/></div>
   }))
 },[foods, foodFilter])
