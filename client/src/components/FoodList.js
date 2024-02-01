@@ -25,7 +25,7 @@ function newFood() {
 
   return (
     <div>
-      <button className="new">Add New Food</button>
+      <button className="new" onClick={newFood}>Add New Food</button>
       <input type="text" placeholder='Search' name="filter" value={filter} className="input" onChange={handleChange} />
       {foodsMap}
     </div>
