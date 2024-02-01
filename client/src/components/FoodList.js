@@ -10,6 +10,7 @@ useEffect(() => {
   const map = setFoodsMap(foodFilter.map(food => {
     return <div key={food.id}>{food.name} - {food.brand}<br/><br/></div>
   }))
+  setFoodfilter(filter ? foodFilter : foods)
 },[foods, foodFilter])
 
 function handleChange(e) {
