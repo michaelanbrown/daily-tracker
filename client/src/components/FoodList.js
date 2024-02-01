@@ -5,6 +5,7 @@ function FoodList({ foods }) {
   const [filter, setFilter] = useState('')
   const [foodFilter, setFoodfilter] = useState(foods)
   const [foodsMap, setFoodsMap] = useState([])
+  const navigate = useNavigate()
 
 useEffect(() => {
   const map = setFoodsMap(foodFilter.map(food => {
