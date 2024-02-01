@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 function FoodList({ foods }) {
   const [filter, setFilter] = useState('')
   const [foodFilter, setFoodfilter] = useState(foods)
+  const [foodsMap, setFoodsMap] = useState([])
 //useeffect to set filteredfoods
 
 useEffect(() => {
