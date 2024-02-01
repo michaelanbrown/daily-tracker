@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 
 function FoodList({ foods }) {
   const [filter, setFilter] = useState('')
-  const [filteredFoods, setFilteredFoods] = useState(foods)
+  const [foodFilter, setFoodfilter] = useState(foods)
 //useeffect to set filteredfoods
 
 useEffect(() => {
   
-},[foods, filteredFoods])
+},[foods, foodFilter])
 
 const foodsMap = foods.map(food => {
   return <div key={food.id}>{food.name} - {food.brand}<br/><br/></div>
@@ -15,7 +15,7 @@ const foodsMap = foods.map(food => {
 
 function handleChange(e) {
   setFilter(e.target.value);
-  setFilteredFoods(foods.filter(food => food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1 || food.brand.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
+  setFoodfilter(foods.filter(food => food.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1 || food.brand.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
 }
 
   return (
