@@ -20,7 +20,7 @@ function handleChange(e) {
 }
 
 function newFood() {
-  
+  navigate("/newfood")
 }
 
   return (
