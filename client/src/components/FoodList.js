@@ -7,6 +7,10 @@ function FoodList({ foods }) {
   const [foodsMap, setFoodsMap] = useState([])
   const navigate = useNavigate()
 
+function onAdd() {
+
+}
+
 useEffect(() => {
   const map = setFoodsMap(foodFilter.map(food => {
     return <div key={food.id}><button className="foodbutton">{food.name} - {food.brand}</button><br/><br/></div>
