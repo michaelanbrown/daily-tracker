@@ -13,7 +13,7 @@ function onAdd() {
 
 useEffect(() => {
   const map = setFoodsMap(foodFilter.map(food => {
-    return <div key={food.id}><button className="foodbutton">{food.name} - {food.brand}</button><br/><br/></div>
+    return <div key={food.id}><button className="foodbutton" onClick={onAdd}>{food.name} - {food.brand}</button><br/><br/></div>
   }))
   setFoodfilter(filter ? foodFilter : foods)
 },[foods, foodFilter])
