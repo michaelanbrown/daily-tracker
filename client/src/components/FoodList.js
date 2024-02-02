@@ -7,6 +7,8 @@ function FoodList({ foods }) {
   const [foodsMap, setFoodsMap] = useState([])
   const navigate = useNavigate()
 
+//finish onadd function
+
 function onAdd() {
   
 }
