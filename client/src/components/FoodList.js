@@ -8,7 +8,7 @@ function FoodList({ foods }) {
   const navigate = useNavigate()
 
 function onAdd() {
-  console.log("hello")
+  
 }
 
 useEffect(() => {
