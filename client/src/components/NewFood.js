@@ -51,7 +51,6 @@ function NewFood({ foods, setFoods }) {
       }
     })
   }
-  console.log(errors)
 
   return (
     <div>
