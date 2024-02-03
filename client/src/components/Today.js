@@ -62,7 +62,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
   return (
     <div>
         <h2>Breakfast</h2>
-        <button className="addfood" onClick={addFood}>Add Food</button>
+        <button className="addfood" onClick={addFoodBreakfast}>Add Food</button>
         <br/>
         <br/>
         {breakfastMap}
