@@ -40,6 +40,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
 
   function addFoodSnack() {
     navigate('/foodlist')
+    setMeal("Snack")
   }
 
   const breakfastMap = breakfastFoods ? breakfastFoods.map(food => {
