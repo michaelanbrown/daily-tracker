@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function BreakfastMap({ food }) {
   const [showMeal, setShowMeal] = useState(false)
+  const [plus, setPlus] = useState("+")
 
   function foodInformation() {
     setShowMeal(!showMeal)
