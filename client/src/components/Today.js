@@ -35,6 +35,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
 
   function addFoodDinner() {
     navigate('/foodlist')
+    setMeal("Dinner")
   }
 
   function addFoodSnack() {
