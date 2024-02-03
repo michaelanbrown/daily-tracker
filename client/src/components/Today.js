@@ -22,7 +22,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
     const snack = currentCategories ? setSnackFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Snack").map(food => food.id).indexOf(food.id) > -1)) : null
   },[currentUser, currentCategories])
 
-  function addFood() {
+  function addFoodBreakfast() {
     navigate('/foodlist')
   }
 
