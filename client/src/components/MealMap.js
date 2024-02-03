@@ -6,6 +6,7 @@ function BreakfastMap({ food }) {
 
   function foodInformation() {
     setShowMeal(!showMeal)
+    plus === "+" ? setPlus("-") : setPlus("+")
   }
 
 
