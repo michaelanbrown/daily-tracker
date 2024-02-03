@@ -18,6 +18,7 @@ function App() {
   const [errors, setErrors] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const { currentUser, fetchCurrentUser } = useCurrentUser()
+  const [meal, setMeal] = useState("")
 
   useEffect(() => {
     fetchCurrentUser()
