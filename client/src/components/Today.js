@@ -12,6 +12,7 @@ function Today({ users, foods, categories }) {
   const [lunchFoods, setLunchFoods] = useState([])
   const [dinnerFoods, setDinnerFoods] = useState([])
   const [snackFoods, setSnackFoods] = useState([])
+  const [meal, setMeal] = useState("")
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
