@@ -34,6 +34,10 @@ function Today({ users, foods, categories, meal, setMeal }) {
     navigate('/foodlist')
   }
 
+  function addFoodSnack() {
+    navigate('/foodlist')
+  }
+
   const breakfastMap = breakfastFoods ? breakfastFoods.map(food => {
     return <MealMap key={food.id} food={food}/>
   }) : null
