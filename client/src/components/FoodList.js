@@ -9,8 +9,8 @@ function FoodList({ foods, meal }) {
 
 //finish onadd function - use meal const to determine which meal you are adding to
 
-function onAdd() {
-  
+function onAdd(e) {
+  e.preventDefault()
 }
 
 useEffect(() => {
