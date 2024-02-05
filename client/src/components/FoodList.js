@@ -13,11 +13,11 @@ function FoodList({ foods, meal }) {
 
 function onAdd(e) {
   e.preventDefault()
-  // const meal = {
-  //   category: meal,
-  //   food_id: e.target.value,
-  //   user_id: currentUser.id
-  // }
+  const meal = {
+    category: meal,
+    food_id: e.target.value,
+    user_id: currentUser.id
+  }
 }
 
 
