@@ -7,6 +7,7 @@ function FoodList({ foods, meal }) {
   const [foodFilter, setFoodfilter] = useState(foods)
   const [foodsMap, setFoodsMap] = useState([])
   const navigate = useNavigate()
+  const { currentUser, fetchCurrentUser } = useCurrentUser()
 
 //finish onadd function - use meal const to determine which meal you are adding to
 
