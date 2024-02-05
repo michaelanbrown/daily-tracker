@@ -10,15 +10,17 @@ function FoodList({ foods, meal }) {
 //finish onadd function - use meal const to determine which meal you are adding to
 
 function onAdd(e) {
-  e.preventDefault()
-  const meal = {
-    category: meal
-  }   
+  // e.preventDefault()
+  // const meal = {
+  //   category: meal,
+    
+  // }   
+  console.log(e.target.value)
 }
 
 useEffect(() => {
   const map = setFoodsMap(foodFilter.map(food => {
-    return <div key={food.id}><button className="foodbutton" onClick={onAdd}>{food.name} - {food.brand}</button><br/><br/></div>
+    return <div key={food.id}><button className="foodbutton" value={food.id} onClick={onAdd}>{food.name} - {food.brand}</button><br/><br/></div>
   }))
   setFoodfilter(filter ? foodFilter : foods)
 },[foods, foodFilter])
