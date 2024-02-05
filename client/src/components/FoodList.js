@@ -19,6 +19,8 @@ function onAdd(e) {
   }   
 }
 
+console.log(currentUser)
+
 useEffect(() => {
   const map = setFoodsMap(foodFilter.map(food => {
     return <div key={food.id}><button className="foodbutton" value={food.id} onClick={onAdd}>{food.name} - {food.brand}</button><br/><br/></div>
