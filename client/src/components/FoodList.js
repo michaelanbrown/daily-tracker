@@ -18,9 +18,6 @@ function onAdd(e) {
   //   food_id: e.target.value,
   //   user_id: currentUser.id
   // }
-  console.log(`category: ${meal},
-    food_id: ${e.target.value},
-    user_id: ${currentUser.id}`)
 }
 
 
