@@ -15,7 +15,6 @@ function onAdd(e) {
   //   category: meal,
     
   // }   
-  console.log(e.target.value)
 }
 
 useEffect(() => {
