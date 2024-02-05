@@ -12,8 +12,8 @@ function FoodList({ foods, meal }) {
 function onAdd(e) {
   e.preventDefault()
   const meal = {
-    
-}   
+    category: meal
+  }   
 }
 
 useEffect(() => {
