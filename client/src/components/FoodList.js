@@ -10,11 +10,11 @@ function FoodList({ foods, meal }) {
 //finish onadd function - use meal const to determine which meal you are adding to
 
 function onAdd(e) {
-  // e.preventDefault()
-  // const meal = {
-  //   category: meal,
+  e.preventDefault()
+  const meal = {
+    category: meal,
     
-  // }   
+  }   
 }
 
 useEffect(() => {
