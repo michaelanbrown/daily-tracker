@@ -9,7 +9,7 @@ function FoodList({ foods, meal }) {
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
-//finish onadd function - use meal const to determine which meal you are adding to
+//finish onadd function
 
 function onAdd(e) {
   e.preventDefault()
