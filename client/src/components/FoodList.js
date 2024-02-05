@@ -19,7 +19,6 @@ function onAdd(e) {
   }   
 }
 
-console.log(currentUser)
 
 useEffect(() => {
   const map = setFoodsMap(foodFilter.map(food => {
