@@ -19,7 +19,8 @@ function onAdd(e) {
     user_id: currentUser.id
   }
   fetch(`/categories`,{
-    
+    method:'POST',
+    headers:{'Content-Type': 'application/json'}
   })
 }
 
