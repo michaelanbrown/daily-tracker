@@ -18,6 +18,9 @@ function onAdd(e) {
     food_id: e.target.value,
     user_id: currentUser.id
   }
+  fetch(`/categories`,{
+    
+  })
 }
 
 useEffect(() => {
