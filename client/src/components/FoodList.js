@@ -12,7 +12,7 @@ function FoodList({ foods, meal, categories, setCategories }) {
 
 //finish onadd function
 //add errors
-
+//need to make it so that the food gets auto added to currentUser foods list and therefore automatically adds to today page
 
 function onAdd(e) {
   e.preventDefault()
