@@ -26,7 +26,9 @@ function onAdd(e) {
   .then(res => {
     if(res.ok){
         
-        }
+      } else {
+          res.json().then(json => setErrors(json.errors))
+      }
     }) 
   }
 
