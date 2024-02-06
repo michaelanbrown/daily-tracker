@@ -12,11 +12,12 @@ function FoodList({ foods, meal, categories, setCategories }) {
 
 //finish onadd function
 //add errors
+console.log(categories)
 
 function onAdd(e) {
   e.preventDefault()
   const mealAdd = {
-    category: meal,
+    meal: meal,
     food_id: e.target.value,
     user_id: currentUser.id
   }
