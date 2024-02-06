@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"
 import { useCurrentUser } from "./context/User";
 
-function FoodList({ foods, meal }) {
+function FoodList({ foods, meal, categories }) {
   const [filter, setFilter] = useState('')
   const [foodFilter, setFoodfilter] = useState(foods)
   const [foodsMap, setFoodsMap] = useState([])
