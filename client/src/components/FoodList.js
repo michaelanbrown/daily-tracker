@@ -12,7 +12,7 @@ function FoodList({ foods, meal, categories, setCategories }) {
 
 //finish onadd function
 //add errors
-console.log(categories)
+
 
 function onAdd(e) {
   e.preventDefault()
