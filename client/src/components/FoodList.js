@@ -6,6 +6,7 @@ function FoodList({ foods, meal }) {
   const [filter, setFilter] = useState('')
   const [foodFilter, setFoodfilter] = useState(foods)
   const [foodsMap, setFoodsMap] = useState([])
+  const [errors, setErrors] = useState([])
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
