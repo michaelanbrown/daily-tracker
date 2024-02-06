@@ -1,3 +1,3 @@
 class CategorySerializer < ActiveModel::Serializer
-  attributes :id, :meal
+  attributes :id, :meal, :user_id
 end
