@@ -27,7 +27,9 @@ function onAdd(e) {
   })
   .then(res => {
     if(res.ok){
-        
+      res.json().then(mealAdd => {
+
+        })
       } else {
           res.json().then(json => setErrors(json.errors))
       }
