@@ -10,8 +10,6 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
-  console.log(categories)
-
 //finish onadd function
 //add errors
 
