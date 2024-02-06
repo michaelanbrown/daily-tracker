@@ -11,6 +11,7 @@ function FoodList({ foods, meal }) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
 //finish onadd function
+//add errors
 
 function onAdd(e) {
   e.preventDefault()
