@@ -23,7 +23,12 @@ function onAdd(e) {
     headers:{'Content-Type': 'application/json'},
     body:JSON.stringify(mealAdd)
   })
-}
+  .then(res => {
+    if(res.ok){
+        
+        }
+    }) 
+  }
 
 useEffect(() => {
   const mealPresent = meal ? null : navigate("/today")
