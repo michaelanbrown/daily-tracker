@@ -11,7 +11,6 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
 //add errors
-//need to make it so that the food gets auto added to currentUser foods list and therefore automatically adds to today page
 
 function onAdd(e) {
   e.preventDefault()
