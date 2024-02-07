@@ -30,6 +30,7 @@ function onAdd(e) {
     if(res.ok){
       res.json().then(mealAdd => {
         setCategories([...categories, mealAdd])
+        navigate('/today')
         })
       } else {
           res.json().then(json => setErrors(json.errors))
