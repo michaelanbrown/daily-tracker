@@ -20,7 +20,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
     const lunch = currentCategories ? setLunchFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Lunch").map(food => food.food_id).indexOf(food.id) > -1)) : null
     const dinner = currentCategories ? setDinnerFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Dinner").map(food => food.food_id).indexOf(food.id) > -1)) : null
     const snack = currentCategories ? setSnackFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Snack").map(food => food.food_id).indexOf(food.id) > -1)) : null
-  },[currentUser, currentCategories, categories])
+  },[currentUser, currentCategories])
   
   function addFoodBreakfast() {
     navigate('/foodlist')
