@@ -155,5 +155,6 @@
 .error {
   border: 1px outset black;
   width: max-content;
-  margin: auto
+  margin: auto;
+  border-radius: 5%;
 }
