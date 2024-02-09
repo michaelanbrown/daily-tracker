@@ -10,7 +10,6 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 
-//add errors
 
 function onAdd(e) {
   e.preventDefault()
