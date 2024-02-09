@@ -155,4 +155,5 @@
 .error {
   border: 1px outset black;
   padding: 10px;
+  width: fit-content;
 }
