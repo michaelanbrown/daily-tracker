@@ -74,6 +74,7 @@ function NewFood({ foods, setFoods }) {
           <br/>
         <input type="submit" className="submit" value="Add Food!" />
       </form>
+      { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
     </div>
   );
 }
