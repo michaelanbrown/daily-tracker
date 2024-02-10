@@ -57,6 +57,7 @@ function Login({ getUsers, getFoods, getCategories }) {
                     <input type="submit" className="submit" value="Log in" />
                 </form>
                 <br/>
+                { errors ? <br/> : null }
                 { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
             </div>
     )
