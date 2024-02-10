@@ -58,7 +58,9 @@ function Login({ getUsers, getFoods, getCategories }) {
                 </form>
                 <br/>
                 { errors ? <br/> : null }
-                { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
+                { errors.length !==0 ? <div className='error' >
+                { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
+                </div> : null }
             </div>
     )
 }
