@@ -61,7 +61,7 @@ function newFood() {
       <br/>
       {foodsMap}
       { errors ? <br/> : null }
-      { errors.length !==0 ? <div >
+      { errors.length !==0 ? <div className='error' >
       { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
       </div> : null }
     </div>
