@@ -71,7 +71,7 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers }) {
                 <input type='submit' className="submit" value='Sign up!' />
             </form>
             { errors ? <br/> : null }
-            { errors.length !==0 ? <div>
+            { errors.length !==0 ? <div className='error' >
             { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
             </div> : null }
         </>
