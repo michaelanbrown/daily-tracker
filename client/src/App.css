@@ -154,6 +154,7 @@
 
 .error {
   width: max-content;
+  padding: 0 2rem;
   margin: auto;
   background-color: rgb(171, 212, 193);
   color: rgb(173, 54, 54);
