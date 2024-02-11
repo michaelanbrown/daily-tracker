@@ -155,7 +155,6 @@
 .error {
   width: max-content;
   margin: auto;
-  border-radius: 5%;
   background-color: rgb(171, 212, 193);
   color: rgb(173, 54, 54);
   font-weight: bold;
