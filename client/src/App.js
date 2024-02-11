@@ -20,7 +20,6 @@ function App() {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [meal, setMeal] = useState("")
 
-  //div tags for errors with classname
 
   useEffect(() => {
     fetchCurrentUser()
