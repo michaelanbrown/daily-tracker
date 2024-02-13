@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
           if user.categories[0].created_at.midnight == Date.today.midnight
             print "no"
           else
-            
+            print "yes"
           end
           session[:user_id] = user.id
           render json: user, status: :ok
