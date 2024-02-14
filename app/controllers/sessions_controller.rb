@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
           else
             log = "yes"
           end
-          byebug
+          
           session[:user_id] = user.id
           render json: user, status: :ok
         else 
