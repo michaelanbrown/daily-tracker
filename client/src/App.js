@@ -19,7 +19,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true)
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [meal, setMeal] = useState("")
-
+console.log(categories)
 
   useEffect(() => {
     fetchCurrentUser()
