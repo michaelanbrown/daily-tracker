@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
         user = User.find_by_username(params[:username])
         if user&.authenticate(params[:password])
           if user.categories[0].created_at.midnight == Date.today.midnight
+            byebug
             log = "no"
           else
             log = "yes"
