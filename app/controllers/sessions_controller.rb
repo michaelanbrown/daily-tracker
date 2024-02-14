@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
           if user.categories[0].created_at.midnight == Date.today.midnight
             log = "no"
           else
-            user.categories.delete_all
+            user.categories.destroy
           end
           session[:user_id] = user.id
           render json: user, status: :ok
