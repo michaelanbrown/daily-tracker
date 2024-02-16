@@ -9,7 +9,6 @@ class SessionsController < ApplicationController
           else
             user.categories.destroy_all
           end
-          byebug
           session[:user_id] = user.id
           render json: user, status: :ok
         else 
