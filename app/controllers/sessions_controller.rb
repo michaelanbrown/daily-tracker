@@ -21,3 +21,5 @@ class SessionsController < ApplicationController
     end
     
 end
+
+# Date.today.change(:offset => "+0000")
