@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
           if user.categories[0].created_at.midnight == Date.today.midnight
             log = "no"
           else
-            user.categories.destroy
+            user.categories.destroy_all
           end
           byebug
           session[:user_id] = user.id
