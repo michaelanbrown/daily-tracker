@@ -12,6 +12,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
   const [lunchFoods, setLunchFoods] = useState([])
   const [dinnerFoods, setDinnerFoods] = useState([])
   const [snackFoods, setSnackFoods] = useState([])
+  const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
 
   useEffect(() => {
