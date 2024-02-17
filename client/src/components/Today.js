@@ -63,7 +63,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
   return (
     <div>
       <br/>
-      <h2 className="calCount">Calories:</h2>
+      <h2 className="calCount">Calories: {cals}</h2>
       <br/>
       <br/>
       <br/>
