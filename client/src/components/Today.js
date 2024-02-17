@@ -60,6 +60,11 @@ function Today({ users, foods, categories, meal, setMeal }) {
 
   return (
     <div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
         <h2>Breakfast</h2>
         <button className="addfood" onClick={addFoodBreakfast}>Add Food</button>
         <br/>
