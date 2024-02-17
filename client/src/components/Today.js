@@ -17,21 +17,21 @@ function Today({ users, foods, categories, meal, setMeal }) {
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
-    const settingCalArray = currentUser & calArray.length === 0 ? setCalArray(currentFoods.map(food => food.calories)) : null
+    const settingCalArray = currentUser && calArray.length === 0 ? setCalArray(currentFoods.map(food => food.calories)) : null
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, cals)) : null
     const setCategories = currentUser ? setCurrentCategories(currentUser.categories) : null
     const breakfast = currentCategories ? setBreakfastFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Breakfast").map(food => food.food_id).indexOf(food.id) > -1)) : null
     const lunch = currentCategories ? setLunchFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Lunch").map(food => food.food_id).indexOf(food.id) > -1)) : null
     const dinner = currentCategories ? setDinnerFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Dinner").map(food => food.food_id).indexOf(food.id) > -1)) : null
     const snack = currentCategories ? setSnackFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Snack").map(food => food.food_id).indexOf(food.id) > -1)) : null
-  },[currentUser, currentCategories, calArray])
+  },[currentUser, currentCategories])
   
   function addFoodBreakfast() {
     navigate('/foodlist')
     setMeal("Breakfast")
   }
 
-  console.log(calArray)
+  console.log(calArray.length)
 
   function addFoodLunch() {
     navigate('/foodlist')
