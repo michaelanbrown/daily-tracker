@@ -12,6 +12,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
   const [lunchFoods, setLunchFoods] = useState([])
   const [dinnerFoods, setDinnerFoods] = useState([])
   const [snackFoods, setSnackFoods] = useState([])
+  const [cals, setCals] = useState(0)
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
@@ -57,6 +58,7 @@ function Today({ users, foods, categories, meal, setMeal }) {
   const snackMap = snackFoods ? snackFoods.map(food => {
     return <MealMap key={food.id} food={food}/>
   }) : null
+
 
   return (
     <div>
