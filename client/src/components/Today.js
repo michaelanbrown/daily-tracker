@@ -31,8 +31,6 @@ function Today({ users, foods, categories, meal, setMeal }) {
     setMeal("Breakfast")
   }
 
-  console.log(calArray.length)
-
   function addFoodLunch() {
     navigate('/foodlist')
     setMeal("Lunch")
