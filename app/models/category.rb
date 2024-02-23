@@ -2,5 +2,5 @@ class Category < ApplicationRecord
     belongs_to :user
     belongs_to :food
 
-    validates :meal
+    validates :meal, presence: true
 end
