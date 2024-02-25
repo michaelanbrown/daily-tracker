@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"
 
-function Food({ foods, setFoods }) {
+function Food({ foods }) {
   const [foodsMap, setFoodsMap] = useState([])
   const [foodFilter, setFoodfilter] = useState(foods)
   const [filter, setFilter] = useState('')
