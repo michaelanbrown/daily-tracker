@@ -70,7 +70,7 @@ function App() {
           <Route exact path='/login' element={<Login getUsers={getUsers} getFoods={getFoods} getCategories={getCategories}/>}/>
           <Route exact path='/signup' element={<Signup getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} users={users} setUsers={setUsers}/>}/>
           <Route exact path='/' element={<Welcome/>}/>
-          <Route exact path='/food' element={<Food foods={foods} setFoods={setFoods}/>}/>
+          <Route exact path='/food' element={<Food foods={foods}/>}/>
           <Route exact path='/newfood' element={<NewFood foods={foods} setFoods={setFoods}/>}/>
           <Route exact path='/today' element={<Today setMeal={setMeal}/>}/>
           <Route exact path='/foodlist' element={<FoodList foods={foods} meal={meal} categories={categories} setCategories={setCategories}/>}/>
