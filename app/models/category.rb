@@ -3,5 +3,5 @@ class Category < ApplicationRecord
     belongs_to :food
 
     validates :meal, presence: true, inclusion: { in: %w(Breakfast Lunch Dinner Snack) }
-    validates :servings
+    validates :servings, numericality: { greater_than: 0 }
 end
