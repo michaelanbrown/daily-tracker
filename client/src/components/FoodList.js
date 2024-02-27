@@ -40,7 +40,7 @@ useEffect(() => {
   const mealPresent = meal ? null : navigate("/today")
   const map = setFoodsMap(foodFilter.map(food => {
     return <div key={food.id}><button className="foodbutton" value={food.id} onClick={onAdd}>{food.name} - {food.brand}</button><br/><br/></div>
-  }))
+  })) // replace onAdd
   setFoodfilter(filter ? foodFilter : foods)
 },[foods, foodFilter])
 
