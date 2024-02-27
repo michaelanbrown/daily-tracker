@@ -17,7 +17,7 @@ function onServings(e) {
 
 }
 
-function onClick(e) {
+function onClick() {
   setServingPage(!servingPage)
 }
 
@@ -45,6 +45,8 @@ function onAdd(e) {
       }
     }) 
   }
+
+  console.log(servingPage)
 
 useEffect(() => {
   const mealPresent = meal ? null : navigate("/today")
