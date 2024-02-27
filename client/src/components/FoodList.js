@@ -7,12 +7,13 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const [foodFilter, setFoodfilter] = useState(foods)
   const [foodsMap, setFoodsMap] = useState([])
   const [errors, setErrors] = useState([])
+  const [servingSize, setServingSize] = useState()
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 //create ability to do partial food
 
 function onServings(e) {
-  
+
 }
 
 function onAdd(e) {
