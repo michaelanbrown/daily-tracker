@@ -46,7 +46,6 @@ function onAdd(e) {
     }) 
   }
 
-  console.log(servingPage)
 
 useEffect(() => {
   const mealPresent = meal ? null : navigate("/today")
