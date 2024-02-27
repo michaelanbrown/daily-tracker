@@ -1,6 +1,6 @@
 import React from "react";
 
-function ServingPage({ food }) {
+function ServingPage({ food, onAdd }) {
 
   return (
     <div>
