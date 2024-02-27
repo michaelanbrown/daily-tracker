@@ -16,6 +16,10 @@ function onServings(e) {
 
 }
 
+function onClick(e) {
+  
+}
+
 function onAdd(e) {
   e.preventDefault()
   const mealAdd = {
