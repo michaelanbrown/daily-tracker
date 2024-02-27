@@ -11,9 +11,9 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 //create ability to do partial food
 
-function onServings(e) [
+function onServings(e) {
   
-]
+}
 
 function onAdd(e) {
   e.preventDefault()
