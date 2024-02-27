@@ -18,7 +18,7 @@ function onServings(e) {
 }
 
 function onClick(e) {
-
+  setServingPage(!servingPage)
 }
 
 function onAdd(e) {
