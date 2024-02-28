@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function ServingPage({ food, onAdd }) {
 const [servingPage, setServingPage] = useState(false)
-console.log(servingPage)
 
 function onClick() {
   setServingPage(!servingPage)
