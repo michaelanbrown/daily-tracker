@@ -2,9 +2,6 @@ import React from "react";
 
 function ServingPage({ food, onAdd, servingPage }) {
 
-  function onServings(e) {
-
-  }
 
   return (
     <div>
