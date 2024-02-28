@@ -1,6 +1,6 @@
 import React from "react";
 
-function ServingPage({ food, onAdd, servingPage, onClick }) {
+function ServingPage({ food, onAdd, servingPage }) {
 console.log(servingPage)
 
 function onClick() {
