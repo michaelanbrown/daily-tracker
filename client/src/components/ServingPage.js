@@ -5,7 +5,7 @@ function ServingPage({ food, onAdd, servingPage, onClick }) {
 
   return (
     <div>
-      <button className="foodbutton" value={food.id} onClick={onServings}>{food.name} - {food.brand}</button>
+      <button className="foodbutton" value={food.id} onClick={onClick}>{food.name} - {food.brand}</button>
       <br/>
     </div>
   );
