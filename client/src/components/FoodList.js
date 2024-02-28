@@ -9,7 +9,6 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const [foodsMap, setFoodsMap] = useState([])
   const [errors, setErrors] = useState([])
   const [servingSize, setServingSize] = useState(1)
-  const [servingPage, setServingPage] = useState(false)
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
 //create ability to do partial food
