@@ -1,7 +1,7 @@
 import React from "react";
 
 function ServingPage({ food, onAdd, servingPage, onClick }) {
-
+console.log(servingPage)
 
   return (
     <div>
