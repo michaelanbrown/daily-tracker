@@ -4,6 +4,8 @@ function ServingPage({ food, onAdd }) {
 const [servingPage, setServingPage] = useState(false)
 const [servingSize, setServingSize] = useState(1)
 
+//add the onAdd function to the form input, make sure to add the usage of the servingsize and the serving size must be a number, add errors
+
 function onClick() {
   setServingPage(!servingPage)
 }
