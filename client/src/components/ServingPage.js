@@ -9,7 +9,7 @@ function onClick() {
 }
 
 function handleChange(e) {
-  
+  setServingSize(e.target.value)
 }
 
   return (
