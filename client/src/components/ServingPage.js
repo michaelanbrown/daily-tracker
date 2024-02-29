@@ -17,7 +17,7 @@ function handleChange(e) {
       <button className="foodbutton" value={food.id} onClick={onClick}>{food.name} - {food.brand}</button>
       {servingPage ? <div>
         Serving Size: <input type="text" placeholder={servingSize} name="servingSize" value={servingSize} className="servingSizeInput" onChange={handleChange} />
-        <input type="submit" className="submit" value="Add" />
+        <input type="submit" className="submitServSize" value="Add" />
       </div> : null}
       <br/>
     </div>
