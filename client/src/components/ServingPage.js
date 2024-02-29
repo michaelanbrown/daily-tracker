@@ -12,8 +12,8 @@ function onClick() {
     <div>
       <button className="foodbutton" value={food.id} onClick={onClick}>{food.name} - {food.brand}</button>
       {servingPage ? <div>
-
-        </div> : null}
+        <input type="text" />
+      </div> : null}
       <br/>
     </div>
   );
