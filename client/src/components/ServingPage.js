@@ -15,11 +15,11 @@ function handleChange(e) {
   return (
     <div>
       <button className="foodbutton" value={food.id} onClick={onClick}>{food.name} - {food.brand}</button>
-      {servingPage ? <div>
+      {servingPage ? <form>
         Serving Size: <input type="text" placeholder={servingSize} name="servingSize" value={servingSize} className="servingSizeInput" onChange={handleChange} />
         <br/>
         <input type="submit" className="submitServSize" value="Add" />
-      </div> : null}
+      </form> : null}
       <br/>
     </div>
   );
