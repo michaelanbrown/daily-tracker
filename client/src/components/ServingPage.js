@@ -8,6 +8,10 @@ function onClick() {
   setServingPage(!servingPage)
 }
 
+function handleChange(e) {
+  
+}
+
   return (
     <div>
       <button className="foodbutton" value={food.id} onClick={onClick}>{food.name} - {food.brand}</button>
