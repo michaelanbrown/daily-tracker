@@ -10,7 +10,6 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const [errors, setErrors] = useState([])
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
-//create ability to do partial food
 
 
 function onAdd(e) {
