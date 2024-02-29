@@ -10,6 +10,8 @@ function onClick() {
   return (
     <div>
       <button className="foodbutton" value={food.id} onClick={onClick}>{food.name} - {food.brand}</button>
+      {servingPage ? <div>
+        </div> : null}
       <br/>
     </div>
   );
