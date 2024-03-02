@@ -24,7 +24,8 @@ function onAdd(e) {
   const mealAdd = {
     meal: meal,
     food_id: e.target.value,
-    user_id: currentUser.id
+    user_id: currentUser.id,
+    servings: servingSize
   }
   fetch(`/categories`,{
     method:'POST',
