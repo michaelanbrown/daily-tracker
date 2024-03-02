@@ -23,7 +23,7 @@ function onAdd(e) {
   e.preventDefault()
   const mealAdd = {
     meal: meal,
-    food_id: e.target.value,
+    food_id: food.id,
     user_id: currentUser.id,
     servings: servingSize
   }
