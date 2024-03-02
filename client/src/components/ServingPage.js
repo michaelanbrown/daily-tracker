@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 function ServingPage({ food, meal, categories, setCategories }) {
 const [servingPage, setServingPage] = useState(false)
 const [servingSize, setServingSize] = useState(1)
+const navigate = useNavigate()
 
 //add the onAdd function to the form input, make sure to add the usage of the servingsize and the serving size must be a number, add errors
 
