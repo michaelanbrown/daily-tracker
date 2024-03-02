@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ServingPage({ food, onAdd }) {
+function ServingPage({ food, onAdd, categories }) {
 const [servingPage, setServingPage] = useState(false)
 const [servingSize, setServingSize] = useState(1)
 
