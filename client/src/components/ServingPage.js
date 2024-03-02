@@ -16,7 +16,7 @@ function onClick() {
 }
 
 function handleChange(e) {
-  setServingSize(e.target.value)
+  setServingSize(Number(e.target.value))
 }
 
 function onAdd(e) {
@@ -25,7 +25,7 @@ function onAdd(e) {
     meal: meal,
     food_id: food.id,
     user_id: currentUser.id,
-    servings: servingSize
+    servings: Number(servingSize)
   }
   fetch(`/categories`,{
     method:'POST',
