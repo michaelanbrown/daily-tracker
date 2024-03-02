@@ -9,7 +9,7 @@ const [errors, setErrors] = useState([])
 const { currentUser, fetchCurrentUser } = useCurrentUser()
 const navigate = useNavigate()
 
-//add the onAdd function to the form input, add errors, add serving determination to front-end
+//add errors, add serving determination to front-end
 
 function onClick() {
   setServingPage(!servingPage)
