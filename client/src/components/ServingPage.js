@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"
+import { useCurrentUser } from "./context/User";
 
 function ServingPage({ food, meal, categories, setCategories }) {
 const [servingPage, setServingPage] = useState(false)
