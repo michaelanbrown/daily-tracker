@@ -14,7 +14,7 @@ function FoodList({ foods, meal, categories, setCategories }) {
 useEffect(() => {
   const mealPresent = meal ? null : navigate("/today")
   const map = setFoodsMap(foodFilter.map(food => {
-    return <ServingPage key={food.id} food={food} onAdd={onAdd} categories={categories}/>
+    return <ServingPage key={food.id} food={food} categories={categories}/>
   })) // replace onAdd
   setFoodfilter(filter ? foodFilter : foods)
 },[foods, foodFilter])
