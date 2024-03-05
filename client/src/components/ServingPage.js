@@ -33,7 +33,6 @@ function onAdd(e) {
     body:JSON.stringify(mealAdd)
   })
   .then(res => {
-    console.log(res)
     if(res.ok){
       res.json().then(mealAdd => {
         setCategories([...categories, mealAdd])
