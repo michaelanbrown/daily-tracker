@@ -53,6 +53,7 @@ function onAdd(e) {
         <br/>
         <input type="submit" className="submitServSize" value="Add" />
       </form> : null}
+        { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
       <br/>
     </div>
   );
