@@ -17,7 +17,7 @@ class CategoriesController < ApplicationController
     private
 
     def category_params
-        params.permit(:meal, :food_id, :user_id)
+        params.permit(:meal, :food_id, :user_id, :servings)
     end
 
 end
