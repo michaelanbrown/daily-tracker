@@ -8,8 +8,6 @@ function BreakfastMap({ food, currentCategories }) {
     setShowMeal(!showMeal)
     plus === "+" ? setPlus("-") : setPlus("+")
   }
-console.log(currentCategories)
-console.log(food)
 
   return (
     <div>
