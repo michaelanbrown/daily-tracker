@@ -9,6 +9,7 @@ function BreakfastMap({ food, currentCategories }) {
     plus === "+" ? setPlus("-") : setPlus("+")
   }
 console.log(currentCategories)
+console.log(food)
 
   return (
     <div>
