@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function BreakfastMap({ category, currentFoods }) {
+function BreakfastMap({ category, food, currentFoods }) {
   const [showMeal, setShowMeal] = useState(false)
   const [plus, setPlus] = useState("+")
 
