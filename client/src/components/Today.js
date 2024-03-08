@@ -23,7 +23,7 @@ function Today({ setMeal }) {
     const breakfast = currentCategories ? setBreakfastFoods(currentCategories.filter(category => category.meal === "Breakfast")) : null
     const lunch = currentCategories ? setLunchFoods(currentCategories.filter(category => category.meal === "Lunch")) : null
     const dinner = currentCategories ? setDinnerFoods(currentCategories.filter(category => category.meal === "Dinner")) : null
-    const snack = currentCategories ? setSnackFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Snack").map(food => food.food_id).indexOf(food.id) > -1)) : null
+    const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
   },[currentUser, currentCategories, calArray])
 
   // categories are coming from current user - need to get the food into the categories in current user
