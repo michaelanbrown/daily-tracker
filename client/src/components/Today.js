@@ -54,7 +54,7 @@ function Today({ setMeal }) {
 
 
   const lunchMap = lunchFoods ? lunchFoods.map(food => {
-    return <MealMap key={food.id} food={food} currentCategories={currentCategories}/>
+    return <MealMap key={food.id} food={food} currentFoods={currentFoods}/>
   }) : null
 
   const dinnerMap = dinnerFoods ? dinnerFoods.map(food => {
