@@ -20,7 +20,7 @@ function Today({ setMeal }) {
     const settingCalArray = currentUser && calArray.length !== currentFoods.length ? setCalArray(currentFoods.map(food => food.calories)) : null
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
     const setCategories = currentUser ? setCurrentCategories(currentUser.categories) : null
-    const breakfast = currentCategories ? setBreakfastFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Breakfast").map(food => food.food_id).indexOf(food.id) > -1)) : null
+    const breakfast = currentCategories ? setBreakfastFoods(currentCategories.filter(category => category.meal === "Breakfast")) : null
     const lunch = currentCategories ? setLunchFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Lunch").map(food => food.food_id).indexOf(food.id) > -1)) : null
     const dinner = currentCategories ? setDinnerFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Dinner").map(food => food.food_id).indexOf(food.id) > -1)) : null
     const snack = currentCategories ? setSnackFoods(currentFoods.filter(food => currentCategories.filter(category => category.meal === "Snack").map(food => food.food_id).indexOf(food.id) > -1)) : null
@@ -47,6 +47,7 @@ function Today({ setMeal }) {
     navigate('/foodlist')
     setMeal("Snack")
   }
+  console.log(breakfastFoods)
 
   const breakfastMap = breakfastFoods ? breakfastFoods.map(food => {
     return <MealMap key={food.id} food={food} currentCategories={currentCategories}/>
