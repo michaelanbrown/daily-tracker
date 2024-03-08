@@ -47,7 +47,6 @@ function Today({ setMeal }) {
     navigate('/foodlist')
     setMeal("Snack")
   }
-  console.log(breakfastFoods)
 
   const breakfastMap = breakfastFoods ? breakfastFoods.map(food => {
     return <MealMap key={food.id} food={food} currentCategories={currentCategories}/>
