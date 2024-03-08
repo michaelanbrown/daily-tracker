@@ -27,6 +27,7 @@ function Today({ setMeal }) {
   },[currentUser, currentCategories, calArray])
 
   // categories are coming from current user - need to get the food into the categories in current user
+  // finish adding food atribute to the mealmaps
   
   function addFoodBreakfast() {
     navigate('/foodlist')
