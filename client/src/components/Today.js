@@ -17,7 +17,7 @@ function Today({ setMeal }) {
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
-    const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings)) : null
+    const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
     const setCategories = currentUser ? setCurrentCategories(currentUser.categories) : null
     const breakfast = currentCategories ? setBreakfastFoods(currentCategories.filter(category => category.meal === "Breakfast")) : null
