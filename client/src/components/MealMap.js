@@ -9,7 +9,7 @@ function BreakfastMap({ food, category }) {
     plus === "+" ? setPlus("-") : setPlus("+")
   }
 
-  console.log(food.filter(food => food.id === category.food_id))
+  console.log(food)
 
   return (
     <div>
