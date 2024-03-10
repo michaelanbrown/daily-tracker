@@ -27,7 +27,7 @@ function Today({ setMeal }) {
   },[currentUser, currentCategories, calArray])
 
   // finish adding food atribute to the mealmaps
-  console.log(calArray)
+  console.log(currentCategories)
   
   function addFoodBreakfast() {
     navigate('/foodlist')
