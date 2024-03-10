@@ -17,7 +17,7 @@ function BreakfastMap({ food, category }) {
       { showMeal ? <div className= "food">
         {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
         <br/>
-        {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats } g`}
+        {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats * category.servings } g`}
         <br/>
         {food.carbs === 0 ? `Carbohydrates: 0 g` : `Carbohydrates: ${ food.carbs } g`}
         <br/>
