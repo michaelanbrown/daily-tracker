@@ -17,7 +17,7 @@ function Today({ setMeal }) {
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
-    const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories) : null
+    const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings)) : null
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
     const setCategories = currentUser ? setCurrentCategories(currentUser.categories) : null
     const breakfast = currentCategories ? setBreakfastFoods(currentCategories.filter(category => category.meal === "Breakfast")) : null
@@ -27,7 +27,7 @@ function Today({ setMeal }) {
   },[currentUser, currentCategories, calArray])
 
   // finish adding food atribute to the mealmaps
-  console.log(currentCategories)
+  console.log(calArray)
   
   function addFoodBreakfast() {
     navigate('/foodlist')
