@@ -26,7 +26,6 @@ function Today({ setMeal }) {
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
   },[currentUser, currentCategories, calArray])
 
-  // categories are coming from current user - need to get the food into the categories in current user
   // finish adding food atribute to the mealmaps
   
   function addFoodBreakfast() {
