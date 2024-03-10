@@ -9,6 +9,8 @@ function BreakfastMap({ food, category }) {
     plus === "+" ? setPlus("-") : setPlus("+")
   }
 
+  console.log(food.filter(food => food.id === category.food_id))
+
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>{plus}</button></div>
