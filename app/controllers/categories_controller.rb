@@ -14,7 +14,7 @@ class CategoriesController < ApplicationController
         render json: category, status: :created
     end
 
-    def delete
+    def destroy
 
     end
 
