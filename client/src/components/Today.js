@@ -26,6 +26,7 @@ function Today({ setMeal }) {
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
   },[currentUser, currentCategories, calArray])
 
+  //add ability to destroy a category
   
   function addFoodBreakfast() {
     navigate('/foodlist')
