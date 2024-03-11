@@ -27,6 +27,7 @@ function Today({ setMeal }) {
   },[currentUser, currentCategories, calArray])
 
   //add ability to destroy a category
+  //add ability to edit a category's servings
   
   function addFoodBreakfast() {
     navigate('/foodlist')
