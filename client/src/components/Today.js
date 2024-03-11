@@ -26,7 +26,6 @@ function Today({ setMeal }) {
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
   },[currentUser, currentCategories, calArray])
 
-  // finish adding food atribute to the mealmaps
   
   function addFoodBreakfast() {
     navigate('/foodlist')
