@@ -15,7 +15,7 @@ class CategoriesController < ApplicationController
     end
 
     def update
-        @category.update!
+        @category.update!(update_category_params)
     end
 
     def destroy
