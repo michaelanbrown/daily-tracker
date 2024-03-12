@@ -30,7 +30,7 @@ class CategoriesController < ApplicationController
     end
 
     def update_category_params
-        
+        params.permit(:servings)
     end
 
 end
