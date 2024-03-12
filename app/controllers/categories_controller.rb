@@ -34,5 +34,3 @@ class CategoriesController < ApplicationController
     end
 
 end
-
-## find dates controller
