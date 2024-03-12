@@ -14,6 +14,10 @@ class CategoriesController < ApplicationController
         render json: category, status: :created
     end
 
+    def update
+
+    end
+
     def destroy
         @category.destroy
         head :no_content 
