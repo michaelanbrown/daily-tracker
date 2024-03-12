@@ -29,6 +29,10 @@ class CategoriesController < ApplicationController
         params.permit(:meal, :food_id, :user_id, :servings)
     end
 
+    def update_category_params
+        
+    end
+
 end
 
 ## find dates controller
