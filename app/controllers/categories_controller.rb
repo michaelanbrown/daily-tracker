@@ -16,6 +16,7 @@ class CategoriesController < ApplicationController
 
     def update
         @category.update!(update_category_params)
+        render json: @category
     end
 
     def destroy
