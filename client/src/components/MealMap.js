@@ -28,6 +28,7 @@ function BreakfastMap({ food, category }) {
           {food.added_sugars === 0 ? `Added Sugars: 0 g` : `Added Sugars: ${ food.added_sugars * category.servings } g`}
         </div>
         {food.protein === 0 ? `PRoetin: 0 g` : `Protein: ${ food.protein * category.servings } g`}
+        <button>Edit</button>
       </div> : null}
     </div>
   );
