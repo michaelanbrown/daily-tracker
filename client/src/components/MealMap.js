@@ -29,7 +29,7 @@ function BreakfastMap({ food, category }) {
         </div>
         {food.protein === 0 ? `PRoetin: 0 g` : `Protein: ${ food.protein * category.servings } g`}
         <br/>
-        <button className="editDelete">Edit</button>
+        <div><button className="editDelete">Edit</button></div>
       </div> : null}
     </div>
   );
