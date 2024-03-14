@@ -25,9 +25,6 @@ function Today({ setMeal }) {
     const dinner = currentCategories ? setDinnerFoods(currentCategories.filter(category => category.meal === "Dinner")) : null
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
   },[currentUser, currentCategories, calArray])
-
-  //add ability to destroy a category
-  //add ability to edit a category's servings - update method complete
   
   function addFoodBreakfast() {
     navigate('/foodlist')
