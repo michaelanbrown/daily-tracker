@@ -4,6 +4,9 @@ function BreakfastMap({ food, category }) {
   const [showMeal, setShowMeal] = useState(false)
   const [plus, setPlus] = useState("+")
 
+  //add ability to destroy a category
+  //add ability to edit a category's servings - update method complete
+
   function foodInformation() {
     setShowMeal(!showMeal)
     plus === "+" ? setPlus("-") : setPlus("+")
