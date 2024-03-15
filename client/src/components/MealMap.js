@@ -3,6 +3,7 @@ import React, { useState } from "react";
 function BreakfastMap({ food, category }) {
   const [showMeal, setShowMeal] = useState(false)
   const [plus, setPlus] = useState("+")
+  const [edit, setEdit] = useState(false)
 
   //add ability to destroy a category
   //add ability to edit a category's servings - update method complete
