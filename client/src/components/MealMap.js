@@ -12,6 +12,10 @@ function BreakfastMap({ food, category }) {
     plus === "+" ? setPlus("-") : setPlus("+")
   }
 
+  function onEdit() {
+    
+  }
+
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>{plus}</button></div>
