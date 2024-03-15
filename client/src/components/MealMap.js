@@ -20,7 +20,8 @@ function BreakfastMap({ food, category }) {
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>{plus}</button></div>
-      { showMeal ? <div className= "food">
+      { showMeal ?
+      <div className= "food">
         {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
         <br/>
         {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats * category.servings } g`}
@@ -35,7 +36,8 @@ function BreakfastMap({ food, category }) {
         {food.protein === 0 ? `PRoetin: 0 g` : `Protein: ${ food.protein * category.servings } g`}
         <br/>
         <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete">Delete</button></div>
-      </div> : null}
+      </div>
+      : null}
     </div>
   );
 }
