@@ -42,7 +42,7 @@ function BreakfastMap({ food, category }) {
       : null}
       { showMeal && edit === true ?
       <div className= "food">
-      <input type="text" placeholder='Servings' name="userservingsname" value={category.servings} className="input" />
+      Servings: <input type="text" placeholder='Servings' name="userservingsname" value={category.servings} className="input" />
       <br/>
       {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
       <br/>
