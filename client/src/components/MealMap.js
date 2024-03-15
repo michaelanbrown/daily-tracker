@@ -20,7 +20,7 @@ function BreakfastMap({ food, category }) {
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>{plus}</button></div>
-      { showMeal ?
+      { showMeal && edit === false ?
       <div className= "food">
         {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
         <br/>
@@ -37,7 +37,7 @@ function BreakfastMap({ food, category }) {
         <br/>
         <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete">Delete</button></div>
       </div>
-      : null}
+      : null} 
     </div>
   );
 }
