@@ -37,6 +37,11 @@ function BreakfastMap({ food, category }) {
         <br/>
         <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete">Delete</button></div>
       </div>
+      : null}
+      { showMeal && edit === true ?
+      <div className= "food">
+        
+      </div>
       : null} 
     </div>
   );
