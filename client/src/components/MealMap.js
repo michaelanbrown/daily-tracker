@@ -22,6 +22,7 @@ function BreakfastMap({ food, category }) {
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>{plus}</button></div>
       { showMeal && edit === false ?
       <div className= "food">
+        Servings: {category.servings}
         {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
         <br/>
         {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats * category.servings } g`}
