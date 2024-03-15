@@ -42,7 +42,22 @@ function BreakfastMap({ food, category }) {
       : null}
       { showMeal && edit === true ?
       <div className= "food">
-        
+        Servings: {category.servings}
+        <br/>
+        {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
+        <br/>
+        {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats * category.servings } g`}
+        <br/>
+        {food.carbs === 0 ? `Carbohydrates: 0 g` : `Carbohydrates: ${ food.carbs * category.servings } g`}
+        <br/>
+        {food.sugars === 0 ? `Sugars: 0 g` : `Sugars: ${ food.sugars * category.servings } g`}
+        <br/>
+        <div className="mealMapAddedSugar">
+          {food.added_sugars === 0 ? `Added Sugars: 0 g` : `Added Sugars: ${ food.added_sugars * category.servings } g`}
+        </div>
+        {food.protein === 0 ? `PRoetin: 0 g` : `Protein: ${ food.protein * category.servings } g`}
+        <br/>
+        <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete">Delete</button></div>
       </div>
       : null} 
     </div>
