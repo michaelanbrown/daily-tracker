@@ -12,7 +12,7 @@ function BreakfastMap({ food, category }) {
     plus === "+" ? setPlus("-") : setPlus("+")
   }
 
-  function onEdit(e) {
+  function onEdit() {
 
   }
 
