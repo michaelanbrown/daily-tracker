@@ -23,6 +23,7 @@ function BreakfastMap({ food, category }) {
       { showMeal && edit === false ?
       <div className= "food">
         Servings: {category.servings}
+        <br/>
         {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
         <br/>
         {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats * category.servings } g`}
