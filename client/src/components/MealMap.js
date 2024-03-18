@@ -18,6 +18,10 @@ function BreakfastMap({ food, category }) {
     setEdit(!edit)
   }
 
+  function handleChange() {
+    
+  }
+
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>{plus}</button></div>
