@@ -20,7 +20,7 @@ function BreakfastMap({ food, category }) {
   }
 
   function handleChange(e) {
-    
+    setServingAmount(e.target.value)
   }
 
   return (
