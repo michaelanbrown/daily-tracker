@@ -9,8 +9,6 @@ const [errors, setErrors] = useState([])
 const { currentUser, fetchCurrentUser } = useCurrentUser()
 const navigate = useNavigate()
 
-//add serving determination to front-end
-
 function onClick() {
   setServingPage(!servingPage)
 }
