@@ -51,7 +51,6 @@ function BreakfastMap({ food, category }) {
         <form>
       Servings: <input type="text" placeholder='Servings' name="userservingsname" value={servingAmount} className="servingInput" onChange={handleChange} />
       </form>
-      <br/>
       {food.calories === 0 ? `Calories: 0` : `Calories: ${ food.calories * category.servings }`}
       <br/>
       {food.fats === 0 ? `Fat: 0 g` : `Fat: ${ food.fats * category.servings } g`}
