@@ -19,8 +19,8 @@ function BreakfastMap({ food, category }) {
     setEdit(!edit)
   }
 
-  function handleChange() {
-
+  function handleChange(e) {
+    
   }
 
   return (
