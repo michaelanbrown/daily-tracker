@@ -4,6 +4,7 @@ function BreakfastMap({ food, category }) {
   const [showMeal, setShowMeal] = useState(false)
   const [plus, setPlus] = useState("+")
   const [edit, setEdit] = useState(false)
+  const [servingAmount, setServingAmount] = useState(category.servings)
 
   //add ability to destroy a category
   //add ability to edit a category's servings - update method complete
@@ -19,7 +20,7 @@ function BreakfastMap({ food, category }) {
   }
 
   function handleChange() {
-    
+
   }
 
   return (
