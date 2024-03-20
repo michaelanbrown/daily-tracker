@@ -38,7 +38,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     })
     .then(res =>{
       if(res.ok){
-
+        deleteCategory(category)
       }
     })
   }
