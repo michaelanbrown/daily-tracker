@@ -6,7 +6,6 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
   const [edit, setEdit] = useState(false)
   const [servingAmount, setServingAmount] = useState(category.servings)
 
-  //add ability to destroy a category
   //add ability to edit a category's servings - update method complete
 
   function foodInformation() {
