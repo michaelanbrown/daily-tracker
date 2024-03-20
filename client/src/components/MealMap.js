@@ -40,6 +40,9 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
       if(res.ok){
         deleteCategory(category)
       }
+      else {
+        res.json().then(json => console.log([json.errors]))
+      }
     })
   }
 
