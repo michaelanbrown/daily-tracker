@@ -8,7 +8,6 @@ function BreakfastMap({ food, category }) {
 
   //add ability to destroy a category
   //add ability to edit a category's servings - update method complete
-  //servings input needs onChange
 
   function foodInformation() {
     setShowMeal(!showMeal)
