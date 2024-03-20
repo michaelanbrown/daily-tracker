@@ -39,6 +39,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     .then(res =>{
       if(res.ok){
         deleteCategory(category)
+        window.location.reload()
       }
       else {
         res.json().then(json => console.log([json.errors]))
