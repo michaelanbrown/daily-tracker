@@ -24,7 +24,7 @@ function BreakfastMap({ food, category }) {
   }
 
   function deleteCategory() {
-    
+    const deletingCategory = 
   }
 
   function handleDelete() {
