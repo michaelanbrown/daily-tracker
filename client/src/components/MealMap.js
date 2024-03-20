@@ -33,7 +33,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
   }
 
   function handleDelete() {
-    fetch(`${category.id}`, {
+    fetch(`categories/${category.id}`, {
       method:"DELETE"
     })
     .then(res =>{
