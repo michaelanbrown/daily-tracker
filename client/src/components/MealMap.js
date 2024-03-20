@@ -23,13 +23,17 @@ function BreakfastMap({ food, category }) {
     setServingAmount(e.target.value)
   }
 
+  function deleteCategory() {
+    
+  }
+
   function handleDelete() {
     fetch(`${category.id}`, {
       method:"DELETE"
     })
     .then(res =>{
       if(res.ok){
-        
+
       }
     })
   }
