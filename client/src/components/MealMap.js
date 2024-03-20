@@ -23,6 +23,10 @@ function BreakfastMap({ food, category }) {
     setServingAmount(e.target.value)
   }
 
+  function handleDelete() {
+    
+  }
+
   return (
     <div>
       <div className="mealMap">• { food.name }{" "}<button className="plus" onClick={foodInformation}>{plus}</button></div>
