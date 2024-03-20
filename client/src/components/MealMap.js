@@ -27,6 +27,11 @@ function BreakfastMap({ food, category }) {
     fetch(`${category.id}`, {
       method:"DELETE"
     })
+    .then(res =>{
+      if(res.ok){
+        
+      }
+    })
   }
 
   return (
