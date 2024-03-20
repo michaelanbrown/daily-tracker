@@ -23,7 +23,7 @@ function BreakfastMap({ food, category, currentCategories }) {
     setServingAmount(e.target.value)
   }
 
-  function deleteCategory() {
+  function deleteCategory(deletedCategory) {
     const deletingCategory = currentCategories.filter(category => {
       if (category.id !== deletedCategory)
     })
