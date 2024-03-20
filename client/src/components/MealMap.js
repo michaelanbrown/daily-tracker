@@ -20,6 +20,7 @@ function BreakfastMap({ food, category }) {
   }
 
   function handleChange(e) {
+    e.preventDefault()
     setServingAmount(e.target.value)
   }
 
