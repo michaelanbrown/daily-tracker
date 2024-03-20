@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-    before_action :find_category, only: [:show, :destroy]
+    before_action :find_category, only: [:show, :update, :destroy]
 
     def index
         render json: Category.all, status: :ok
