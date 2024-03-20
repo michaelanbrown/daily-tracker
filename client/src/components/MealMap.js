@@ -25,8 +25,8 @@ function BreakfastMap({ food, category }) {
 
   function handleDelete() {
     fetch(`${category.id}`, {
-      
-  })
+      method:"DELETE"
+    })
   }
 
   return (
