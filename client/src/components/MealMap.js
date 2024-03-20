@@ -24,7 +24,7 @@ function BreakfastMap({ food, category }) {
   }
 
   function handleDelete() {
-    
+
   }
 
   return (
@@ -68,7 +68,7 @@ function BreakfastMap({ food, category }) {
       </div>
       {food.protein === 0 ? `PRoetin: 0 g` : `Protein: ${ food.protein * category.servings } g`}
       <br/>
-      <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete">Delete</button></div>
+      <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete" onClick={handleDelete}>Delete</button></div>
     </div>
       : null} 
     </div>
