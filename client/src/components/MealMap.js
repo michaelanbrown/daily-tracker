@@ -29,6 +29,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
         return deleteCategory
       }
     })
+    setCurrentCategories(deletingCategory)
   }
 
   function handleDelete() {
