@@ -53,7 +53,8 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
       headers: {
           "Content-Type" : "application/json",
           "Accept" : "application/json"
-      }
+      },
+      body: JSON.stringify(servingAmount)
     })
   }
 
