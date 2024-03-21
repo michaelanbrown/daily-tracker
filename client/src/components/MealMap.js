@@ -50,7 +50,10 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     e.preventDefault();
     fetch(`categories/${category.id}`, {
       method: "PATCH",
-      
+      headers: {
+          "Content-Type" : "application/json",
+          "Accept" : "application/json"
+      }
     })
   }
 
