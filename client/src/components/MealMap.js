@@ -48,6 +48,9 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
 
   function handleEdit(e) {
     e.preventDefault();
+    fetch(`categories/${category.id}`, {
+      
+    })
   }
 
   return (
