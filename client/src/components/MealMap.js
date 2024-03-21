@@ -46,7 +46,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     })
   }
 
-  function handleEdit(e) {
+  function handleEdit() {
 
   }
 
