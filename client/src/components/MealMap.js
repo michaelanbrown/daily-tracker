@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 function BreakfastMap({ food, category, currentCategories, setCurrentCategories }) {
   const [showMeal, setShowMeal] = useState(false)
@@ -57,7 +58,9 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
       body: JSON.stringify(servingAmount)
     }).then(res => {
       if (res.ok) {
-        res.json()
+        res.json().then(
+
+        )
       }
     })
   }
