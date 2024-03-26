@@ -47,7 +47,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
   }
 
   function updateCategory(updatedCategory) {
-    const updatingCategory = 
+    const updatingCategory = currentCategories.map()
   }
 
   function handleEdit(e) {
