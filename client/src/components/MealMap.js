@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
 function BreakfastMap({ food, category, currentCategories, setCurrentCategories }) {
-  const navigate = useNavigate()
   const [showMeal, setShowMeal] = useState(false)
   const [plus, setPlus] = useState("+")
   const [edit, setEdit] = useState(false)
