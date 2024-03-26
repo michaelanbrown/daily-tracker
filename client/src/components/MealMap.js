@@ -50,6 +50,8 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     const updatingCategory = currentCategories.map(category => {
       if (category.id === updatedCategory.id) {
         return updatedCategory
+      } else {
+        return category
       }
     })
   }
