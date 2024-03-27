@@ -66,7 +66,6 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
           "Accept" : "application/json"
       },
       body: JSON.stringify({
-        id: category.id,
         servings: servingAmount
     })
     }).then(res => {
