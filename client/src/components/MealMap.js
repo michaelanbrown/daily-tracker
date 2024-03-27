@@ -70,6 +70,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
       if (res.ok) {
         res.json().then(category => {
           updateCategory(category)
+          window.location.reload()
           }          
         )
       }
