@@ -53,8 +53,8 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
       } else {
         return category
       }
-      setCurrentCategories(updatingCategory)
     })
+    setCurrentCategories(updatingCategory)
   }
 
   function handleEdit(e) {
