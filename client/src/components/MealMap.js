@@ -69,8 +69,8 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     }).then(res => {
       if (res.ok) {
         res.json().then(category => {
-          
-        }          
+          updateCategory(category)
+          }          
         )
       }
     })
