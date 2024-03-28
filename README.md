@@ -12,3 +12,4 @@ This app will calculate certain macronutrients and will delete all records on th
 
 ## Throughout the day you are able to edit the serving amounts and delete any foods that were mistakenly added!
 #### Here's how!
+1. Within the today page click the plus sign "+" that is next to the food you wish to edit or delete
