@@ -11,3 +11,4 @@ This app will calculate certain macronutrients and will delete all records on th
 6. Protein
 
 ## Throughout the day you are able to edit the serving amounts and delete any foods that were mistakenly added!
+#### Here's how!
