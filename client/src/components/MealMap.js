@@ -98,7 +98,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
         <div className="mealMapAddedSugar">
           {food.added_sugars === 0 ? `Added Sugars: 0 g` : `Added Sugars: ${ food.added_sugars * category.servings } g`}
         </div>
-        {food.protein === 0 ? `Proetin: 0 g` : `Protein: ${ food.protein * category.servings } g`}
+        {food.protein === 0 ? `Protein: 0 g` : `Protein: ${ food.protein * category.servings } g`}
         <br/>
         <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete" onClick={handleDelete}>Delete</button></div>
       </div>
@@ -119,7 +119,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
       <div className="mealMapAddedSugar">
         {food.added_sugars === 0 ? `Added Sugars: 0 g` : `Added Sugars: ${ food.added_sugars * category.servings } g`}
       </div>
-      {food.protein === 0 ? `Proetin: 0 g` : `Protein: ${ food.protein * category.servings } g`}
+      {food.protein === 0 ? `Protein: 0 g` : `Protein: ${ food.protein * category.servings } g`}
       <br/>
       <div><button className="editDelete" onClick={onEdit}>Edit</button>{" "}<button className="editDelete" onClick={handleDelete}>Delete</button></div>
     </div>
