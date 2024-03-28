@@ -14,3 +14,6 @@ This app will calculate certain macronutrients and will delete all records on th
 #### Here's how!
 1. Within the today page click the plus sign "+" that is next to the food you wish to edit or delete
 2. Select edit or delete
+  - Edit:
+    1. Input the new serving size
+    2. Press Submit
