@@ -38,3 +38,8 @@ It is connected to the food and category models as a user can have many foods an
 The food model stores a list of all foods and is a growing database. Users have the ability to add foods as they please.
 
 It is connected to the user and category models as a food can be eaten by many users and a food can be in many categories.
+
+### Category
+Categories allow a person to list out their serving amounts that they consumed per food.
+
+It is connected to the user and food models by belonging to each of them - a category can only be for one user and can only be for one food.
