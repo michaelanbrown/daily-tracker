@@ -28,3 +28,8 @@ We are also open to suggestions!
 1. User
 2. Food
 3. Category
+
+### User
+This allows everyone to have their own account for their own personal use.
+
+It is connected to the food and category models as a user can have many foods and many categories.
