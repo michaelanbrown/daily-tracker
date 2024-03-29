@@ -33,3 +33,8 @@ We are also open to suggestions!
 This allows everyone to have their own account for their own personal use.
 
 It is connected to the food and category models as a user can have many foods and many categories.
+
+### Food
+The food model stores a list of all foods and is a growing database. Users have the ability to add foods as they please.
+
+It is connected to the user and category models as a food can be eaten by many users and a food can be in many categories.
