@@ -19,3 +19,5 @@ This app will calculate certain macronutrients and will delete all records on th
     2. Press Submit
   - Delete:
     1. Press Delete
+
+## Please fork and clone this for your own use!
