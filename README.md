@@ -21,3 +21,4 @@ This app will calculate certain macronutrients and will delete all records on th
     1. Press Delete
 
 ## Please fork and clone this for your own use!
+We are also open to suggestions!
