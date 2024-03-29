@@ -25,3 +25,6 @@ We are also open to suggestions!
 
 
 ## Models
+1. User
+2. Food
+3. Category
