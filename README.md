@@ -53,3 +53,4 @@ It is connected to the user and food models by belonging to each of them - a cat
 4. Validates that the age of anyone is greater than 0
 
 ### Food
+1. Validates that a name is present upon creation
