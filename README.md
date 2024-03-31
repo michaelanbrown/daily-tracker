@@ -62,3 +62,4 @@ It is connected to the user and food models by belonging to each of them - a cat
 7. Validates that proteins are greater than -1
 
 ### Category
+1. Validates that a meal is present
