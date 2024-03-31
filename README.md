@@ -55,3 +55,4 @@ It is connected to the user and food models by belonging to each of them - a cat
 ### Food
 1. Validates that a name is present upon creation
 2. Validates that calories are greater than 0
+3. Validates that fats are greater than -1
