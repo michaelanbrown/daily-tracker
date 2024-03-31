@@ -43,3 +43,5 @@ It is connected to the user and category models as a food can be eaten by many u
 Categories allow a person to list out their serving amounts that they consumed per food.
 
 It is connected to the user and food models by belonging to each of them - a category can only be for one user and can only be for one food.
+
+## Validations
