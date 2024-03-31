@@ -50,3 +50,4 @@ It is connected to the user and food models by belonging to each of them - a cat
 1. Validates that a name is present upon creation
 2. Validates that a username is present and unique upon creation
 3. Validates that the email is present and unique upon creation
+4. Validates that the age of anyone is greater than 0
