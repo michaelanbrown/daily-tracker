@@ -57,3 +57,4 @@ It is connected to the user and food models by belonging to each of them - a cat
 2. Validates that calories are greater than 0
 3. Validates that fats are greater than -1
 4. Validates that carbs are greater than -1
+5. Validates that sugars are greater than -1
