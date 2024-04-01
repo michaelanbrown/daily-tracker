@@ -70,3 +70,5 @@ It is connected to the user and food models by belonging to each of them - a cat
 
 ### Users
 The users schema contains all information needed for a user account - name, username, email, password, and age
+
+### Food
