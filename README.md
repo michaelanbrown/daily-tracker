@@ -67,3 +67,5 @@ It is connected to the user and food models by belonging to each of them - a cat
 3. Validates that a serving size is greater than 0
 
 ## Schemas
+
+### Users
