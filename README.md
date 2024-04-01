@@ -77,4 +77,4 @@ The Food schema owns all information about a food and it's pertinent nutrition f
 ### Category
 The Category schema possesses the information regarding the name of the meal and the amount of servings.
 
-The Category schema references the User and Food tables to connect all information.
+** The Category schema references the User and Food tables to connect all information.
