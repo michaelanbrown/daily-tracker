@@ -82,4 +82,4 @@ The Category schema possesses the information regarding the name of the meal and
 ## Future Enhancements
 1. Keep all records
  - Will need to be able to switch between and look at old days
- 2. 
+ 2. Create meals with your own ingredients
