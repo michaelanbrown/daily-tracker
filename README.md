@@ -85,6 +85,9 @@ The Category schema possesses the information regarding the name of the meal and
   resources :foods
   resources :categories
 
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+  get "/authorized_user", to: "users#show"
 ```
 
 ## Future Enhancements
