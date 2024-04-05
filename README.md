@@ -79,6 +79,8 @@ The Category schema possesses the information regarding the name of the meal and
 
 ** The Category schema references the User and Food tables to connect all information.
 
+## Routes
+
 ## Future Enhancements
 1. Keep all records
  - Will need to be able to switch between and look at old days
