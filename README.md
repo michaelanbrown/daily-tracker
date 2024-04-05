@@ -80,6 +80,7 @@ The Category schema possesses the information regarding the name of the meal and
 ** The Category schema references the User and Food tables to connect all information.
 
 ## Methods
+placeholder
 
 ### Users
 
