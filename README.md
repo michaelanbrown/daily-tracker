@@ -14,11 +14,11 @@ This app will calculate certain macronutrients and will delete all records on th
 #### Here's how!
 1. Within the today page click the plus sign "+" that is next to the food you wish to edit or delete
 2. Select edit or delete
-  - Edit:
-    1. Input the new serving size
-    2. Press Submit
-  - Delete:
-    1. Press Delete
+      - Edit:
+        1. Input the new serving size
+        2. Press Submit
+      - Delete:
+        1. Press Delete
 
 ## Please fork and clone this for your own use!
 We are also open to suggestions!
@@ -94,5 +94,5 @@ The Category schema possesses the information regarding the name of the meal and
 
 ## Future Enhancements
 1. Keep all records
- - Will need to be able to switch between and look at old days
+      - Will need to be able to switch between and look at old days
 2. Be able to create your own foods wit ingredients
