@@ -81,15 +81,6 @@ The Category schema possesses the information regarding the name of the meal and
 
 ## Methods
 
-### Users
-placeholder
-
-### Food
-placeholder
-
-### Category
-placeholder
-
 ## Routes
 ```python
   resources :users, only: [:index, :show, :create]
