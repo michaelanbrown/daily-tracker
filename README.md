@@ -82,7 +82,9 @@ The Category schema possesses the information regarding the name of the meal and
 ## Method Examples
 ```python
 # Index
-
+  def index 
+      render json: Food.all, status: :ok
+  end
 ```
 
 ## Routes
