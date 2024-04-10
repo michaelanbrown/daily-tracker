@@ -88,6 +88,7 @@ The Category schema possesses the information regarding the name of the meal and
 ```
 
 ```python
+# Show
 
 ```
 
