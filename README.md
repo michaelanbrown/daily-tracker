@@ -89,6 +89,9 @@ The Category schema possesses the information regarding the name of the meal and
 
 ```python
 # Show
+  def find_category
+    @category = Category.find(params[:id])
+  end
 
 ```
 
