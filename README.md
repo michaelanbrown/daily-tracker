@@ -136,7 +136,10 @@ The Category schema possesses the information regarding the name of the meal and
     @category = Category.find(params[:id])
   end
 
-
+  def destroy
+      @category.destroy
+      head :no_content 
+  end
 ```
 
 ## Routes
