@@ -93,6 +93,9 @@ The Category schema possesses the information regarding the name of the meal and
     @category = Category.find(params[:id])
   end
 
+  def show
+      render json: @food, status: :ok
+  end
 ```
 
 ## Routes
