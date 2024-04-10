@@ -118,6 +118,9 @@ The Category schema possesses the information regarding the name of the meal and
 
   private
 
+  def update_food_params
+      params.permit(:calories, :fats, :carbs, :sugars, :added_sugars, :protein)
+  end
 ```
 
 ## Routes
