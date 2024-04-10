@@ -100,7 +100,10 @@ The Category schema possesses the information regarding the name of the meal and
 
 ```python
 # Create Request
-
+  def create
+      category = Category.create!(category_params)
+      render json: category, status: :created
+  end
 
   private
     
