@@ -101,9 +101,12 @@ The Category schema possesses the information regarding the name of the meal and
 ```python
 # Create Request
 
+
   private
     
-
+  def category_params
+      params.permit(:meal, :food_id, :user_id, :servings)
+   end
 ```
 
 ## Routes
