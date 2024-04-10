@@ -114,7 +114,9 @@ The Category schema possesses the information regarding the name of the meal and
 
 ```python
 # Update Request
-
+  def find_food
+    @food = Food.find(params[:id])
+  end
 
   private
 
