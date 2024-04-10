@@ -118,6 +118,11 @@ The Category schema possesses the information regarding the name of the meal and
     @food = Food.find(params[:id])
   end
 
+  def update
+      @food.update!(update_food_params)
+      render json: @food, status: :accepted
+  end
+
   private
 
   def update_food_params
