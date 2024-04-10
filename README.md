@@ -112,6 +112,10 @@ The Category schema possesses the information regarding the name of the meal and
    end
 ```
 
+```python
+
+```
+
 ## Routes
 ```python
   resources :users, only: [:index, :show, :create]
