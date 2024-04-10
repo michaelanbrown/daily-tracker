@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2024_04_10_001326) do
     t.bigint "food_id"
     t.bigint "user_id"
     t.float "servings"
-    t.datetime "date"
+    t.datetime "date", default: Time.now.to_datetime
     t.index ["food_id"], name: "index_categories_on_food_id"
     t.index ["user_id"], name: "index_categories_on_user_id"
   end
