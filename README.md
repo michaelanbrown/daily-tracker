@@ -132,6 +132,10 @@ The Category schema possesses the information regarding the name of the meal and
 
 ```python
 # Delete Request
+  def find_category
+    @category = Category.find(params[:id])
+  end
+
 
 ```
 
