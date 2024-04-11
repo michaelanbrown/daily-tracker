@@ -32,9 +32,6 @@ function newFood() {
       <br/>
       <br/>
       {foodsMap}
-      { errors.length !==0 ? <div className='error' >
-      { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
-      </div> : null }
     </div>
   );
 }
