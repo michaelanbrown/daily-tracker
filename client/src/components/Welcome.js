@@ -1,6 +1,6 @@
 import React from "react";
 
-function Welcome( { } ) {
+function Welcome( { errors } ) {
 
   return (
     <div>
