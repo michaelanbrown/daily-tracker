@@ -21,6 +21,7 @@ function App() {
   const [meal, setMeal] = useState("")
 
   useEffect(() => {
+    setErrors([])
     fetchCurrentUser()
     getUsers()
     getFoods()
