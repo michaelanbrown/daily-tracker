@@ -58,7 +58,7 @@ function App() {
       if(res.ok){
         res.json().then(setCategories)
       } else {
-        res.json().then(json => setErrors([json.error]))
+        res.json().then(json => setErrors([...errors, json.error]))
       }
     })
   }
