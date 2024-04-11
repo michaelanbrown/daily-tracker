@@ -25,6 +25,8 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     const deletingCategory = currentCategories.filter(category => {
       if (category.id !== deletedCategory.id) {
         return deleteCategory
+      } else {
+        return deletedCategory
       }
     })
     setCurrentCategories(deletingCategory)
