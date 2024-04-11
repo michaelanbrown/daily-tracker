@@ -9,7 +9,6 @@ function FoodList({ foods, meal, categories, setCategories }) {
   const [foodsMap, setFoodsMap] = useState([])
   const [errors, setErrors] = useState([])
   const navigate = useNavigate()
-  const { currentUser, fetchCurrentUser } = useCurrentUser()
 
 useEffect(() => {
   const mealPresent = meal ? null : navigate("/today")
