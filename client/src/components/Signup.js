@@ -1,4 +1,4 @@
-import React, { useState, useContext} from 'react'
+import React, { useState } from 'react'
 import { useCurrentUser } from './context/User';
 import '../App.css'
 import { useNavigate } from 'react-router-dom';
