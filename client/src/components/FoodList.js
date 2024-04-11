@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"
-import { useCurrentUser } from "./context/User";
 import ServingPage from "./ServingPage";
 
 function FoodList({ foods, meal, categories, setCategories }) {
