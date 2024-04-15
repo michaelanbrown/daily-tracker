@@ -160,3 +160,4 @@ The Category schema possesses the information regarding the name of the meal and
 2. Be able to create your own foods with ingredients
 
 ## Previous Functionality
+Upon login, the sessions controller would automatically delete any categories that were not today's date.
