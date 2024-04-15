@@ -158,3 +158,5 @@ The Category schema possesses the information regarding the name of the meal and
       - Will need to be able to switch between and look at old days
             **IN PROGRESS
 2. Be able to create your own foods with ingredients
+
+## Previous Functionality
