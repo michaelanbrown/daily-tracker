@@ -161,3 +161,4 @@ The Category schema possesses the information regarding the name of the meal and
 
 ## Previous Functionality
 Upon login, the sessions controller would automatically delete any categories that were not today's date.
+      -This is now removed and all categories will be accessible.
