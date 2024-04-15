@@ -15,6 +15,8 @@ function Today({ setMeal }) {
   const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
 
+  //will need to filter categories for categories made today
+
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
     const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
