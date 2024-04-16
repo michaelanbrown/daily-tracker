@@ -16,18 +16,19 @@ function Today({ setMeal }) {
   const [cals, setCals] = useState(0)
 
   //will need to filter categories for categories made today
-  console.log(currentUser.categories)
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
     const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
-    const setCategories = currentUser ? setCurrentCategories(currentUser.categories.filter(date => )) : null
+    const setCategories = currentUser ? setCurrentCategories(currentUser.categories) : null
     const breakfast = currentCategories ? setBreakfastFoods(currentCategories.filter(category => category.meal === "Breakfast")) : null
     const lunch = currentCategories ? setLunchFoods(currentCategories.filter(category => category.meal === "Lunch")) : null
     const dinner = currentCategories ? setDinnerFoods(currentCategories.filter(category => category.meal === "Dinner")) : null
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
   },[currentUser, currentCategories, calArray])
+
+  console.log(currentUser)
   
   function addFoodBreakfast() {
     navigate('/foodlist')
