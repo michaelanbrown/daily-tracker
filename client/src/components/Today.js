@@ -16,6 +16,7 @@ function Today({ setMeal }) {
   const [cals, setCals] = useState(0)
 
   //will need to filter categories for categories made today
+  console.log(currentUser.categories)
 
   useEffect(() => {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
