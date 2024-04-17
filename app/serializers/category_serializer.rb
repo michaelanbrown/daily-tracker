@@ -4,7 +4,7 @@ class CategorySerializer < ActiveModel::Serializer
   has_one :food
 
   def created_at
-    return @created_at.strftime("%d %b %Y")
+    return object.created_at.strftime("%d %b %Y")
   end
 
 end
