@@ -73,7 +73,7 @@ function App() {
           <Route exact path='/' element={<Welcome errors={errors}/>}/>
           <Route exact path='/food' element={<Food foods={foods}/>}/>
           <Route exact path='/newfood' element={<NewFood foods={foods} setFoods={setFoods}/>}/>
-          <Route exact path='/today' element={<Today setMeal={setMeal}/>}/>
+          <Route exact path='/today' element={<Today setMeal={setMeal} categories={categories}/>}/>
           <Route exact path='/foodlist' element={<FoodList foods={foods} meal={meal} categories={categories} setCategories={setCategories}/>}/>
         </Routes>
       </Router>
