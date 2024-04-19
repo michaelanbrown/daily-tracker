@@ -29,7 +29,6 @@ function Today({ setMeal, categories }) {
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
   },[currentUser, categories, calArray])
 
-  console.log(currentCategories ? currentCategories : null)
   
   function addFoodBreakfast() {
     navigate('/foodlist')
