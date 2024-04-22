@@ -77,6 +77,7 @@ function Today({ setMeal, categories }) {
         {currentDate}
         <br/>
         <br/>
+        <br/>
         Calories: {cals}
       </h2>
       <br/>
