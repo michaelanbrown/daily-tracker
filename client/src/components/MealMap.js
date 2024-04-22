@@ -6,6 +6,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
   const [edit, setEdit] = useState(false)
   const [servingAmount, setServingAmount] = useState(category.servings)
 
+  console.log(category)
 
   function foodInformation() {
     setShowMeal(!showMeal)
