@@ -80,7 +80,6 @@ function Today({ setMeal, categories }) {
         Calories: {cals}
       </h2>
       <br/>
-      <br/>
         <h2>Breakfast</h2>
         <button className="addfood" onClick={addFoodBreakfast}>Add Food</button>
         <br/>
