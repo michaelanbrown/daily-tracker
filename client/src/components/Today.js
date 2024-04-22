@@ -73,10 +73,12 @@ function Today({ setMeal, categories }) {
   return (
     <div>
       <br/>
-      <h2 className="calCount">{currentDate}
-      Calories: {cals}</h2>
-      <br/>
-      <br/>
+      <h2 className="calCount">
+        {currentDate}
+        <br/>
+        <br/>
+        Calories: {cals}
+      </h2>
       <br/>
       <br/>
         <h2>Breakfast</h2>
