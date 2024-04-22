@@ -17,7 +17,7 @@ function Today({ setMeal, categories }) {
   const today = new Date()
   const month = today.getMonth()+1;
   const year = today.getFullYear();
-  const date = today. getDate();
+  const day = today. getDate();
 
   //will need to filter categories for categories made today
   console.log(today)
