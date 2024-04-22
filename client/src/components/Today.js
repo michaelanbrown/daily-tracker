@@ -14,6 +14,7 @@ function Today({ setMeal, categories }) {
   const [snackFoods, setSnackFoods] = useState([])
   const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
+  const today = new Date()
 
   //will need to filter categories for categories made today
 
@@ -65,11 +66,11 @@ function Today({ setMeal, categories }) {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
   }) : null
 
-
   return (
     <div>
       <br/>
-      <h2 className="calCount">Calories: {cals}</h2>
+      <h2 className="calCount">
+      Calories: {cals}</h2>
       <br/>
       <br/>
       <br/>
