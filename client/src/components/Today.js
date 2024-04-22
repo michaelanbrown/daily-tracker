@@ -16,6 +16,7 @@ function Today({ setMeal, categories }) {
   const [cals, setCals] = useState(0)
   const today = new Date()
   const month = today.getMonth()+1;
+  const year = today.getFullYear();
 
 
   //will need to filter categories for categories made today
