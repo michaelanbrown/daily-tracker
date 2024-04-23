@@ -21,6 +21,7 @@ function Today({ setMeal, categories }) {
   const monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const month = monthsArray[new Date().getMonth()];
 
+  console.log(month)
   //will need to filter categories for categories made today
 
   useEffect(() => {
