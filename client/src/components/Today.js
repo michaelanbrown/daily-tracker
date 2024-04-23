@@ -15,7 +15,7 @@ function Today({ setMeal, categories }) {
   const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
   const today = new Date()
-  const month = today.getMonth()+1;
+  const month = months[new Date().getMonth()];
   const year = today.getFullYear();
   const day = today. getDate();
   const currentDate = month + "/" + day + "/" + year;
