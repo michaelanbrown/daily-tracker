@@ -19,19 +19,7 @@ function Today({ setMeal, categories }) {
   const year = today.getFullYear();
   const day = today. getDate();
   const currentDate = month + "/" + day + "/" + year;
-  const months = ["January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ]
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
   //will need to filter categories for categories made today
 
