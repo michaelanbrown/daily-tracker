@@ -30,7 +30,7 @@ function Today({ setMeal, categories }) {
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
     const settingCalArray = currentUser && calArray.length !== categories.filter(category => category.user_id === currentUser.id).length ? setCalArray(categories.filter(category => category.user_id === currentUser.id).map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
-  },[currentUser, currentFoods, calArray, currentCategories.length])
+  },[currentUser, currentFoods, calArray])
   
   function addFoodBreakfast() {
     navigate('/foodlist')
