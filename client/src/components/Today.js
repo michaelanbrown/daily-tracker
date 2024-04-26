@@ -29,7 +29,7 @@ function Today({ setMeal, categories }) {
     const lunch = currentCategories ? setLunchFoods(currentCategories.filter(category => category.meal === "Lunch")) : null
     const dinner = currentCategories ? setDinnerFoods(currentCategories.filter(category => category.meal === "Dinner")) : null
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
-    const settingCalArray = currentUser && calArray.length !== categories.length ? setCalArray(categories.filter(category => category.user_id === currentUser.id).map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
+    const settingCalArray = currentUser && calArray.length !== categories.filter(category => category.user_id === currentUser.id).length ? setCalArray(categories.filter(category => category.user_id === currentUser.id).map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
   },[currentUser, currentFoods, calArray])
   
   function addFoodBreakfast() {
