@@ -28,7 +28,7 @@ function Today({ setMeal, categories }) {
     const lunch = currentCategories ? setLunchFoods(currentCategories.filter(category => category.meal === "Lunch")) : null
     const dinner = currentCategories ? setDinnerFoods(currentCategories.filter(category => category.meal === "Dinner")) : null
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
-    const settingCalArray = currentUser && calArray.length !== categories.filter(category => category.user_id === currentUser.id).length ? setCalArray(categories.filter(category => category.user_id === currentUser.id).map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
+    const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(categories.filter(category => category.user_id === currentUser.id).map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
   },[currentUser, currentFoods, calArray, categories.filter(category => category.user_id === currentUser.id).length])
   
