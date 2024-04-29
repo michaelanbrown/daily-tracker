@@ -19,7 +19,7 @@ function Today({ setMeal, categories }) {
   const currentDate = month + " " + new Date().getDate() + ", " + new Date().getFullYear();
 
   //will need to filter categories for categories made today
-  console.log(calArray)
+  console.log(currentCategories.length)
 
   useEffect(() => {
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
@@ -30,7 +30,7 @@ function Today({ setMeal, categories }) {
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
     const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
-  },[currentUser, currentFoods, calArray, currentCategories.filter(category => category.user_id === currentUser.id).length])
+  },[currentUser, currentFoods, calArray, currentCategories.length])
   
   function addFoodBreakfast() {
     navigate('/foodlist')
