@@ -19,6 +19,7 @@ function Today({ setMeal, categories }) {
   const currentDate = month + " " + new Date().getDate() + ", " + new Date().getFullYear();
 
   //will need to filter categories for categories made today
+  console.log(currentCategories)
 
   useEffect(() => {
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
