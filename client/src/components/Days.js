@@ -30,11 +30,6 @@ function Day({ setMeal, categories }) {
   },[currentUser, currentFoods, calArray, currentCategories.length !== categories.length])
   
 
-  function addFoodLunch() {
-    navigate('/foodlist')
-    setMeal("Lunch")
-  }
-
   function addFoodDinner() {
     navigate('/foodlist')
     setMeal("Dinner")
