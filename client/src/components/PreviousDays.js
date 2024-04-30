@@ -4,7 +4,6 @@ import { useCurrentUser } from "./context/User";
 import MealMap from "./MealMap";
 
 function PreviousDays({ setMeal, categories }) {
-  const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [currentFoods, setCurrentFoods] = useState([])
   const [currentCategories, setCurrentCategories] = useState([])
