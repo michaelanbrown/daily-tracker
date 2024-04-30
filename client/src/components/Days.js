@@ -28,12 +28,10 @@ function Day({ setMeal, categories }) {
     const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
   },[currentUser, currentFoods, calArray, currentCategories.length !== categories.length])
-  
 
   const breakfastMap = breakfastFoods ? breakfastFoods.map(category => {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
   }) : null
-
 
   const lunchMap = lunchFoods ? lunchFoods.map(category => {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
