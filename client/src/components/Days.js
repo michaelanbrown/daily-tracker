@@ -29,12 +29,6 @@ function Day({ setMeal, categories }) {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
   },[currentUser, currentFoods, calArray, currentCategories.length !== categories.length])
   
-
-  function addFoodDinner() {
-    navigate('/foodlist')
-    setMeal("Dinner")
-  }
-
   function addFoodSnack() {
     navigate('/foodlist')
     setMeal("Snack")
