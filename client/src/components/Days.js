@@ -29,10 +29,6 @@ function Day({ setMeal, categories }) {
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
   },[currentUser, currentFoods, calArray, currentCategories.length !== categories.length])
   
-  function addFoodSnack() {
-    navigate('/foodlist')
-    setMeal("Snack")
-  }
 
   const breakfastMap = breakfastFoods ? breakfastFoods.map(category => {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
