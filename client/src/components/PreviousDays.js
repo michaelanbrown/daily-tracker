@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useCurrentUser } from "./context/User";
 import MealMap from "./MealMap";
 
-function PreviousDays({ setMeal, categories }) {
+function PreviousDays({ categories }) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [currentFoods, setCurrentFoods] = useState([])
   const [currentCategories, setCurrentCategories] = useState([])
