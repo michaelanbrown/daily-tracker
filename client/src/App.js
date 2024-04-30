@@ -10,6 +10,7 @@ import Food from './components/Food';
 import NewFood from './components/NewFood';
 import Today from './components/Today';
 import FoodList from './components/FoodList';
+import PreviousDays from './components/PreviousDays';
 
 function App() {
   const [users, setUsers] = useState([])
@@ -74,7 +75,7 @@ function App() {
           <Route exact path='/food' element={<Food foods={foods}/>}/>
           <Route exact path='/newfood' element={<NewFood foods={foods} setFoods={setFoods}/>}/>
           <Route exact path='/today' element={<Today setMeal={setMeal} categories={categories}/>}/>
-          <Route exact path='/previousdays' />
+          <Route exact path='/previousdays' element={<PreviousDays/>}/>
           <Route exact path='/foodlist' element={<FoodList foods={foods} meal={meal} categories={categories} setCategories={setCategories}/>}/>
         </Routes>
       </Router>
