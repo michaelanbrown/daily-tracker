@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useCurrentUser } from "./context/User";
 import MealMap from "./MealMap";
 
-function Day({ setMeal, categories }) {
+function PreviousDays({ setMeal, categories }) {
   const navigate = useNavigate()
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [currentFoods, setCurrentFoods] = useState([])
@@ -78,4 +78,4 @@ function Day({ setMeal, categories }) {
   );
 }
 
-export default Day;
+export default PreviousDays;
