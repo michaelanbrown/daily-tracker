@@ -83,8 +83,6 @@ function Day({ setMeal, categories }) {
         <br/>
         <br/>
         <h2>Lunch</h2>
-        <button className="addfood" onClick={addFoodLunch}>Add Food</button>
-        <br/>
         <br/>
         {lunchMap}
         <br/>
