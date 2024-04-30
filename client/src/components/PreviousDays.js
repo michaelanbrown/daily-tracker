@@ -16,6 +16,8 @@ function PreviousDays({ categories }) {
   const month = monthsArray[new Date().getMonth()];
   const currentDate = month + " " + new Date().getDate() + ", " + new Date().getFullYear();
 
+  //edit previous days to select the date and it will populate that date's meals
+
   useEffect(() => {
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
     const setCategories = currentUser ? setCurrentCategories(categories.filter(category => category.user_id === currentUser.id && category.created_at === currentDate)) : null
