@@ -44,7 +44,7 @@ function PreviousDays({ categories }) {
   }) : null
 
   function handleChange(e) {
-    
+    setCurrentDate();
   }
 
   return (
