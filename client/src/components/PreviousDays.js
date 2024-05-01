@@ -47,6 +47,8 @@ function PreviousDays({ categories }) {
     setCurrentDate();
   }
 
+  //change this to look for month, day, and year
+
   return (
     <div>
       <br/>
