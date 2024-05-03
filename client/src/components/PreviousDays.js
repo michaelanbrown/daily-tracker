@@ -59,6 +59,9 @@ function PreviousDays({ categories }) {
       <br/>
       <h2 className="calCount">
       <input type="text" placeholder='Current Date' name="currentDate" value={currentDate} className="currentDate" onChange={handleChange}/>
+      <form>
+        
+      </form>
           <br/>
         <br/>
         <br/>
