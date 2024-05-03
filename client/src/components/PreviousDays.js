@@ -53,8 +53,10 @@ function PreviousDays({ categories }) {
 })
 
   function handleMonthChange(e) {
-    
-  }
+    setCurrentDate({
+      ...currentDate,
+      [e.target.id] : document.getElementById('month').value
+  })}
 
   //change this to look for month, day, and year
 
