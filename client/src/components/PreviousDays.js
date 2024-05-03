@@ -74,7 +74,7 @@ function PreviousDays({ categories }) {
               {monthOptions}
               </select>
         Day: <select id="day" onChange={}>
-              {}
+              {dayOptions}
               </select>      
       </form>
           <br/>
