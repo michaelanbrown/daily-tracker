@@ -12,7 +12,6 @@ function PreviousDays({ categories }) {
   const [snackFoods, setSnackFoods] = useState([])
   const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
-  const [currentDate, setCurrentDate] = useState('');
   const monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const [currentDate, setCurrentDate] = useState({
     month: '',
