@@ -45,7 +45,7 @@ function PreviousDays({ categories }) {
   }) : null
 
   const monthOptions = monthsArray.map(month => {
-    
+    return (<option value={month} key={month}>{month}</option>)
 })
 
   function handleChange(e) {
