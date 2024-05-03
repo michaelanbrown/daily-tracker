@@ -44,7 +44,7 @@ function PreviousDays({ categories }) {
   }) : null
 
   function handleChange(e) {
-    setCurrentDate();
+    setCurrentDate(e.target.value);
   }
 
   //change this to look for month, day, and year
