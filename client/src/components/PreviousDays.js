@@ -44,6 +44,10 @@ function PreviousDays({ categories }) {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
   }) : null
 
+  const monthOptions = monthsArray.map(month => {
+    
+})
+
   function handleChange(e) {
     setCurrentDate(e.target.value);
   }
