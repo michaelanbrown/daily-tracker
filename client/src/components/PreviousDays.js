@@ -14,7 +14,7 @@ function PreviousDays({ categories }) {
   const [cals, setCals] = useState(0)
   const [currentDate, setCurrentDate] = useState('');
   const monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const [formData, setFormData] = useState({
+  const [currentDate, setCurrentDate] = useState({
     month: '',
     day: '',
     year: ''
