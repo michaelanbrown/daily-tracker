@@ -52,10 +52,6 @@ function PreviousDays({ categories }) {
     return (<option value={month} key={month}>{month}</option>)
 })
 
-  function handleChange(e) {
-    setCurrentDate(e.target.value);
-  }
-
   function handleMonthChange(e) {
     
   }
