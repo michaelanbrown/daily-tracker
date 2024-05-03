@@ -13,6 +13,7 @@ function PreviousDays({ categories }) {
   const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
   const [currentDate, setCurrentDate] = useState('');
+  const monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   //edit previous days to select the date and it will populate that date's meals
 
