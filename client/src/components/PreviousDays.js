@@ -63,6 +63,9 @@ function PreviousDays({ categories }) {
       [e.target.id] : document.getElementById('month').value
   })}
 
+  function handleDayChange(e) {
+    }
+
   //change this to look for month, day, and year
 
   return (
