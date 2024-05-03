@@ -53,7 +53,7 @@ function PreviousDays({ categories }) {
     <div>
       <br/>
       <h2 className="calCount">
-      <input type="text" placeholder='FocurrentDateod' name="currentDate" value={currentDate} className="currentDate" onChange={handlechange}/>
+      <input type="text" placeholder='FocurrentDateod' name="currentDate" value={currentDate} className="currentDate" onChange={handleChange}/>
           <br/>
         <br/>
         <br/>
