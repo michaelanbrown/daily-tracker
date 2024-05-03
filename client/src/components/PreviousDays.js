@@ -12,7 +12,7 @@ function PreviousDays({ categories }) {
   const [snackFoods, setSnackFoods] = useState([])
   const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
-  const [currentDate, setCurrentDate] = useState('Select date');
+  const [currentDate, setCurrentDate] = useState('');
 
   //edit previous days to select the date and it will populate that date's meals
 
