@@ -86,7 +86,9 @@ function PreviousDays({ categories }) {
   })}
 
   function handleYearChange(e) {
-    }
+    setCurrentDate({
+      
+  })}
 
   //add a select for year
 
