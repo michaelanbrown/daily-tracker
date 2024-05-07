@@ -57,6 +57,8 @@ function PreviousDays({ categories }) {
     return (<option value={day} key={day}>{day}</option>)
   })
 
+  const yearOptions = d
+
   function handleMonthChange(e) {
     setCurrentDate({
       ...currentDate,
