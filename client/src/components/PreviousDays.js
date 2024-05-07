@@ -32,6 +32,7 @@ function PreviousDays({ categories }) {
     const snack = currentCategories ? setSnackFoods(currentCategories.filter(category => category.meal === "Snack")) : null
     const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
+    const settingYearsArray = setYearsArray()
   },[currentUser, currentFoods, calArray, currentCategories.length !== categories.length])
 
   const breakfastMap = breakfastFoods ? breakfastFoods.map(category => {
