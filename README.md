@@ -14,11 +14,11 @@ This app will calculate certain macronutrients and will delete all records on th
 #### Here's how!
 1. Within the today page click the plus sign "+" that is next to the food you wish to edit or delete
 2. Select edit or delete
-  - Edit:
-    1. Input the new serving size
-    2. Press Submit
-  - Delete:
-    1. Press Delete
+      - Edit:
+        1. Input the new serving size
+        2. Press Submit
+      - Delete:
+        1. Press Delete
 
 ## Please fork and clone this for your own use!
 We are also open to suggestions!
@@ -79,7 +79,81 @@ The Category schema possesses the information regarding the name of the meal and
 
 ** The Category schema references the User and Food tables to connect all information.
 
+## Method Examples
+```python
+# Index
+  def index 
+      render json: Food.all, status: :ok
+  end
+```
+
+```python
+# Show
+  def find_category
+    @category = Category.find(params[:id])
+  end
+
+  def show
+      render json: @food, status: :ok
+  end
+```
+
+```python
+# Create Request
+  def create
+      category = Category.create!(category_params)
+      render json: category, status: :created
+  end
+
+  private
+    
+  def category_params
+      params.permit(:meal, :food_id, :user_id, :servings)
+   end
+```
+
+```python
+# Update Request
+  def find_food
+    @food = Food.find(params[:id])
+  end
+
+  def update
+      @food.update!(update_food_params)
+      render json: @food, status: :accepted
+  end
+
+  private
+
+  def update_food_params
+      params.permit(:calories, :fats, :carbs, :sugars, :added_sugars, :protein)
+  end
+```
+
+```python
+# Delete Request
+  def find_category
+    @category = Category.find(params[:id])
+  end
+
+  def destroy
+      @category.destroy
+      head :no_content 
+  end
+```
+
+## Routes
+```python
+  resources :users, only: [:index, :show, :create]
+  resources :foods
+  resources :categories
+
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+  get "/authorized_user", to: "users#show"
+```
+
 ## Future Enhancements
 1. Keep all records
  - Will need to be able to switch between and look at old days
- 2. Create meals with your own ingredients
+ 2. 
