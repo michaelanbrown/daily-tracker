@@ -91,8 +91,6 @@ function PreviousDays({ categories }) {
       [e.target.id] : document.getElementById('year').value
   })}
 
-  //add a select for year
-
   return (
     <div>
       <br/>
