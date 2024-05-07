@@ -23,6 +23,16 @@ function PreviousDays({ categories }) {
 
   //edit previous days to select the date and it will populate that date's meals
 
+  function getYear(){
+    var currentYear = new Date().getFullYear(),
+    var years = [];
+    var startYear = currentYear - 100;
+    for(var i=startYear; i<= currentYear; i++){
+       years.push(startYear++);
+    }
+    setYearsArray(years);
+    }
+
   useEffect(() => {
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
     const setCategories = currentUser ? setCurrentCategories(categories.filter(category => category.user_id === currentUser.id && category.created_at === currentDate)) : null
