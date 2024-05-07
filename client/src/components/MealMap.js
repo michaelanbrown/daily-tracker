@@ -6,6 +6,7 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
   const [edit, setEdit] = useState(false)
   const [servingAmount, setServingAmount] = useState(category.servings)
 
+  console.log(category)
 
   function foodInformation() {
     setShowMeal(!showMeal)
@@ -25,6 +26,8 @@ function BreakfastMap({ food, category, currentCategories, setCurrentCategories 
     const deletingCategory = currentCategories.filter(category => {
       if (category.id !== deletedCategory.id) {
         return deleteCategory
+      } else {
+        return deletedCategory
       }
     })
     setCurrentCategories(deletingCategory)

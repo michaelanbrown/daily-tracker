@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
 import { useCurrentUser } from "./context/User";
 import MealMap from "./MealMap";
 
-function Today({ setMeal, categories }) {
-  const navigate = useNavigate()
+function PreviousDays({ categories }) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const [currentFoods, setCurrentFoods] = useState([])
   const [currentCategories, setCurrentCategories] = useState([])
@@ -15,8 +13,14 @@ function Today({ setMeal, categories }) {
   const [calArray, setCalArray] = useState([])
   const [cals, setCals] = useState(0)
   const monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const month = monthsArray[new Date().getMonth()];
-  const currentDate = month + " " + new Date().getDate() + ", " + new Date().getFullYear();
+  const daysArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  const [currentDate, setCurrentDate] = useState({
+    month: '',
+    day: '',
+    year: ''
+  })
+
+  //edit previous days to select the date and it will populate that date's meals
 
   useEffect(() => {
     const settingCals = currentUser ? setCals(calArray.reduce((a, b) => a + b, 0)) : null
@@ -28,31 +32,10 @@ function Today({ setMeal, categories }) {
     const settingCalArray = currentUser && calArray.length !== currentCategories.length ? setCalArray(currentCategories.map(cat => cat.servings * currentFoods.filter(food => food.id === cat.food_id)[0].calories)) : null
     const setFoods = currentUser ? setCurrentFoods(currentUser.foods) : null
   },[currentUser, currentFoods, calArray, currentCategories.length !== categories.length])
-  
-  function addFoodBreakfast() {
-    navigate('/foodlist')
-    setMeal("Breakfast")
-  }
-
-  function addFoodLunch() {
-    navigate('/foodlist')
-    setMeal("Lunch")
-  }
-
-  function addFoodDinner() {
-    navigate('/foodlist')
-    setMeal("Dinner")
-  }
-
-  function addFoodSnack() {
-    navigate('/foodlist')
-    setMeal("Snack")
-  }
 
   const breakfastMap = breakfastFoods ? breakfastFoods.map(category => {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
   }) : null
-
 
   const lunchMap = lunchFoods ? lunchFoods.map(category => {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
@@ -66,11 +49,42 @@ function Today({ setMeal, categories }) {
     return <MealMap key={category.id} currentCategories={currentCategories} setCurrentCategories={setCurrentCategories} category={category} food={currentFoods.filter(food => food.id === category.food_id)[0]}/>
   }) : null
 
+  const monthOptions = monthsArray.map(month => {
+    return (<option value={month} key={month}>{month}</option>)
+  })
+
+  const dayOptions = daysArray.map(day => {
+    return (<option value={day} key={day}>{day}</option>)
+  })
+
+  function handleMonthChange(e) {
+    setCurrentDate({
+      ...currentDate,
+      [e.target.id] : document.getElementById('month').value
+  })}
+
+  function handleDayChange(e) {
+    setCurrentDate({
+      ...currentDate,
+      [e.target.id] : document.getElementById('day').value
+  })}
+
+  //add a select for year
+
   return (
     <div>
       <br/>
       <h2 className="calCount">
-        {currentDate}
+      <form>
+        Month: <select id="month" onChange={handleMonthChange}>
+              {monthOptions}
+              </select>
+              &nbsp;
+        Day: <select id="day" onChange={handleDayChange}>
+              {dayOptions}
+              </select>      
+      </form>
+          <br/>
         <br/>
         <br/>
         <br/>
@@ -78,33 +92,25 @@ function Today({ setMeal, categories }) {
       </h2>
       <br/>
         <h2>Breakfast</h2>
-        <button className="addfood" onClick={addFoodBreakfast}>Add Food</button>
-        <br/>
         <br/>
         {breakfastMap}
         <br/>
         <br/>
         <h2>Lunch</h2>
-        <button className="addfood" onClick={addFoodLunch}>Add Food</button>
-        <br/>
         <br/>
         {lunchMap}
         <br/>
         <br/>
         <h2>Dinner</h2>
-        <button className="addfood" onClick={addFoodDinner}>Add Food</button>
-        <br/>
         <br/>
         {dinnerMap}
         <br/>
         <br/>
         <h2>Snacks</h2>
-        <button className="addfood" onClick={addFoodSnack}>Add Food</button>
-        <br/>
         <br/>
         {snackMap}
     </div>
   );
 }
 
-export default Today;
+export default PreviousDays;

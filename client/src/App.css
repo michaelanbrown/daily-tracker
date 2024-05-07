@@ -197,3 +197,17 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
 }
+
+.currentDate{
+  background-color: rgb(129, 206, 167);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 125%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+.space{
+  font-size: 125%;
+}

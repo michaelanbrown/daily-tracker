@@ -10,6 +10,7 @@ import Food from './components/Food';
 import NewFood from './components/NewFood';
 import Today from './components/Today';
 import FoodList from './components/FoodList';
+import PreviousDays from './components/PreviousDays';
 
 function App() {
   const [users, setUsers] = useState([])
@@ -21,6 +22,7 @@ function App() {
   const [meal, setMeal] = useState("")
 
   useEffect(() => {
+    setErrors([])
     fetchCurrentUser()
     getUsers()
     getFoods()
@@ -35,7 +37,7 @@ function App() {
           setUsers(res)
           setIsLoading(false)})
       } else {
-        res.json().then(json => setErrors([json.error]))
+        res.json().then(json => setErrors([...errors, json.error]))
       }
     })
   }
@@ -46,7 +48,7 @@ function App() {
       if(res.ok){
         res.json().then(setFoods)
       } else {
-        res.json().then(json => setErrors([json.error]))
+        res.json().then(json => setErrors([...errors, json.error]))
       }
     })
   }
@@ -57,7 +59,7 @@ function App() {
       if(res.ok){
         res.json().then(setCategories)
       } else {
-        res.json().then(json => setErrors([json.error]))
+        res.json().then(json => setErrors([...errors, json.error]))
       }
     })
   }
@@ -69,10 +71,11 @@ function App() {
         <Routes>
           <Route exact path='/login' element={<Login getUsers={getUsers} getFoods={getFoods} getCategories={getCategories}/>}/>
           <Route exact path='/signup' element={<Signup getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} users={users} setUsers={setUsers}/>}/>
-          <Route exact path='/' element={<Welcome/>}/>
+          <Route exact path='/' element={<Welcome errors={errors}/>}/>
           <Route exact path='/food' element={<Food foods={foods}/>}/>
           <Route exact path='/newfood' element={<NewFood foods={foods} setFoods={setFoods}/>}/>
-          <Route exact path='/today' element={<Today setMeal={setMeal}/>}/>
+          <Route exact path='/today' element={<Today setMeal={setMeal} categories={categories}/>}/>
+          <Route exact path='/previousdays' element={<PreviousDays categories={categories}/>}/>
           <Route exact path='/foodlist' element={<FoodList foods={foods} meal={meal} categories={categories} setCategories={setCategories}/>}/>
         </Routes>
       </Router>

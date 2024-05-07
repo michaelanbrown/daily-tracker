@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"
-import { useCurrentUser } from "./context/User";
 import ServingPage from "./ServingPage";
 
 function FoodList({ foods, meal, categories, setCategories }) {
   const [filter, setFilter] = useState('')
   const [foodFilter, setFoodfilter] = useState(foods)
   const [foodsMap, setFoodsMap] = useState([])
-  const [errors, setErrors] = useState([])
   const navigate = useNavigate()
-  const { currentUser, fetchCurrentUser } = useCurrentUser()
 
 useEffect(() => {
   const mealPresent = meal ? null : navigate("/today")
@@ -35,10 +32,6 @@ function newFood() {
       <br/>
       <br/>
       {foodsMap}
-      { errors ? <br/> : null }
-      { errors.length !==0 ? <div className='error' >
-      { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
-      </div> : null }
     </div>
   );
 }
