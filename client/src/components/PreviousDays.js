@@ -69,7 +69,9 @@ function PreviousDays({ categories }) {
     return (<option value={day} key={day}>{day}</option>)
   })
 
-  const yearOptions = yearsArray.map()
+  const yearOptions = yearsArray.map(year => {
+    return (<option value={year} key={year}>{year}</option>)
+  })
 
   function handleMonthChange(e) {
     setCurrentDate({
