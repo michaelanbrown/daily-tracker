@@ -69,7 +69,6 @@ function PreviousDays({ categories }) {
     return (<option value={day} key={day}>{day}</option>)
   })
 
-  console.log(yearsArray)
 
   // const yearOptions = 
 
