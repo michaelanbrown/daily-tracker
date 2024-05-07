@@ -24,7 +24,7 @@ function PreviousDays({ categories }) {
   //edit previous days to select the date and it will populate that date's meals
 
   function getYear(){
-    var currentYear = new Date().getFullYear(),
+    var currentYear = new Date().getFullYear()
     var years = [];
     var startYear = currentYear - 100;
     for(var i=startYear; i<= currentYear; i++){
