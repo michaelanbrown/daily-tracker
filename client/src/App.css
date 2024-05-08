@@ -210,5 +210,6 @@
 
 .select{
   font-size: 100%;
-  background-color: rgb(177, 216, 196)
+  background-color: rgb(177, 216, 196);
+  border: none;
 }
