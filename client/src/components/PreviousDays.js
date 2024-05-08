@@ -96,14 +96,14 @@ function PreviousDays({ categories }) {
       <br/>
       <h2 className="calCount">
       <form>
-        Month: <select id="month" class="select" defaultValue={currentDate['month']} onChange={handleMonthChange}>
+        Month: <select id="month" className="select" defaultValue={currentDate['month']} onChange={handleMonthChange}>
               {monthOptions}
               </select>
               &nbsp;
-        Day: <select id="day" class="select" defaultValue={currentDate['day']} onChange={handleDayChange}>
+        Day: <select id="day" className="select" defaultValue={currentDate['day']} onChange={handleDayChange}>
               {dayOptions}
               </select>     
-        Year:  <select id="year" class="select" defaultValue={currentDate['year']} onChange={handleYearChange}>
+        Year:  <select id="year" className="select" defaultValue={currentDate['year']} onChange={handleYearChange}>
               {yearOptions}
               </select>  
       </form>
