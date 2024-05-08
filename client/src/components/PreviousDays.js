@@ -17,7 +17,7 @@ function PreviousDays({ categories }) {
   const [yearsArray, setYearsArray] = useState([])
   const [currentDate, setCurrentDate] = useState({
     month: monthsArray[new Date().getMonth()],
-    day: '',
+    day: new Date().getDate(),
     year: new Date().getFullYear()
   })
 
