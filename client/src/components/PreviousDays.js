@@ -91,8 +91,6 @@ function PreviousDays({ categories }) {
       [e.target.id] : document.getElementById('year').value
   })}
 
-console.log(currentDate['year'])
-
   return (
     <div>
       <br/>
