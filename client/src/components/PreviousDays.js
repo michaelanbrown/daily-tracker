@@ -92,6 +92,8 @@ function PreviousDays({ categories }) {
       [e.target.id] : document.getElementById('year').value
   })}
 
+  console.log(yearsArray[yearsArray.length-1])
+
   return (
     <div>
       <br/>
