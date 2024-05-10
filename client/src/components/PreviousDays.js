@@ -21,7 +21,6 @@ function PreviousDays({ categories }) {
     year: new Date().getFullYear()
   })
 
-
   //edit previous days to select the date and it will populate that date's meals
   //fix year value in select
 
@@ -106,7 +105,7 @@ function PreviousDays({ categories }) {
               {dayOptions}
               </select>    
               &nbsp;
-        Year: <select id="year" className="select" defaultValue={currentDate['year']} onChange={handleYearChange}>
+        Year: <select id="year" className="select" defaultValue={new Date().getFullYear()} onChange={handleYearChange}>
               {yearOptions}
               </select>  
       </form>
