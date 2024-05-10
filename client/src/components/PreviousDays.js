@@ -29,7 +29,7 @@ function PreviousDays({ categories }) {
     var years = [];
     var startYear = currentYear - 100;
     for(var i=startYear; i<= currentYear; i++){
-       years.push(startYear++);
+       years.unshift(startYear++);
     }
     setYearsArray(years);
     }
