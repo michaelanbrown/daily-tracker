@@ -105,7 +105,7 @@ function PreviousDays({ categories }) {
               {dayOptions}
               </select>    
               &nbsp;
-        Year: <select id="year" className="select" defaultValue={currentDate['year']} onChange={handleYearChange}>
+        Year: <select id="year" className="select" onChange={handleYearChange}>
               {yearOptions}
               </select>  
       </form>
