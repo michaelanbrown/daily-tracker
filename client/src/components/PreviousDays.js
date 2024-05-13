@@ -91,7 +91,7 @@ function PreviousDays({ categories }) {
       [e.target.id] : document.getElementById('year').value
   })}
 
-  function onSubmit() {
+  function onSubmit(e) {
 
   }
 
