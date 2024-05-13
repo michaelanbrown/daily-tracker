@@ -107,6 +107,7 @@ function PreviousDays({ categories }) {
         Year: <select id="year" className="select" defaultValue={yearsArray[yearsArray.length-1]} onChange={handleYearChange}>
               {yearOptions}
               </select>
+              &nbsp;
         <input type='submit' className="select" value='Search'></input>
       </form>
           <br/>
