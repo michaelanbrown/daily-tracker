@@ -92,7 +92,7 @@ function PreviousDays({ categories }) {
   })}
 
   function onSubmit(e) {
-
+    e.preventDefault()
   }
 
   return (
