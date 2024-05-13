@@ -92,14 +92,14 @@ function PreviousDays({ categories }) {
   })}
 
   function onSubmit() {
-    
+
   }
 
   return (
     <div>
       <br/>
       <h2 className="calCount">
-      <form onSubmit={}>
+      <form onSubmit={onSubmit}>
         Month: <select id="month" className="select" defaultValue={currentDate['month']} onChange={handleMonthChange}>
               {monthOptions}
               </select>
