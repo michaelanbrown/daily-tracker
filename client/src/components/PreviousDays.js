@@ -21,7 +21,7 @@ function PreviousDays({ categories }) {
     year: new Date().getFullYear()
   })
   const [formData, setFormData] = useState({
-    
+    date_value: ''
   })
 
   //edit previous days to select the date and it will populate that date's meals
