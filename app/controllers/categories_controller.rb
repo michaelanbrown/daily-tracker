@@ -5,6 +5,9 @@ class CategoriesController < ApplicationController
         render json: Category.all, status: :ok
     end
 
+    def date
+    end
+
     def show
         render json: @category, status: :ok
     end
