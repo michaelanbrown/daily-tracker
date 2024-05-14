@@ -20,6 +20,7 @@ function PreviousDays({ categories }) {
     day: new Date().getDate(),
     year: new Date().getFullYear()
   })
+  const date_value = ''
 
   //edit previous days to select the date and it will populate that date's meals
 
