@@ -91,9 +91,6 @@ function PreviousDays({ categories }) {
       ...currentDate,
       [e.target.id] : document.getElementById('day').value
     })
-    setFormData({
-      
-    })
   }
 
   function handleYearChange(e) {
