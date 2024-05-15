@@ -7,6 +7,7 @@ class CategoriesController < ApplicationController
 
     def date
         date_value = params[:created_at]
+        ##create empty array
         if date_value == created_at
             ##then push into new array
         end
