@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
     end
 
     def date
-        created_at = 
+        created_at = params[:created_at]
     end
 
     def show
