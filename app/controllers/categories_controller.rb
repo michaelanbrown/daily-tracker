@@ -8,7 +8,7 @@ class CategoriesController < ApplicationController
     def date
         date_value = params[:created_at]
         if
-            
+            date_value == created_at
         end
     end
 
