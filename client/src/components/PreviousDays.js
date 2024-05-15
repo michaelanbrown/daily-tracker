@@ -101,6 +101,9 @@ function PreviousDays({ categories }) {
       ...currentDate,
       [e.target.id] : document.getElementById('year').value
     })
+    setFormData({
+      
+    })
   }
 
   function onSubmit(e) {
