@@ -96,7 +96,7 @@ function PreviousDays({ categories }) {
 
   function onSubmit(e) {
     e.preventDefault()
-
+    const created_at = 
   }
 
   return (
