@@ -96,7 +96,7 @@ function PreviousDays({ categories }) {
 
   function onSubmit(e) {
     e.preventDefault()
-    const created_at = 
+    const created_at = currentDate['month'] + currentDate['day'] + ', ' + currentDate['year']
   }
 
   return (
