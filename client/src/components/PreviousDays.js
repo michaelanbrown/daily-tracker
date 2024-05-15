@@ -82,7 +82,7 @@ function PreviousDays({ categories }) {
       [e.target.id] : document.getElementById('month').value
     })
     setFormData({
-      
+
     })
   }
 
@@ -90,6 +90,9 @@ function PreviousDays({ categories }) {
     setCurrentDate({
       ...currentDate,
       [e.target.id] : document.getElementById('day').value
+    })
+    setFormData({
+      
     })
   }
 
