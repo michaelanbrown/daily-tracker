@@ -80,19 +80,25 @@ function PreviousDays({ categories }) {
     setCurrentDate({
       ...currentDate,
       [e.target.id] : document.getElementById('month').value
-  })}
+    })
+    setFormData({
+      
+    })
+  }
 
   function handleDayChange(e) {
     setCurrentDate({
       ...currentDate,
       [e.target.id] : document.getElementById('day').value
-  })}
+    })
+  }
 
   function handleYearChange(e) {
     setCurrentDate({
       ...currentDate,
       [e.target.id] : document.getElementById('year').value
-  })}
+    })
+  }
 
   function onSubmit(e) {
     e.preventDefault()
