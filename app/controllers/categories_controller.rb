@@ -13,6 +13,7 @@ class CategoriesController < ApplicationController
                 date_array.push(c)
             end
         end
+        render json: date_array
     end
 
     def show
