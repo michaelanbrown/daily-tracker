@@ -100,7 +100,7 @@ function PreviousDays({ categories }) {
     fetch(`/date/${date_value}`)
     .then(res => {
       if (res.ok) {
-        
+        res.json().then(setCurrentCategories)
       }
     })
   }
