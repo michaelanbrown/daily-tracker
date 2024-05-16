@@ -22,7 +22,6 @@ function PreviousDays({ categories }) {
     year: new Date().getFullYear()
   })
 
-
   function createYearArray(){
     var currentYear = new Date().getFullYear()
     var years = [];
