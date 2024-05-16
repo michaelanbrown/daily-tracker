@@ -8,7 +8,8 @@ class CategoriesController < ApplicationController
     def date
         date_value = params[:created_at]
         date_array = []
-        Category.all.each
+        Category.all.each do |c|
+        end
         if date_value == created_at
             ##then push into new array
         end
