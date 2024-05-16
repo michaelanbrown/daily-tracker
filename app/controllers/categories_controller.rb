@@ -14,7 +14,7 @@ class CategoriesController < ApplicationController
             end
         end
         if date_value == created_at
-            ##then push into new array
+            
         end
     end
 
