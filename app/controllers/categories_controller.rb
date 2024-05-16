@@ -12,6 +12,7 @@ class CategoriesController < ApplicationController
             if c.created_at == date_value
                 date_array.push(c)
             end
+            byebug
         end
         render json: date_array, status: :ok
     end
