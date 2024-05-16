@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
         date_value = params[:date_value]
         date_array = []
         Category.all.each do |c|
-            if c.created_at == date_value
+            if c.created_at.strftime("%B %d, %Y") == date_value
                 date_array.push(c)
             end
             byebug
