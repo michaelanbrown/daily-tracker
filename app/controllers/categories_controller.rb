@@ -9,7 +9,6 @@ class CategoriesController < ApplicationController
         date_value = params[:created_at]
         date_array = []
         Category.all.each
-        ##need to add for each item in Category
         if date_value == created_at
             ##then push into new array
         end
