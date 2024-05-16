@@ -12,7 +12,6 @@ class CategoriesController < ApplicationController
             if c.created_at.strftime("%B %d, %Y") == date_value
                 date_array.push(c)
             end
-            byebug
         end
         render json: date_array, status: :ok
     end
