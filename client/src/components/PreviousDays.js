@@ -97,7 +97,7 @@ function PreviousDays({ categories }) {
   function onSubmit(e) {
     e.preventDefault()
     const date_value = currentDate['month'] + ' ' + currentDate['day'] + ', ' + currentDate['year']
-    
+    fetch()
   }
 
   return (
