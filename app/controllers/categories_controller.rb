@@ -13,9 +13,6 @@ class CategoriesController < ApplicationController
                 date_array.push(c)
             end
         end
-        if date_value == created_at
-            
-        end
     end
 
     def show
