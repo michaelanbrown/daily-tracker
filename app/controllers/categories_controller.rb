@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
                 date_array.push(c)
             end
         end
-        render json: date_array
+        render json: date_array, status: :ok
     end
 
     def show
