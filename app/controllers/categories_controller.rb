@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
         date_value = params[:created_at]
         date_array = []
         Category.all.each do |c|
-            if
+            if c.created_at == date_value
             end
         end
         if date_value == created_at
