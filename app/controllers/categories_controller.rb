@@ -10,6 +10,7 @@ class CategoriesController < ApplicationController
         date_array = []
         Category.all.each do |c|
             if c.created_at == date_value
+                date_array.push(c)
             end
         end
         if date_value == created_at
