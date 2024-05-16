@@ -99,7 +99,7 @@ function PreviousDays({ categories }) {
     const date_value = currentDate['month'] + ' ' + currentDate['day'] + ', ' + currentDate['year']
     fetch(`/date/${date_value}`)
     .then(res => {
-      
+      console.log(res)
     })
   }
 
