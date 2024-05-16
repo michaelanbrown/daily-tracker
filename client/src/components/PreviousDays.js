@@ -101,6 +101,8 @@ function PreviousDays({ categories }) {
     .then(res => {
       if (res.ok) {
         res.json().then(setCurrentCategories)
+      } else {
+        res.json().then(json => setErrors(json.errors))
       }
     })
   }
