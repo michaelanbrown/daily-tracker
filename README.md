@@ -1,6 +1,6 @@
 # Welcome to Daily Tracker where you can keep track of the foods you like to eat and the macronutrients you have consumed in a day!
 
-This app will calculate certain macronutrients on the given day, and allows you to view previous days!
+This app will calculate certain macronutrients on the given day, and allows you to view previous days macronutrients!
 
 ## The following information is calculated:
 1. Calories
