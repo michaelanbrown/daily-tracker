@@ -154,4 +154,4 @@ The Category schema possesses the information regarding the name of the meal and
 ```
 
 ## Future Enhancements
-2. Create meals with your own ingredients
+1. Create meals with your own ingredients
