@@ -12,7 +12,6 @@ import Today from './components/Today';
 import FoodList from './components/FoodList';
 import PreviousDays from './components/PreviousDays';
 
-//edit readme
 
 function App() {
   const [users, setUsers] = useState([])
