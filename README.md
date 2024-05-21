@@ -155,7 +155,8 @@ The Category schema possesses the information regarding the name of the meal and
 
 ## Future Enhancements
 1. Create meals with your own ingredients
-  - Ingredients will include a food and a serving size of that food
-  - Ingredient will reference a food
+  - Ingredients model include a food and a serving size of that food
+  - Ingredients will reference a food
+  - Ingredient columns: reference to food, serving size
   - Recipe model that has_many ingredients
   - Recipe model will calculate the macros based on the ingredient food and serving size
