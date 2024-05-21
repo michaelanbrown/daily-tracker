@@ -158,3 +158,4 @@ The Category schema possesses the information regarding the name of the meal and
   - Recipe model that has_many ingredients
   - Ingredients will include a food and a servings size of that food
   - Recipe model will calculate the macros based on the ingredient food and serving size
+  - Ingredient will reference a food
