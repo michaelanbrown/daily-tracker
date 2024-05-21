@@ -160,4 +160,4 @@ The Category schema possesses the information regarding the name of the meal and
   - Ingredient columns: reference to food, reference to recipe, serving size
   - Recipe model that has_many ingredients
   - Recipe model will calculate the macros based on the ingredient food and serving size
-  - Recipe columns: 
+  - Recipe columns: name, calories, fats, carbs, sugars, added_sugars, protein
