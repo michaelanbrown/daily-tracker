@@ -9,6 +9,7 @@ function Welcome( { errors } ) {
   }
 
   function clickLogin() {
+    navigate("/login")
   }
 
   return (
