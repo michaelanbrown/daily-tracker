@@ -5,7 +5,7 @@ function Welcome( { errors } ) {
   const navigate = useNavigate()
 
   function clickSignUp() {
-
+    navigate("/signup")
   }
 
   return (
