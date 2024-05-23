@@ -18,7 +18,7 @@ function Welcome( { errors } ) {
       <br/>
       <button className="welcome" onClick={clickSignUp}>Signup</button>
       &nbsp;
-      <button className="welcome">Login</button>
+      <button className="welcome" onClick={clickLogin}>Login</button>
       { errors ? <br/> : null }
       { errors.length !==0 ? <div className='error' >
       { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
