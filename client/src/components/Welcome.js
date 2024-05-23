@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 function Welcome( { errors } ) {
   const navigate = useNavigate()
 
+  function clickSignUp() {
+    
+  }
 
   return (
     <div>
