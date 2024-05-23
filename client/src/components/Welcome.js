@@ -19,6 +19,9 @@ function Welcome( { errors } ) {
       <br/>
       <button className="welcome" onClick={clickSignUp}>Signup</button>
       &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
       <button className="welcome" onClick={clickLogin}>Login</button>
       { errors ? <br/> : null }
       { errors.length !==0 ? <div className='error' >
