@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import { useCurrentUser } from './components/context/User';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { useNavigate } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Welcome from './components/Welcome';
