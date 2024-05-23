@@ -8,17 +8,6 @@ export default function NavBar ({ isLoading })  {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const navigate = useNavigate()
 
-  function handleLogout() {
-    fetch(`/logout`, {
-      method:"DELETE"
-    })
-    .then(res =>{
-      if(res.ok){
-        fetchCurrentUser()
-        navigate(`/`)
-      }
-    })
-  }
 
     return (
       isLoading ? "Loading..." : <nav className='NavBar'>
