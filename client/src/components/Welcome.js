@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 
 function Welcome( { errors } ) {
+  const navigate = useNavigate()
+
 
   return (
     <div>
