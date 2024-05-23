@@ -65,6 +65,18 @@ function App() {
     })
   }
 
+  function handleLogout() {
+    fetch(`/logout`, {
+      method:"DELETE"
+    })
+    .then(res =>{
+      if(res.ok){
+        fetchCurrentUser()
+        navigate(`/`)
+      }
+    })
+  }
+
   return (
     <div className="App">
       <Router>
