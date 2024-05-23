@@ -8,6 +8,9 @@ function Welcome( { errors } ) {
     navigate("/signup")
   }
 
+  function clickLogin() {
+  }
+
   return (
     <div>
       <br/>
