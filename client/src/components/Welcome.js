@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import { useCurrentUser } from './components/context/User';
+import { useCurrentUser } from "./context/User";
 
 function Welcome( { errors } ) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
