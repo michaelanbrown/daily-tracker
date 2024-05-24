@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 import { useCurrentUser } from "./context/User";
 
-function Welcome( { errors, isLoading } ) {
+function Welcome( { errors } ) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const navigate = useNavigate()
 
@@ -13,8 +13,6 @@ function Welcome( { errors, isLoading } ) {
   function clickLogin() {
     navigate("/login")
   }
-
-  console.log(isLoading)
 
   return (
     <div>
