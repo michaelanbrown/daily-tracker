@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useCurrentUser } from './components/context/User';
 
 function Welcome( { errors } ) {
+  const { currentUser, fetchCurrentUser } = useCurrentUser()
   const navigate = useNavigate()
 
   function clickSignUp() {
