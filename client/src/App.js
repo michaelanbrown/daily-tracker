@@ -69,7 +69,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header isLoading={isLoading}/>
+        <Header isLoading={isLoading} setIsLoading={setIsLoading}/>
         <Routes>
           <Route exact path='/login' element={<Login getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} setIsLoading={setIsLoading}/>}/>
           <Route exact path='/signup' element={<Signup getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} users={users} setUsers={setUsers} setIsLoading={setIsLoading}/>}/>
