@@ -70,7 +70,7 @@ function App() {
       <Router>
         <Header isLoading={isLoading} setIsLoading={setIsLoading}/>
         <Routes>
-          <Route exact path='/login' element={<Login getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} isLoading={isLoading} setIsLoading={setIsLoading}/>}/>
+          <Route exact path='/login' element={<Login getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} setIsLoading={setIsLoading}/>}/>
           <Route exact path='/signup' element={<Signup getUsers={getUsers} getFoods={getFoods} getCategories={getCategories} users={users} setUsers={setUsers} isLoading={isLoading} setIsLoading={setIsLoading}/>}/>
           <Route exact path='/' element={<Welcome errors={errors} isLoading={isLoading}/>}/>
           <Route exact path='/food' element={<Food foods={foods}/>}/>
