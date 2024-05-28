@@ -15,7 +15,6 @@ export default function NavBar ({ isLoading, setIsLoading })  {
     .then(res =>{
       if(res.ok){
         fetchCurrentUser()
-        setIsLoading(true)
         navigate(`/`)
       }
     })
