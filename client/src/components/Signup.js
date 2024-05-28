@@ -33,6 +33,7 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers, setIsLoadi
         .then(res => {
             if(res.ok){
                 res.json().then(user => {
+                    setIsLoading(false)
                     fetchCurrentUser(user)
                     setUsers([...users, user])
                     getUsers()
