@@ -9,7 +9,7 @@ function Header({ isLoading }) {
         <div>
             <h1>🍪 Daily Tracker 🍪</h1>
             <h2>Track your intake here for a happier, healthier you.</h2>
-            <NavBar isLoading={isLoading} setIsLoading={setIsLoading}/>
+            <NavBar isLoading={isLoading}/>
         </div>  
       </header>
     </div>
