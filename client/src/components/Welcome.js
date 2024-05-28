@@ -14,8 +14,6 @@ function Welcome( { errors, isLoading } ) {
     navigate("/login")
   }
 
-  console.log(currentUser)
-
   return (
     <div>
       <br/>
