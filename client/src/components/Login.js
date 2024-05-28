@@ -27,6 +27,7 @@ function Login({ getUsers, getFoods, getCategories, isLoading, setIsLoading }) {
         })
         .then(res => {
             if (res.ok) {
+                setIsLoading(false)
                 fetchCurrentUser()
                 getUsers()
                 getFoods()
