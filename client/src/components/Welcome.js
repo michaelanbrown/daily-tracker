@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 import { useCurrentUser } from "./context/User";
 
-function Welcome( { errors } ) {
+function Welcome( { errors, isLoading } ) {
   const { currentUser, fetchCurrentUser } = useCurrentUser()
   const navigate = useNavigate()
 
