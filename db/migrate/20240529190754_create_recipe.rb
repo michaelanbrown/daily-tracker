@@ -7,7 +7,7 @@ class CreateRecipe < ActiveRecord::Migration[6.1]
       t.float :carbs, default: 0
       t.float :sugars, default: 0
       t.float :added_sugars, default: 0
-      t.float :protein
+      t.float :protein, default: 0
 
       t.timestamps
     end
