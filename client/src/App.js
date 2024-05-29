@@ -10,8 +10,7 @@ import Food from './components/Food';
 import NewFood from './components/NewFood';
 import Today from './components/Today';
 import FoodList from './components/FoodList';
-import PreviousDays from './components/PreviousDays';
-//use setIsLoading in login and sign up to have login/sign up buttons disappear
+import PreviousDays from './components/PreviousDays'
 
 function App() {
   const [users, setUsers] = useState([])
