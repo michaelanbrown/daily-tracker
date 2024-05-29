@@ -2,7 +2,7 @@ class CreateRecipe < ActiveRecord::Migration[6.1]
   def change
     create_table :recipes do |t|
       t.string :name
-      t.float :calories
+      t.float :calories, default: 0
       t.float :fats
       t.float :carbs
       t.float :sugars
