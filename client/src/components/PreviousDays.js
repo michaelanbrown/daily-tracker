@@ -106,8 +106,6 @@ function PreviousDays({ categories }) {
     })
   }
 
-  console.log(currentCategories)
-
   return (
     <div>
       <br/>
