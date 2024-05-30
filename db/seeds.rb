@@ -13,8 +13,3 @@ f3 = Food.create(name: "Turkey Pepperoni", brand: "Great Value", calories: 70, f
 u1 = User.create(name: "Michaela", age: 24, email: "michaela.brown375@gmail.com", username: "michaelanbrown", password: "owner")
 
 c1 = Category.create(meal: "Breakfast", servings: 1.5, food_id: f1.id, user_id: u1.id)
-
-r1 = Recipe.create(name: "Potato Bowl")
-
-i1 = Ingredient.create(serving_size: 1, food: f2.id, recipe: r1.id)
-i2 = Ingredient.create(serving_size: 1, food: f3.id, recipe: r1.id)
