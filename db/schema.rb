@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_04_16_205221) do
+ActiveRecord::Schema.define(version: 2024_05_29_190914) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,28 @@ ActiveRecord::Schema.define(version: 2024_04_16_205221) do
     t.string "brand"
   end
 
+  create_table "ingredients", force: :cascade do |t|
+    t.float "serving_size"
+    t.bigint "food_id", null: false
+    t.bigint "recipe_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["food_id"], name: "index_ingredients_on_food_id"
+    t.index ["recipe_id"], name: "index_ingredients_on_recipe_id"
+  end
+
+  create_table "recipes", force: :cascade do |t|
+    t.string "name"
+    t.float "calories", default: 0.0
+    t.float "fats", default: 0.0
+    t.float "carbs", default: 0.0
+    t.float "sugars", default: 0.0
+    t.float "added_sugars", default: 0.0
+    t.float "protein", default: 0.0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "age"
@@ -51,4 +73,6 @@ ActiveRecord::Schema.define(version: 2024_04_16_205221) do
 
   add_foreign_key "categories", "foods"
   add_foreign_key "categories", "users"
+  add_foreign_key "ingredients", "foods"
+  add_foreign_key "ingredients", "recipes"
 end
