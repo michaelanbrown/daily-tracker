@@ -4,4 +4,6 @@ class CreateIngredientsController < ApplicationController
         
     end
 
+    private
+
 end
