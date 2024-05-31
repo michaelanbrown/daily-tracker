@@ -4,4 +4,6 @@ class CreateRecipesController < ApplicationController
         recipe = Recipe.create!
     end
 
+    private
+
 end
