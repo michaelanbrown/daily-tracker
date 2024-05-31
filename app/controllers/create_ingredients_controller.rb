@@ -6,4 +6,8 @@ class CreateIngredientsController < ApplicationController
 
     private
 
+    def ingredient_params
+        
+    end
+
 end
