@@ -1,6 +1,6 @@
-class CreateCreateIngredients < ActiveRecord::Migration[6.1]
+class CreateIngredients < ActiveRecord::Migration[6.1]
   def change
-    create_table :create_ingredients do |t|
+    create_table :ingredients do |t|
       t.float :serving_size
       t.references :food
       t.references :recipe
