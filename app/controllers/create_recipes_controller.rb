@@ -2,6 +2,7 @@ class CreateRecipesController < ApplicationController
 
     def create
         recipe = Recipe.create!(recipe_params)
+        render json: recipe, status: :created
     end
 
     private
