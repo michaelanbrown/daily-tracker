@@ -1,7 +1,7 @@
 class CreateIngredientsController < ApplicationController
 
     def create
-        
+        ingredient = Ingredient.create!(ingredient_params_params)
     end
 
     private
