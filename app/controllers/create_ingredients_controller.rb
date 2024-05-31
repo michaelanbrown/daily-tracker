@@ -2,6 +2,7 @@ class CreateIngredientsController < ApplicationController
 
     def create
         ingredient = Ingredient.create!(ingredient_params_params)
+        render json: ingredient, status: :created
     end
 
     private
