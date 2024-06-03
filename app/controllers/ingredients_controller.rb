@@ -1,4 +1,4 @@
-class CreateIngredientsController < ApplicationController
+class IngredientsController < ApplicationController
 
     def create
         ingredient = Ingredient.create!(ingredient_params_params)
