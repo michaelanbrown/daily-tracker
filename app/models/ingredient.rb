@@ -1,2 +1,2 @@
-class CreateIngredient < ApplicationRecord
+class Ingredient < ApplicationRecord
 end
