@@ -1,4 +1,4 @@
-class CreateRecipesController < ApplicationController
+class RecipesController < ApplicationController
 
     def create
         recipe = Recipe.create!(recipe_params)
