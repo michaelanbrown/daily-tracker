@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_05_29_190754) do
+ActiveRecord::Schema.define(version: 2024_05_31_213322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,14 +39,24 @@ ActiveRecord::Schema.define(version: 2024_05_29_190754) do
     t.string "brand"
   end
 
+  create_table "ingredients", force: :cascade do |t|
+    t.float "serving_size"
+    t.bigint "food_id"
+    t.bigint "recipe_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["food_id"], name: "index_ingredients_on_food_id"
+    t.index ["recipe_id"], name: "index_ingredients_on_recipe_id"
+  end
+
   create_table "recipes", force: :cascade do |t|
     t.string "name"
-    t.float "calories", default: 0.0
-    t.float "fats", default: 0.0
-    t.float "carbs", default: 0.0
-    t.float "sugars", default: 0.0
-    t.float "added_sugars", default: 0.0
-    t.float "protein", default: 0.0
+    t.float "calories"
+    t.float "fats"
+    t.float "carbs"
+    t.float "sugars"
+    t.float "added_sugars"
+    t.float "protein"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
