@@ -12,6 +12,7 @@ class IngredientsController < ApplicationController
 
     def update
         @ingredient.update!(update_ingredient_params)
+        render json: @ingredient, status: :accepted
     end
 
     private
