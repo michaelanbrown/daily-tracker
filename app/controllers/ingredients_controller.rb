@@ -1,4 +1,5 @@
 class IngredientsController < ApplicationController
+    before_action :find_ingredient
 
     def index
         render json: Ingredient.all, status: :ok
