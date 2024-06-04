@@ -4,6 +4,10 @@ class RecipesController < ApplicationController
         render json: Recipe.all, status: :ok
     end
 
+    def show
+
+    end
+
     def create
         recipe = Recipe.create!(recipe_params)
         render json: recipe, status: :created
