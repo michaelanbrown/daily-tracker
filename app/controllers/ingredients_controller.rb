@@ -10,6 +10,9 @@ class IngredientsController < ApplicationController
         render json: ingredient, status: :created
     end
 
+    def update
+    end
+
     private
 
     def ingredient_params
