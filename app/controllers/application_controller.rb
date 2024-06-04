@@ -30,7 +30,7 @@ class ApplicationController < ActionController::API
   end
 
   def find_ingredient
-
+    @ingredient = Ingredient.find(params[:id])
   end
 
   def render_unprocessable_entity_response(exception)
