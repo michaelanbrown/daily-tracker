@@ -21,7 +21,7 @@ class IngredientsController < ApplicationController
     end
 
     def update_ingredient_params
-        
+        params.permit(:serving_size)
     end
 
 end
