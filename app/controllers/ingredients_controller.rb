@@ -20,4 +20,8 @@ class IngredientsController < ApplicationController
         params.permit(:serving_size, :food_id, :recipe_id)
     end
 
+    def update_ingredient_params
+        
+    end
+
 end
