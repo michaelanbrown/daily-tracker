@@ -1,5 +1,9 @@
 class IngredientsController < ApplicationController
 
+    def index
+        
+    end
+
     def create
         ingredient = Ingredient.create!(ingredient_params_params)
         render json: ingredient, status: :created
