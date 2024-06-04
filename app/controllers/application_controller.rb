@@ -29,6 +29,10 @@ class ApplicationController < ActionController::API
     @recipe = Recipe.find(params[:id])
   end
 
+  def find_ingredient
+
+  end
+
   def render_unprocessable_entity_response(exception)
     render json: { errors: exception.record.errors.full_messages }, status: :unprocessable_entity
   end
