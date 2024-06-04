@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
     end
 
     def show
-
+        render json: @recipe, status: :ok
     end
 
     def create
