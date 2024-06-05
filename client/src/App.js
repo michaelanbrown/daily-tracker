@@ -66,6 +66,11 @@ function App() {
 
   function getRecipes() {
     fetch("/recipes")
+    .then(res => {
+      if (res.ok) {
+        
+      }
+    })
   }
 
   return (
