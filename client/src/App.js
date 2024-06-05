@@ -70,6 +70,8 @@ function App() {
     .then(res => {
       if (res.ok) {
         res.json().then(setRecipes)
+      } else {
+        
       }
     })
   }
