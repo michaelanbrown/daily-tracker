@@ -28,6 +28,7 @@ function App() {
     getUsers()
     getFoods()
     getCategories()
+    getRecipes()
   },[])
 
   function getUsers() {
