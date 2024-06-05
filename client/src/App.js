@@ -64,6 +64,10 @@ function App() {
     })
   }
 
+  function getRecipes() {
+    
+  }
+
   return (
     <div className="App">
       <Router>
