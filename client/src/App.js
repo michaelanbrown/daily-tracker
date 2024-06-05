@@ -69,7 +69,7 @@ function App() {
     fetch("/recipes")
     .then(res => {
       if (res.ok) {
-
+        res.json().then(setRecipes)
       }
     })
   }
