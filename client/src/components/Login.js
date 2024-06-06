@@ -32,6 +32,7 @@ function Login({ getUsers, getFoods, getRecipes, getCategories, setIsLoading }) 
                 getUsers()
                 getFoods()
                 getCategories()
+                getRecipes()
                 navigate("/")
             }
              else {
