@@ -39,6 +39,7 @@ function Signup({ getUsers, getFoods, getRecipes, getCategories, users, setUsers
                     getUsers()
                     getFoods()
                     getCategories()
+                    getRecipes()
                     navigate("/")
                 })
             } else {
