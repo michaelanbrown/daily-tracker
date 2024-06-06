@@ -1,4 +1,5 @@
 import React from "react";
+import IngredientShow from "./IngredientShow";
 
 function RecipeShow(  ) {
   //want to be able to edit the recipe
