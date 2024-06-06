@@ -1,4 +1,5 @@
 import React from "react";
+import RecipeShow from "./RecipeShow";
 
 function Recipes( { recipes } ) {
     //want to be able to click into a recipe
