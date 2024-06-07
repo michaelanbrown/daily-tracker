@@ -85,7 +85,7 @@ function App() {
       if (res.ok) {
         res.json().then(setIngredients)
       } else {
-        
+        res.json().then(json => setErrors([...errors, json.error]))
       }
     })
   }
