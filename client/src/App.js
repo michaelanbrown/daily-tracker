@@ -79,6 +79,10 @@ function App() {
     })
   }
 
+  function getIngredients() {
+    
+  }
+
   return (
     <div className="App">
       <Router>
