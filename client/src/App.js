@@ -80,7 +80,8 @@ function App() {
   }
 
   function getIngredients() {
-    
+    fetch("/ingredients")
+    .
   }
 
   return (
