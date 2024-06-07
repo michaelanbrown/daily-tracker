@@ -81,7 +81,11 @@ function App() {
 
   function getIngredients() {
     fetch("/ingredients")
-    .
+    .then(res => {
+      if (res.ok) {
+        
+      }
+    })
   }
 
   return (
