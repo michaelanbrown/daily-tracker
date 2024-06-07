@@ -18,6 +18,7 @@ function App() {
   const [foods, setFoods] = useState([])
   const [categories, setCategories] = useState([])
   const [recipes, setRecipes] = useState([])
+  const [ingredients, setIngredients] 
   const [errors, setErrors] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const { currentUser, fetchCurrentUser } = useCurrentUser()
