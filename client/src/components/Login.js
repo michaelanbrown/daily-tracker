@@ -3,7 +3,7 @@ import '../App.css'
 import { useCurrentUser } from './context/User'
 import { useNavigate } from "react-router-dom"
 
-function Login({ getUsers, getFoods, getRecipes, getCategories, setIsLoading }) {
+function Login({ getUsers, getFoods, getRecipes, getIngredients, getCategories, setIsLoading }) {
     const [errors, setErrors] = useState([])
     const [formData, setFormData] = useState({
         username: "",
