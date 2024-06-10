@@ -12,6 +12,7 @@ import Today from './components/Today';
 import FoodList from './components/FoodList';
 import PreviousDays from './components/PreviousDays'
 import Recipes from './components/Recipes';
+import Ingredients from './components/Ingredients';
 
 function App() {
   const [users, setUsers] = useState([])
