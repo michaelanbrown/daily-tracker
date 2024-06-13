@@ -18,3 +18,6 @@ r1 = Recipe.create(name: "Potato Bowl")
 
 i1 = Ingredient.create(serving_size: 1, food_id: f2.id, recipe_id: r1.id)
 i2 = Ingredient.create(serving_size: 1, food_id: f3.id, recipe_id: r1.id)
+
+# i1 = Ingredient.create(serving_size: 1, food_id: f2.id, recipe_id: r1.id)
+# i2 = Ingredient.create(serving_size: 1, food_id: f3.id, recipe_id: r1.id)
