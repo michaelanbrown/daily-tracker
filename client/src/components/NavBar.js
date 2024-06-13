@@ -36,6 +36,7 @@ export default function NavBar ({ isLoading })  {
         { currentUser ? <NavLink className="Navelements" to="/recipes">Recipes</NavLink> : null }
         { currentUser ? <br/> : null }
         { currentUser ? <NavLink className="Navelements" to="/ingredients">Ingredients</NavLink> : null }
+        { currentUser ? <br/> : null }
         { currentUser ? <button className="logout" onClick={handleLogout}>Logout</button> : null }
       </nav>
     )
