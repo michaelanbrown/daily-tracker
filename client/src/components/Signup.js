@@ -3,7 +3,7 @@ import { useCurrentUser } from './context/User';
 import '../App.css'
 import { useNavigate } from 'react-router-dom';
 
-function Signup({ getUsers, getFoods, getCategories, users, setUsers, setIsLoading }) {
+function Signup({ getUsers, getFoods, getRecipes, getIngredients, getCategories, users, setUsers, setIsLoading }) {
     const { currentUser, fetchCurrentUser } = useCurrentUser()
     const [errors, setErrors] = useState([])
     const [formData, setFormData] = useState({
@@ -39,6 +39,8 @@ function Signup({ getUsers, getFoods, getCategories, users, setUsers, setIsLoadi
                     getUsers()
                     getFoods()
                     getCategories()
+                    getRecipes()
+                    getIngredients()
                     navigate("/")
                 })
             } else {
