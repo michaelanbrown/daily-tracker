@@ -25,7 +25,7 @@ function Welcome( { errors, isLoading } ) {
       &nbsp;
       &nbsp;
       { currentUser && isLoading === false ? null : <button className="welcome" onClick={clickLogin}>Login</button>}
-      { errors ? <br/> : null }
+      { errors ? errors.map(error => <br/>) : null }
       { errors.length !==0 ? <div className='error' >
       { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
       </div> : null }
