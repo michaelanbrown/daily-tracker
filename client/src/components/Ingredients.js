@@ -8,7 +8,9 @@ function Ingredients( { ingredients } ) {
 
     const ingredientMap = ingredients.map( ingredient => {
       return <div>
-        <Route path={`ingredients/${recipe.id}`} element={<IngredientShowShow/>}/>
+        <Routes>
+          <Route path={`ingredients/${recipe.id}`} element={<IngredientShowShow/>}/>
+        </Routes>
       </div>
     })
 
