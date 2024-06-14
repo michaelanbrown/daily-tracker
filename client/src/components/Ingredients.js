@@ -17,7 +17,7 @@ function Ingredients( { ingredients } ) {
 
   return (
     <div>
-      
+      {ingredientMap}
     </div>
   );
 }
