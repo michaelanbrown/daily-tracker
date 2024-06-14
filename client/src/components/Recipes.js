@@ -11,7 +11,7 @@ function Recipes( { recipes } ) {
 
   return (
     <div>
-      
+      {recipeMap}
     </div>
   );
 }
