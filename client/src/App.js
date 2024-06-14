@@ -34,6 +34,7 @@ function App() {
     getFoods()
     getCategories()
     getRecipes()
+    getIngredients()
   },[])
 
   function getUsers() {
