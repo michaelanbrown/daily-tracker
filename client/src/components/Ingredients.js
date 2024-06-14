@@ -10,7 +10,7 @@ function Ingredients( { ingredients } ) {
       return <div key={ingredient.id}>
         <Link to={`${ingredient.id}`}>{ingredient.name}</Link>
         <Routes>
-          <Route path={`ingredients/${recipe.id}`} element={<IngredientShow/>}/>
+          <Route path={`ingredients/${ingredient.id}`} element={<IngredientShow/>}/>
         </Routes>
       </div>
     })
