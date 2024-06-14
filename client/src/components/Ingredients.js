@@ -1,6 +1,6 @@
 import React from "react";
 import IngredientShow from "./IngredientShow";
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function Ingredients( { ingredients } ) {
     //will want to be able to edit ingredient serving size
