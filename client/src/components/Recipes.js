@@ -6,9 +6,9 @@ function Recipes( { recipes } ) {
     //want to be able to click into a recipe
     //want to be able to create a new recipe
     const recipeMap = recipes.map(recipe => {
-      return <Routes key={recipe.id}>
+      return <><Routes key={recipe.id}>
       <Route path={`recipes/${recipe.id}`} element={<RecipeShow/>}/>
-        </Routes>
+        </Routes></>
     })
 
   return (
