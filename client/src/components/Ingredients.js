@@ -9,7 +9,7 @@ function Ingredients( { ingredients } ) {
     const ingredientMap = ingredients.map( ingredient => {
       return <div key={ingredient.id}>
         <Routes>
-          <Route path={`ingredients/${recipe.id}`} element={<IngredientShowShow/>}/>
+          <Route path={`ingredients/${recipe.id}`} element={<IngredientShow/>}/>
         </Routes>
       </div>
     })
