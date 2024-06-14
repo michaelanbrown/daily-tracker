@@ -1,6 +1,6 @@
 import React from "react";
 import RecipeShow from "./RecipeShow";
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function Recipes( { recipes } ) {
     //want to be able to click into a recipe
