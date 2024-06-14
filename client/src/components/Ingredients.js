@@ -7,7 +7,7 @@ function Ingredients( { ingredients } ) {
     //will be able to see all ingredients and click into each one
 
     const ingredientMap = ingredients.map( ingredient => {
-      return <div>
+      return <div key={ingredient.id}>
         <Routes>
           <Route path={`ingredients/${recipe.id}`} element={<IngredientShowShow/>}/>
         </Routes>
