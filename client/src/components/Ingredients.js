@@ -9,7 +9,7 @@ function Ingredients( { ingredients } ) {
 
     const ingredientMap = ingredients.map(ingredient => {
       return <div key={ingredient.id}>
-        <Link to={`${ingredient.id}`}>{ingredient.name}</Link>
+        <Link to={`${ingredient.id}`}>{ingredient.food_id}</Link>
         <Routes>
           <Route path={`ingredients/${ingredient.id}`} element={<IngredientShow/>}/>
         </Routes>
