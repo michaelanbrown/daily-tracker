@@ -8,7 +8,7 @@ function Ingredients( { ingredients } ) {
 
     const ingredientMap = ingredients.map( ingredient => {
       return <div>
-
+        <Route path={`ingredients/${recipe.id}`}/>
       </div>
     })
 
