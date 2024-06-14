@@ -7,7 +7,7 @@ function Recipes( { recipes } ) {
     //want to be able to create a new recipe
     const recipeMap = recipes.map(recipe => {
       return <>
-      <Link to={`${recipe.id}`}></Link>
+      <Link to={`${recipe.id}`}>{recipe.name}</Link>
       <Routes key={recipe.id}>
         <Route path={`recipes/${recipe.id}`} element={<RecipeShow/>}/>
       </Routes></>
