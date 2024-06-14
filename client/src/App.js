@@ -36,7 +36,6 @@ function App() {
     getRecipes()
     getIngredients()
   },[])
-  console.log(ingredients)
 
   function getUsers() {
     fetch("/users")
