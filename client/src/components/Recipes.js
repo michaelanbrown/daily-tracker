@@ -9,7 +9,7 @@ function Recipes( { recipes } ) {
       return <div key={recipe.id}>
       <Link to={`${recipe.id}`}>{recipe.name}</Link>
       <Routes>
-        <Route path={`recipes/${recipe.id}`} element={<RecipeShow recipe={recipe}/>}/>
+        <Route path={`recipes/${recipe.id}`} element={<RecipeShow recipes={recipes} recipe={recipe}/>}/>
       </Routes></div>
     })
 
