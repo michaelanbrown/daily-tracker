@@ -1,6 +1,6 @@
 import React from "react";
 
-function IngredientShow( { ingredient } ) {
+function IngredientShow( { ingredients, ingredient } ) {
     //will want to be able to edit ingredient serving size
 
   return (
