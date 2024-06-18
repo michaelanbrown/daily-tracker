@@ -11,6 +11,7 @@ function RecipeShow( { recipes } ) {
 
     useEffect(() => {
       fetch(`recipes/${id}`)
+      .then()
     },[])
 
 
