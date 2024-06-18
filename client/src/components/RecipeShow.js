@@ -9,7 +9,7 @@ function RecipeShow( { recipes } ) {
     //add a new ingredient or be able to edit ingredient serving size
 
     useEffect(() => {
-      fetch(`recipes/$`)
+      fetch(`recipes/${id}`)
     },[])
 
 
