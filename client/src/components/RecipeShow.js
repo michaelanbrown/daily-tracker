@@ -1,5 +1,6 @@
 import React from "react";
 import IngredientShow from "./IngredientShow";
+import { useEffect } from 'react';
 
 function RecipeShow( { recipes } ) {
   //want to be able to edit the recipe
