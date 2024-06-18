@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 
 function RecipeShow( { recipes } ) {
-  const { id }
+  const { id } = useParams()
   //want to be able to edit the recipe
     //add a new ingredient or be able to edit ingredient serving size
 
