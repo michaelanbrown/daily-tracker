@@ -4,7 +4,7 @@ import { Route, Routes, Link } from "react-router-dom";
 
 function Recipes( { recipes } ) {
     //want to be able to create a new recipe
-    console.log(recipe)
+    
     const recipeMap = recipes.map(recipe => {
       return <div key={recipe.id}>
       <Link to={`${recipe.id}`}>{recipe.name}</Link>
