@@ -11,7 +11,11 @@ function RecipeShow( { recipes } ) {
 
     useEffect(() => {
       fetch(`recipes/${id}`)
-      .then()
+      .then(res=> {
+        if (res.k) {
+          
+        }
+      })
     },[])
 
 
