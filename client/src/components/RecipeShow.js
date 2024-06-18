@@ -8,7 +8,7 @@ function RecipeShow( { recipes } ) {
 
     useEffect(() => {
       
-    },)
+    },[])
 
 
   return (
