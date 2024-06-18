@@ -13,7 +13,9 @@ function RecipeShow( { recipes } ) {
       fetch(`recipes/${id}`)
       .then(res=> {
         if (res.ok) {
-
+          res.json().then(res => {
+            setRecipe(res)
+          })
         }
       })
     },[])
