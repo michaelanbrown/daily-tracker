@@ -11,7 +11,7 @@ function RecipeShow( { recipes } ) {
     //add a new ingredient or be able to edit ingredient serving size
 
     useEffect(() => {
-      fetch(`recipes/${id}`)
+      fetch(`${id}`)
       .then(res=> {
         if (res.ok) {
           res.json().then(res => {
