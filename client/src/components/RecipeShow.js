@@ -9,6 +9,7 @@ function RecipeShow( { recipes } ) {
   const [errors, setErrors] = useState([])
   //want to be able to edit the recipe
     //add a new ingredient or be able to edit ingredient serving size
+    console.log(recipe)
 
     useEffect(() => {
       fetch(`${id}`)

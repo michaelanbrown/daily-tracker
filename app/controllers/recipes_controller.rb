@@ -14,6 +14,9 @@ class RecipesController < ApplicationController
         render json: recipe, status: :created
     end
 
+    def update
+    end
+
     private
     
     def recipe_params
