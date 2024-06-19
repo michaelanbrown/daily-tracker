@@ -9,7 +9,7 @@ class IngredientsController < ApplicationController
         ingredient = Ingredient.create!(ingredient_params)
         recipe = Recipe.find(params[:recipe_id])
         food = Food.find(params[:food_id])
-        recipe.update!(calories: food[:calories]*params[:serving_size], fats: food[:fats]*params[:serving_size], carbs: food[:carbs]*params[:serving_size], sugars: food[:sugars]*params[:serving_size])
+        recipe.update!(calories: food[:calories]*params[:serving_size], fats: food[:fats]*params[:serving_size], carbs: food[:carbs]*params[:serving_size], added_sugars: food[:added_sugars]*params[:serving_size], sugars)
         byebug
         render json: ingredient, status: :created
     end
