@@ -16,6 +16,7 @@ class RecipesController < ApplicationController
 
     def update
         @recipe.update!(update_recipe_params)
+        render json: @recipe, status: :accepted
     end
 
     private
