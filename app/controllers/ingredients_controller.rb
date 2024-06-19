@@ -7,6 +7,7 @@ class IngredientsController < ApplicationController
 
     def create
         ingredient = Ingredient.create!(ingredient_params)
+        recipe = Recipe.find(params[:recipe_id])
         byebug
         render json: ingredient, status: :created
     end
