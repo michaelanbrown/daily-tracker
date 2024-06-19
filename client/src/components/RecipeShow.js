@@ -16,8 +16,10 @@ function RecipeShow( { recipes } ) {
         if (res.ok) {
           res.json().then(res => {
             setRecipe(res)
-          })
-        }
+          })}
+          else {
+            
+          }
       })
     },[])
 
