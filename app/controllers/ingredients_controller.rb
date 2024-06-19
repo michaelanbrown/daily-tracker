@@ -6,7 +6,7 @@ class IngredientsController < ApplicationController
     end
 
     def create
-        ingredient = Ingredient.create!(update_ingredient_params)
+        ingredient = Ingredient.create!(ingredient_params)
         render json: ingredient, status: :created
     end
 
