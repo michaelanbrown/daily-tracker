@@ -15,7 +15,7 @@ class RecipesController < ApplicationController
     end
 
     def update
-        
+        @recipe.update!(update_recipe_params)
     end
 
     private
