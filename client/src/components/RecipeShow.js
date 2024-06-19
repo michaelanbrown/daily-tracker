@@ -18,7 +18,7 @@ function RecipeShow( { recipes } ) {
             setRecipe(res)
           })}
           else {
-            
+            res.json().then(json => setErrors([...errors, json.error]))
           }
       })
     },[])
