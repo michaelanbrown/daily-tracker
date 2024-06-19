@@ -23,7 +23,6 @@ function RecipeShow( { recipes } ) {
       })
     },[])
 
-console.log(recipe)
   return (
     <div>
       
