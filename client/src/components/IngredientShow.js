@@ -11,7 +11,9 @@ function IngredientShow( { ingredients } ) {
       fetch(`${id}`)
       .then(res => {
         if (res.ok) {
-          
+          res.json().then(res => {
+            
+          })
         }
       })
     }, [])
