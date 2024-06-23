@@ -9,6 +9,7 @@ function IngredientShow( { ingredients } ) {
 
     useEffect(() => {
       fetch(`${id}`)
+      .then()
     }, [])
 
   return (
