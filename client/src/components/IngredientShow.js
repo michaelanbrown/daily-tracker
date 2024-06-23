@@ -13,7 +13,7 @@ function IngredientShow( { ingredients } ) {
       .then(res => {
         if (res.ok) {
           res.json().then(res => {
-
+            setIngredient(res)
           })
         }
       })
