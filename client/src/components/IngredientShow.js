@@ -8,7 +8,7 @@ function IngredientShow( { ingredients } ) {
     const [errors, setErrors] = useState([])
 
     useEffect(() => {
-
+      fetch()
     }, [])
 
   return (
