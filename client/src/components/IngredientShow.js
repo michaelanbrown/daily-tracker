@@ -16,6 +16,9 @@ function IngredientShow( { ingredients } ) {
             setIngredient(res)
           })
         }
+        else {
+          
+        }
       })
     }, [])
 
