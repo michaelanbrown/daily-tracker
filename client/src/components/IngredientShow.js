@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from 'react';
 
 function IngredientShow( { ingredients, ingredient } ) {
     //will want to be able to edit ingredient serving size
