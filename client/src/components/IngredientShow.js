@@ -6,7 +6,7 @@ function IngredientShow( { ingredients } ) {
     //will want to be able to edit ingredient serving size
     const { id } = useParams()
     const [errors, setErrors] = useState([])
-    const [ingredient, setIngredient]
+    const [ingredient, setIngredient] = useState({})
 
     useEffect(() => {
       fetch(`${id}`)
