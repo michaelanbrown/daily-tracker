@@ -17,7 +17,7 @@ function IngredientShow( { ingredients } ) {
           })
         }
         else {
-          
+          res.json().then(json => setErrors([...errors, json.error]))
         }
       })
     }, [])
