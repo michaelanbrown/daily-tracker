@@ -8,8 +8,8 @@ function IngredientShow( { ingredients, ingredient } ) {
     const [errors, setErrors] = useState([])
 
     useEffect(() => {
-      
-    })
+
+    }, [])
 
   return (
     <div>
