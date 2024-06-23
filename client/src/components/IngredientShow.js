@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 function IngredientShow( { ingredients, ingredient } ) {
     //will want to be able to edit ingredient serving size
+    const { id }
 
   return (
     <div>
