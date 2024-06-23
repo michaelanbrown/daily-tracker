@@ -7,6 +7,10 @@ function IngredientShow( { ingredients, ingredient } ) {
     const { id } = useParams()
     const [errors, setErrors] = useState([])
 
+    useEffect(() => {
+      
+    })
+
   return (
     <div>
       
