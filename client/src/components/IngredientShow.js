@@ -33,7 +33,7 @@ function IngredientShow( { ingredients } ) {
           "Content-Type" : "application/json",
           "Accept" : "application/json"
         },
-        
+        body: JSON.stringify(serving)
       })
     }
 
