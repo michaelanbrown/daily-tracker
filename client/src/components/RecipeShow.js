@@ -7,7 +7,7 @@ function RecipeShow( { recipes } ) {
   const { id } = useParams()
   const [recipe, setRecipe] = useState({})
   const [errors, setErrors] = useState([])
-  const [edit, setEdit]
+  const [edit, setEdit] = useState(false)
   //want to be able to edit the recipe
     //add a new ingredient or be able to edit ingredient serving size
 
