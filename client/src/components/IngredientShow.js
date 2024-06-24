@@ -7,6 +7,7 @@ function IngredientShow( { ingredients } ) {
     const { id } = useParams()
     const [errors, setErrors] = useState([])
     const [ingredient, setIngredient] = useState({})
+    const [edit, setEdit]
 
     useEffect(() => {
       fetch(`${id}`)
