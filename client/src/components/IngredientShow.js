@@ -24,7 +24,7 @@ function IngredientShow( { ingredients } ) {
     }, [])
 
     function editServingSize(e) {
-      
+      e.preventDefault()
     }
 
   return (
