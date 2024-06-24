@@ -34,6 +34,10 @@ function IngredientShow( { ingredients } ) {
           "Accept" : "application/json"
         },
         body: JSON.stringify(serving)
+      }).then(res => {
+        if (res.ok) {
+          
+        }
       })
     }
 
