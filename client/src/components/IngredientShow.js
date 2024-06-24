@@ -26,7 +26,10 @@ function IngredientShow( { ingredients } ) {
     function editServingSize(e) {
       e.preventDefault();
       fetch(`${id}`, {
-        method: 'PATCH'
+        method: 'PATCH',
+        headers: {
+          
+        }
       })
     }
 
