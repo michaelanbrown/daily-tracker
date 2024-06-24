@@ -25,7 +25,9 @@ function IngredientShow( { ingredients } ) {
 
     function editServingSize(e) {
       e.preventDefault();
-      fetch(`${id}`)
+      fetch(`${id}`, {
+        method: 'PATCH'
+      })
     }
 
   return (
