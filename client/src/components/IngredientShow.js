@@ -28,7 +28,8 @@ function IngredientShow( { ingredients } ) {
       fetch(`${id}`, {
         method: 'PATCH',
         headers: {
-          
+          "Content-Type" : "application/json",
+          "Accept" : "application/json"
         }
       })
     }
