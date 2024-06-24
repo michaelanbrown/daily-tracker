@@ -23,7 +23,7 @@ function IngredientShow( { ingredients } ) {
       })
     }, [])
 
-    function editServingSize() {
+    function editServingSize(e) {
       
     }
 
