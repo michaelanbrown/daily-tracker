@@ -8,6 +8,7 @@ function IngredientShow( { ingredients } ) {
     const [errors, setErrors] = useState([])
     const [ingredient, setIngredient] = useState({})
     const [edit, setEdit] = useState(false)
+    const [serving, setServing]
 
     useEffect(() => {
       fetch(`${id}`)
@@ -30,7 +31,8 @@ function IngredientShow( { ingredients } ) {
         headers: {
           "Content-Type" : "application/json",
           "Accept" : "application/json"
-        }
+        },
+        
       })
     }
 
