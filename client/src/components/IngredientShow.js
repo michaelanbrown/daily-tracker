@@ -23,6 +23,10 @@ function IngredientShow( { ingredients } ) {
       })
     }, [])
 
+    function editServingSize() {
+      
+    }
+
   return (
     <div>
       
