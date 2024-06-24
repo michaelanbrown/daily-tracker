@@ -8,7 +8,7 @@ function IngredientShow( { ingredients } ) {
     const [errors, setErrors] = useState([])
     const [ingredient, setIngredient] = useState({})
     const [edit, setEdit] = useState(false)
-    const [serving, setServing]
+    const [serving, setServing] = useState(ingredient.serving_size)
 
     useEffect(() => {
       fetch(`${id}`)
