@@ -8,7 +8,11 @@ function IngredientShow( { ingredients, setIngredients } ) {
     const [errors, setErrors] = useState([])
     const [ingredient, setIngredient] = useState({})
     const [edit, setEdit] = useState(false)
-    const [serving, setServing] = useState(ingredient.serving_size)
+    const [serving, setServing] = useState({
+      serving_size: ingredient.serving_size,
+      food_id: ingredient.food_id,
+      recipe_id: recipe.id
+    })
 
     useEffect(() => {
       fetch(`${id}`)
