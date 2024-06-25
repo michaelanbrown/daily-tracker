@@ -26,7 +26,9 @@ function IngredientShow( { ingredients } ) {
     }, [])
 
     function updateServingSize(updatedServing) {
-
+      const updatingServingSize = ingredients.map(currentIngredient => {
+        
+      })
     }
 
     function editServingSize(e) {
