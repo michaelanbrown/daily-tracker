@@ -27,7 +27,7 @@ function IngredientShow( { ingredients } ) {
 
     function updateServingSize(updatedServing) {
       const updatingServingSize = ingredients.map(currentIngredient => {
-        
+        if (currentIngredient.id === ingredient.id)
       })
     }
 
