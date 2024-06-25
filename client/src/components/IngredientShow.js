@@ -11,7 +11,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
     const [serving, setServing] = useState({
       serving_size: ingredient.serving_size,
       food_id: ingredient.food_id,
-      recipe_id: recipe.id
+      recipe_id: ingredient.recipe.id
     })
 
     useEffect(() => {
