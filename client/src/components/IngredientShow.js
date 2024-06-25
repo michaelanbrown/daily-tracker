@@ -20,7 +20,11 @@ function IngredientShow( { ingredients, setIngredients } ) {
         if (res.ok) {
           res.json().then(res => {
             setIngredient(res)
-            setServing(res.serving_size)
+            setServing({
+              serving_size: res.serving_size,
+              food_id: res.food_id,
+              recipe_id: res.recipe.id
+            })
           })
         }
         else {
