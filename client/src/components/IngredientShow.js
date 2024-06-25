@@ -18,12 +18,12 @@ function IngredientShow( { ingredients, setIngredients } ) {
       fetch(`${id}`)
       .then(res => {
         if (res.ok) {
-          res.json().then(res => {
-            setIngredient(res)
+          res.json().then(ingredient => {
+            setIngredient(ingredient)
             setServing({
-              serving_size: res.serving_size,
-              food_id: res.food_id,
-              recipe_id: res.recipe.id
+              serving_size: ingredient.serving_size,
+              food_id: ingredient.food_id,
+              recipe_id: ingredient.recipe.id
             })
           })
         }
