@@ -110,7 +110,7 @@ function App() {
           <Route exact path='/recipes/*' element={<Recipes recipes={recipes}/>}/>
           <Route exact path="/recipes/:id" element={<RecipeShow recipes={recipes}/>}/>
           <Route exact path='/ingredients/*' element={<Ingredients ingredients={ingredients}/>}/>
-          <Route exact path="/ingredients/:id" element={<IngredientShow ingredients={ingredients}/>}/>
+          <Route exact path="/ingredients/:id" element={<IngredientShow ingredients={ingredients} setIngredients={setIngredients}/>}/>
         </Routes>
       </Router>
     </div>
