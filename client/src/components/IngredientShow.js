@@ -33,6 +33,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
          return currentIngredient 
         }
       })
+      setIngredients(updatingServingSize)
     }
 
     function editServingSize(e) {
