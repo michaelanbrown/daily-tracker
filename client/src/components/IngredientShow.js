@@ -25,6 +25,10 @@ function IngredientShow( { ingredients } ) {
       })
     }, [])
 
+    function updateServingSize() {
+      
+    }
+
     function editServingSize(e) {
       e.preventDefault();
       fetch(`${id}`, {
