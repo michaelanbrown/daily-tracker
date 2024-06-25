@@ -30,7 +30,7 @@ function IngredientShow( { ingredients } ) {
         if (currentIngredient.id === ingredient.id) {
           return updatedServing
         } else {
-          
+         return currentIngredient 
         }
       })
     }
