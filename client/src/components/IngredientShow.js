@@ -55,7 +55,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
         body: JSON.stringify(serving)
       }).then(res => {
         if (res.ok) {
-          //need function to edit the ingredient in the ingredients list - will work on another day and will check on current functionality another day
+          
         }
       })
     }
