@@ -60,7 +60,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
             setIngredient(serving)
           })
         } else {
-          
+          res.json().then(json => setErrors([...errors, json.error]))
         }
       })
     }
