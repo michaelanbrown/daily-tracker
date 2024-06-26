@@ -33,7 +33,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
       })
     }, [])
 
-    function updateServingSize(updatedServing) {
+    function updateIngredients(updatedServing) {
       const updatingServingSize = ingredients.map(currentIngredient => {
         if (currentIngredient.id === ingredient.id) {
           return updatedServing
@@ -56,7 +56,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
       }).then(res => {
         if (res.ok) {
           res.json().then(serving => {
-            updateServingSize(serving)
+            updateIngredients(serving)
             setIngredient(serving)
           })
         }
