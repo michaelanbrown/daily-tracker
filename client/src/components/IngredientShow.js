@@ -33,10 +33,10 @@ function IngredientShow( { ingredients, setIngredients } ) {
       })
     }, [])
 
-    function updateIngredients(updatedServing) {
+    function updateIngredients(updatedIngredient) {
       const updatingIngredients = ingredients.map(currentIngredient => {
         if (currentIngredient.id === ingredient.id) {
-          return updatedServing
+          return updatedIngredient
         } else {
          return currentIngredient 
         }
