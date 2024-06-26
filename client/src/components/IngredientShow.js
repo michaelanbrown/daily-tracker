@@ -55,7 +55,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
         body: JSON.stringify(serving)
       }).then(res => {
         if (res.ok) {
-          res.json()
+          res.json().then(serving => {
+            updateServingSize(serving)
+          })
         }
       })
     }
