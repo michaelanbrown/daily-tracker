@@ -59,6 +59,8 @@ function IngredientShow( { ingredients, setIngredients } ) {
             updateIngredients(serving)
             setIngredient(serving)
           })
+        } else {
+          
         }
       })
     }
