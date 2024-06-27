@@ -24,6 +24,10 @@ function RecipeShow( { recipes } ) {
       })
     },[])
 
+    function editRecipe() {
+      
+    }
+
   return (
     <div>
       
