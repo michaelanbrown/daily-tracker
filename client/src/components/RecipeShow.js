@@ -28,7 +28,10 @@ function RecipeShow( { recipes } ) {
       e.preventDefault();
       fetch(`${id}`,{
         method: 'PATCH',
-        
+        headers: {
+          "Content-Type" : "application/json",
+          "Accept" : "application/json"
+        }
       })
     }
 
