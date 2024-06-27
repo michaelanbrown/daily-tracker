@@ -9,9 +9,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
     const [ingredient, setIngredient] = useState({})
     const [edit, setEdit] = useState(false)
     const [serving, setServing] = useState({
-      serving_size: ingredient.serving_size,
-      food_id: ingredient.food_id,
-      recipe_id: ingredient.recipe.id
+      serving_size: ingredient.serving_size
     })
 
     useEffect(() => {
@@ -21,9 +19,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
           res.json().then(ingredient => {
             setIngredient(ingredient)
             setServing({
-              serving_size: ingredient.serving_size,
-              food_id: ingredient.food_id,
-              recipe_id: ingredient.recipe.id
+              serving_size: ingredient.serving_size
             })
           })
         }
