@@ -26,7 +26,10 @@ function RecipeShow( { recipes } ) {
 
     function editRecipe(e) {
       e.preventDefault();
-      fetch(`${id}`)
+      fetch(`${id}`,{
+        method: 'PATCH',
+        
+      })
     }
 
   return (
