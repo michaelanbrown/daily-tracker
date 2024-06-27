@@ -25,7 +25,7 @@ function RecipeShow( { recipes } ) {
     },[])
 
     function editRecipe(e) {
-
+      e.preventDefault();
     }
 
   return (
