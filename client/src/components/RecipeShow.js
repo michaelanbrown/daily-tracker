@@ -31,7 +31,8 @@ function RecipeShow( { recipes } ) {
         headers: {
           "Content-Type" : "application/json",
           "Accept" : "application/json"
-        }
+        },
+        body: JSON.stringify(recipe)
       })
     }
 
