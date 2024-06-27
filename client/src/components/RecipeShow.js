@@ -24,8 +24,8 @@ function RecipeShow( { recipes } ) {
       })
     },[])
 
-    function editRecipe() {
-      
+    function editRecipe(e) {
+
     }
 
   return (
