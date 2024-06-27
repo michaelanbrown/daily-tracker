@@ -33,6 +33,10 @@ function RecipeShow( { recipes } ) {
           "Accept" : "application/json"
         },
         body: JSON.stringify(recipe)
+      }).then(res => {
+        if (res.ok) {
+          
+        }
       })
     }
 
