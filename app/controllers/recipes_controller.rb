@@ -15,7 +15,7 @@ class RecipesController < ApplicationController
     end
 
     def update
-        @recipe.update!(update_recipe_params)
+        @recipe.update!(recipe_params)
         render json: @recipe, status: :accepted
     end
 
@@ -26,7 +26,7 @@ class RecipesController < ApplicationController
     end
 
     def update_recipe_params
-        params.permit(:calories, :fats, :carbs, :sugars, :added_sugars, :protein)
+        params.permit(:name, :calories, :fats, :carbs, :sugars, :added_sugars, :protein)
     end
 
 end
