@@ -35,7 +35,9 @@ function RecipeShow( { recipes } ) {
         body: JSON.stringify(recipe)
       }).then(res => {
         if (res.ok) {
-          res.json()
+          res.json().then(recipe => {
+            //need update recipes function
+          })
         }
       })
     }
