@@ -8,7 +8,7 @@ function RecipeShow( { recipes, setRecipes } ) {
   const [recipe, setRecipe] = useState({})
   const [errors, setErrors] = useState([])
   const [edit, setEdit] = useState(false)
-  //want to be able to edit the recipe
+  //want to be able to edit the recipe - the function for a PATCH request has been created
     //add a new ingredient or be able to edit ingredient serving size - this is going to be accomplished in the ingredientshow page
 
     useEffect(() => {
