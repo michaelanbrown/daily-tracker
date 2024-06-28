@@ -32,6 +32,7 @@ function RecipeShow( { recipes, setRecipes } ) {
           return currentRecipe
         }
       })
+      setRecipes(updatingRecipes)
     }
 
     function editRecipe(e) {
