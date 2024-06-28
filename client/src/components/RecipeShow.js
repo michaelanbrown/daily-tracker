@@ -24,8 +24,8 @@ function RecipeShow( { recipes, setRecipes } ) {
       })
     },[])
 
-    function updateRecipes() {
-      
+    function updateRecipes(updatedRecipe) {
+
     }
 
     function editRecipe(e) {
