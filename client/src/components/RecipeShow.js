@@ -29,7 +29,7 @@ function RecipeShow( { recipes, setRecipes } ) {
         if (currentRecipe.id === recipe.id) {
           return updatedRecipe
         } else {
-          
+          return currentRecipe
         }
       })
     }
