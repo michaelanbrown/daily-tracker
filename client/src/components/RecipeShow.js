@@ -25,7 +25,9 @@ function RecipeShow( { recipes, setRecipes } ) {
     },[])
 
     function updateRecipes(updatedRecipe) {
+      const updatingRecipes = recipes.map(currentRecipe => {
 
+      })
     }
 
     function editRecipe(e) {
