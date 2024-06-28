@@ -47,7 +47,7 @@ function RecipeShow( { recipes, setRecipes } ) {
       }).then(res => {
         if (res.ok) {
           res.json().then(recipe => {
-            //need update recipes function
+            updateRecipes(recipe)
           })
         }
       })
