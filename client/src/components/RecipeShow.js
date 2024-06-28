@@ -26,7 +26,9 @@ function RecipeShow( { recipes, setRecipes } ) {
 
     function updateRecipes(updatedRecipe) {
       const updatingRecipes = recipes.map(currentRecipe => {
-        if (currentRecipe.id === recipe.id)
+        if (currentRecipe.id === recipe.id) {
+          return updatedRecipe
+        }
       })
     }
 
