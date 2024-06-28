@@ -24,6 +24,10 @@ function RecipeShow( { recipes, setRecipes } ) {
       })
     },[])
 
+    function updateRecipes() {
+      
+    }
+
     function editRecipe(e) {
       e.preventDefault();
       fetch(`${id}`,{
