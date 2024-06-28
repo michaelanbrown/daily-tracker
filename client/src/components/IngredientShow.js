@@ -37,7 +37,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
          return currentIngredient 
         }
       })
-      setIngredients(updatingServingSize)
+      setIngredients(updatingIngredients)
     }
 
     function editServingSize(e) {
