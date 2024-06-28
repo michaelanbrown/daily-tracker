@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 
 function IngredientShow( { ingredients, setIngredients } ) {
-    //will want to be able to edit ingredient serving size - function is being created
+    //will want to be able to edit ingredient serving size - function is complete
     const { id } = useParams()
     const [errors, setErrors] = useState([])
     const [ingredient, setIngredient] = useState({})
