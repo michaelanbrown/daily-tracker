@@ -3,7 +3,7 @@ import IngredientShow from "./IngredientShow";
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 
-function RecipeShow( { recipes } ) {
+function RecipeShow( { recipes, setRecipes } ) {
   const { id } = useParams()
   const [recipe, setRecipe] = useState({})
   const [errors, setErrors] = useState([])
