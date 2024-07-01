@@ -6,7 +6,7 @@ function Recipes( { recipes } ) {
     //want to be able to create a new recipe
 
     function addRecipe(e) {
-
+      e.preventDefault()
     }
     
     const recipeMap = recipes.map(recipe => {
