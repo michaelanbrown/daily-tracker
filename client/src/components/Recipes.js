@@ -17,8 +17,10 @@ function Recipes( { recipes } ) {
         protein
       }
       fetch(`/recipes`, {
-       method: 'POST' 
-      })
+       method: 'POST',
+       headers: {
+        "Content-Type" : "application/json"
+       }})
     }
     
     const recipeMap = recipes.map(recipe => {
