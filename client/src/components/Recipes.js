@@ -8,7 +8,13 @@ function Recipes( { recipes } ) {
     function addRecipe(e) {
       e.preventDefault();
       const recipe = {
-
+        name,
+        calories,
+        fats,
+        carbs,
+        sugars,
+        added_sugars,
+        protein
       }
     }
     
