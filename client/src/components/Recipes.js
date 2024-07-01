@@ -17,9 +17,8 @@ function Recipes( { recipes } ) {
         protein
       }
       fetch(`/recipes`, {
-        
-      }
-      )
+       method: 'POST' 
+      })
     }
     
     const recipeMap = recipes.map(recipe => {
