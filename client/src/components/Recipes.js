@@ -22,7 +22,9 @@ function Recipes( { recipes } ) {
         "Content-Type" : "application/json"
        },
       body: JSON.stringify(recipe)
-    })
+    }).then(
+      //will finish up later
+    )
     }
     
     const recipeMap = recipes.map(recipe => {
