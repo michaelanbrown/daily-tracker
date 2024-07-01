@@ -5,8 +5,8 @@ import { Route, Routes, Link } from "react-router-dom";
 function Recipes( { recipes } ) {
     //want to be able to create a new recipe
 
-    function addRecipe() {
-      
+    function addRecipe(e) {
+
     }
     
     const recipeMap = recipes.map(recipe => {
