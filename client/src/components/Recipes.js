@@ -16,6 +16,7 @@ function Recipes( { recipes } ) {
         added_sugars,
         protein
       }
+      fetch()
     }
     
     const recipeMap = recipes.map(recipe => {
