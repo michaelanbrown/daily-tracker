@@ -20,7 +20,9 @@ function Recipes( { recipes } ) {
        method: 'POST',
        headers: {
         "Content-Type" : "application/json"
-       }})
+       },
+      body: JSON.stringify(recipe)
+    })
     }
     
     const recipeMap = recipes.map(recipe => {
