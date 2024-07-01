@@ -16,7 +16,10 @@ function Recipes( { recipes } ) {
         added_sugars,
         protein
       }
-      fetch()
+      fetch(`/recipes`, {
+        
+      }
+      )
     }
     
     const recipeMap = recipes.map(recipe => {
