@@ -25,7 +25,7 @@ function Recipes( { recipes, setRecipes } ) {
     }).then(res => {
       if (res.ok) {
         res.json().then(recipe => {
-
+          setRecipes([...recipes, recipe])
         })
       }
     })
