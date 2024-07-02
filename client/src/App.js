@@ -107,7 +107,7 @@ function App() {
           <Route exact path='/today' element={<Today setMeal={setMeal} categories={categories}/>}/>
           <Route exact path='/previousdays' element={<PreviousDays categories={categories}/>}/>
           <Route exact path='/foodlist' element={<FoodList foods={foods} meal={meal} categories={categories} setCategories={setCategories}/>}/>
-          <Route exact path='/recipes/*' element={<Recipes recipes={recipes}/>}/>
+          <Route exact path='/recipes/*' element={<Recipes recipes={recipes} setRecipes={setRecipes}/>}/>
           <Route exact path="/recipes/:id" element={<RecipeShow recipes={recipes} setRecipes={setRecipes}/>}/>
           <Route exact path='/ingredients/*' element={<Ingredients ingredients={ingredients}/>}/>
           <Route exact path="/ingredients/:id" element={<IngredientShow ingredients={ingredients} setIngredients={setIngredients}/>}/>
