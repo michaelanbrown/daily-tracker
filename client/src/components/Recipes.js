@@ -30,6 +30,8 @@ function Recipes( { recipes, setRecipes } ) {
           setRecipes([...recipes, recipe])
           navigate(`/recipes`)
         })
+      } else {
+        
       }
     })
     }
