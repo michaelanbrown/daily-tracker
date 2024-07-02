@@ -27,6 +27,7 @@ function Recipes( { recipes, setRecipes } ) {
       if (res.ok) {
         res.json().then(recipe => {
           setRecipes([...recipes, recipe])
+          navigate(`/recipes`)
         })
       }
     })
