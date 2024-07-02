@@ -2,7 +2,7 @@ import React from "react";
 import RecipeShow from "./RecipeShow";
 import { Route, Routes, Link } from "react-router-dom";
 
-function Recipes( { recipes } ) {
+function Recipes( { recipes, setRecipes } ) {
     //want to be able to create a new recipe
 
     function addRecipe(e) {
@@ -25,7 +25,7 @@ function Recipes( { recipes } ) {
     }).then(res => {
       if (res.ok) {
         res.json().then(recipe => {
-          
+
         })
       }
     })
