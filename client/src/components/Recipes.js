@@ -23,7 +23,7 @@ function Recipes( { recipes } ) {
        },
       body: JSON.stringify(recipe)
     }).then(
-      //will finish up later
+      
     )
     }
     
