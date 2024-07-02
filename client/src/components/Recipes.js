@@ -31,7 +31,7 @@ function Recipes( { recipes, setRecipes } ) {
           navigate(`/recipes`)
         })
       } else {
-        
+        res.json().then(json => setErrors(json.errors))
       }
     })
     }
