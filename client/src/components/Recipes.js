@@ -1,6 +1,6 @@
 import React from "react";
 import RecipeShow from "./RecipeShow";
-import { Route, Routes, Link, useNavigate } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 
 function Recipes( { recipes, setRecipes } ) {
   const navigate = useNavigate();
