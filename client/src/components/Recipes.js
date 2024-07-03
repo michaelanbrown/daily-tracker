@@ -14,6 +14,10 @@ function Recipes( { recipes, setRecipes } ) {
       </Routes></div>
     })
 
+    function newRecipe() {
+      
+    }
+
   return (
     <div>
       <button className="new" onClick={}>Add New Recipe</button>
