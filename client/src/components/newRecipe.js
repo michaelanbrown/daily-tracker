@@ -1,6 +1,6 @@
 import React from "react";
 
-function NewRecipe( { recipes } ) {
+function NewRecipe( { recipes, setRecipes } ) {
   
   return (
     <div>
