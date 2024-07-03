@@ -1,6 +1,7 @@
 import React from "react";
 
 function NewRecipe( { recipes, setRecipes } ) {
+    const navigate = useNavigate();
     const [errors, setErrors] = useState([])
     const [formdata, setFormdata] = useState({})
 
