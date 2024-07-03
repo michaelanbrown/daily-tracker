@@ -15,7 +15,7 @@ function Recipes( { recipes, setRecipes } ) {
     })
 
     function newRecipe() {
-      
+      navigate("/newrecipe")
     }
 
   return (
