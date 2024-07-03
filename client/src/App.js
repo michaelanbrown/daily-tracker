@@ -15,6 +15,7 @@ import Recipes from './components/Recipes';
 import Ingredients from './components/Ingredients';
 import RecipeShow from './components/RecipeShow';
 import IngredientShow from './components/IngredientShow';
+import NewRecipe from './components/newRecipe';
 
 function App() {
   const [users, setUsers] = useState([])
