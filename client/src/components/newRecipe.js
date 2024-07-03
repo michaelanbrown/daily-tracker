@@ -2,6 +2,7 @@ import React from "react";
 
 function NewRecipe( { recipes, setRecipes } ) {
     const [errors, setErrors] = useState([])
+    const [formdata, setFormdata] = useState({})
 
     function addRecipe(e) {
         e.preventDefault();
