@@ -33,7 +33,7 @@ function NewRecipe( { recipes, setRecipes } ) {
 
   return (
     <div>
-      <button className="new" onClick={}>Add New Recipe</button>
+      <button className="new" onClick={addRecipe}>Add New Recipe</button>
     </div>
   );
 }
