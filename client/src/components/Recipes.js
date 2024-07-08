@@ -20,7 +20,7 @@ function Recipes( { recipes, setRecipes } ) {
 
   return (
     <div>
-      <button className="new" onClick={}>Add New Recipe</button>
+      <button className="new" onClick={newRecipe}>Add New Recipe</button>
       {recipeMap}
     </div>
   );
