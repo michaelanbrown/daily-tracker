@@ -4,7 +4,7 @@ import { Route, Routes, Link, useNavigate } from "react-router-dom";
 
 function Recipes( { recipes, setRecipes } ) {
   //create filter to search for recipes
-  const [filter, setFilter]
+    const [filter, setFilter]
     const navigate = useNavigate();
     
     const recipeMap = recipes.map(recipe => {
