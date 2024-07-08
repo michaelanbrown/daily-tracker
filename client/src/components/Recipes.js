@@ -3,7 +3,6 @@ import RecipeShow from "./RecipeShow";
 import { Route, Routes, Link, useNavigate } from "react-router-dom";
 
 function Recipes( { recipes, setRecipes } ) {
-    //want to be able to create a new recipe - put newRecipe function on a new page
     const navigate = useNavigate();
     
     const recipeMap = recipes.map(recipe => {
