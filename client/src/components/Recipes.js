@@ -21,7 +21,7 @@ function Recipes( { recipes, setRecipes } ) {
     }
 
     function handleChange(e) {
-      
+      setFilter(e.target.value); 
     }
 
   return (
