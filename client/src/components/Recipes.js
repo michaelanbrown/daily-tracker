@@ -20,6 +20,10 @@ function Recipes( { recipes, setRecipes } ) {
       navigate("/newrecipe")
     }
 
+    function handleChange() {
+      
+    }
+
   return (
     <div>
       <button className="new" onClick={newRecipe}>Add New Recipe</button>
