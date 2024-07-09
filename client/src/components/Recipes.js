@@ -22,7 +22,7 @@ function Recipes( { recipes, setRecipes } ) {
 
     function handleChange(e) {
       setFilter(e.target.value); 
-      setRecipefilter(recipes.filter(recipe => ))
+      setRecipefilter(recipes.filter(recipe => recipe.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1))
     }
 
   return (
