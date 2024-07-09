@@ -20,7 +20,7 @@ function Recipes( { recipes, setRecipes } ) {
       navigate("/newrecipe")
     }
 
-    function handleChange() {
+    function handleChange(e) {
       
     }
 
