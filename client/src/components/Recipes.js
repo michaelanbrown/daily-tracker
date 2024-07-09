@@ -28,7 +28,7 @@ function Recipes( { recipes, setRecipes } ) {
   return (
     <div>
       <button className="new" onClick={newRecipe}>Add New Recipe</button>
-      <input type="text" placeholder='Search' name="filter"/>
+      <input type="text" placeholder='Search' name="filter" value={filter} />
       {recipeMap}
     </div>
   );
