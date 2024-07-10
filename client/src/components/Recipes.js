@@ -3,7 +3,6 @@ import RecipeShow from "./RecipeShow";
 import { Route, Routes, Link, useNavigate } from "react-router-dom";
 
 function Recipes( { recipes, setRecipes } ) {
-  //create filter to search for recipes
     const [filter, setFilter] = useState('')
     const [recipeFilter, setRecipefilter] = useState(foods)
     const navigate = useNavigate();
