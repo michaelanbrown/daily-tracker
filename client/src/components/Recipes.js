@@ -17,14 +17,6 @@ function Recipes( { recipes, setRecipes } ) {
         </Routes></div>
       }))
     })
-    
-    const recipeMap = recipes.map(recipe => {
-      return <div key={recipe.id}>
-      <Link to={`${recipe.id}`}>{recipe.name}</Link>
-      <Routes>
-        <Route path={`recipes/${recipe.id}`} element={<RecipeShow recipes={recipes}/>}/>
-      </Routes></div>
-    })
 
     function newRecipe() {
       navigate("/newrecipe")
