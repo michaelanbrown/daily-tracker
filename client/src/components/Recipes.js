@@ -9,7 +9,7 @@ function Recipes( { recipes, setRecipes } ) {
     const navigate = useNavigate();
 
     useEffect(() => {
-      const mapping = 
+      const mapping = recipes ? 
     })
     
     const recipeMap = recipes.map(recipe => {
