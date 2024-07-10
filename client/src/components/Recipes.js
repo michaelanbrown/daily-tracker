@@ -6,6 +6,10 @@ function Recipes( { recipes, setRecipes } ) {
     const [filter, setFilter] = useState('')
     const [recipeFilter, setRecipefilter] = useState(foods)
     const navigate = useNavigate();
+
+    useEffect(() => {
+      
+    })
     
     const recipeMap = recipes.map(recipe => {
       return <div key={recipe.id}>
