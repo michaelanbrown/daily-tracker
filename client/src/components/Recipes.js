@@ -15,7 +15,7 @@ function Recipes( { recipes, setRecipes } ) {
         <Routes>
           <Route path={`recipes/${recipe.id}`} element={<RecipeShow recipes={recipes}/>}/>
         </Routes></div>
-      }))
+      })) : null
     })
 
     function newRecipe() {
