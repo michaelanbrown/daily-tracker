@@ -3,7 +3,6 @@ import IngredientShow from "./IngredientShow";
 import { Route, Routes, Link } from "react-router-dom";
 
 function Ingredients( { ingredients } ) {
-    //will want to be able to edit ingredient serving size
 
     const ingredientMap = ingredients.map(ingredient => {
       return <div key={ingredient.id}>
