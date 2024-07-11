@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import RecipeShow from "./RecipeShow";
 import { Route, Routes, Link, useNavigate } from "react-router-dom";
 
-function Recipes( { recipes, setRecipes } ) {
+function Recipes( { recipes } ) {
   const [recipeMap, setRecipeMap] = useState([])
     const [filter, setFilter] = useState('')
     const [recipeFilter, setRecipefilter] = useState(foods)
