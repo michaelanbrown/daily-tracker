@@ -14,7 +14,7 @@ function NewRecipe( { recipes, setRecipes } ) {
       protein: ''
     })
     const {name, calories, fats, carbs, sugars, added_sugars, protein} = formData
-
+console.log(recipes)
     function addRecipe(e) {
         e.preventDefault();
         const recipe = {
