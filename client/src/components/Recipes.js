@@ -5,7 +5,7 @@ import { Route, Routes, Link, useNavigate } from "react-router-dom";
 function Recipes( { recipes } ) {
   const [recipeMap, setRecipeMap] = useState([])
     const [filter, setFilter] = useState('')
-    const [recipeFilter, setRecipefilter] = useState(foods)
+    const [recipeFilter, setRecipefilter] = useState(recipes)
     const navigate = useNavigate();
 
     useEffect(() => {
