@@ -4,7 +4,15 @@ import { useNavigate } from 'react-router-dom';
 function NewRecipe( { recipes, setRecipes } ) {
     const navigate = useNavigate();
     const [errors, setErrors] = useState([])
-    const [formdata, setFormdata] = useState({})
+    const [formdata, setFormdata] = useState({
+      name: '',
+      calories: '',
+      fats: '',
+      carbs: '',
+      sugars: '',
+      added_sugars: '',
+      protein: ''
+    })
 
     function addRecipe(e) {
         e.preventDefault();
