@@ -16,7 +16,7 @@ function Recipes( { recipes } ) {
           <Route path={`recipes/${recipe.id}`} element={<RecipeShow recipes={recipes}/>}/>
         </Routes></div>
       })) : null
-      setRecipefilter(filter ? recipeFilter : recipes)
+      setRecipeFilter(filter ? recipeFilter : recipes)
     },[recipes, recipeFilter])
 
     console.log(recipes.map (recipe => recipe.name))
