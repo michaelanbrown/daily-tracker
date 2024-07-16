@@ -17,7 +17,7 @@ function Recipes( { recipes } ) {
         </Routes></div>
       })) : null
     },[])
-
+    console.log(recipes)
     function newRecipe() {
       navigate("/newrecipe")
     }
