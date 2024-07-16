@@ -17,7 +17,7 @@ function Recipes( { recipes } ) {
         </Routes></div>
       })) : null
     },[recipes])
-    console.log(recipeMap)
+    console.log(recipes ? "yes" : "no")
     function newRecipe() {
       navigate("/newrecipe")
     }
