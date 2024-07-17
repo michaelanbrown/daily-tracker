@@ -17,7 +17,8 @@ function NewRecipe( { recipes, setRecipes } ) {
 
     function handleChange(e) {
       setFormData({
-          .
+          ...formData,
+          [e.target.name] : e.target.value
       });
     }
 
