@@ -46,7 +46,7 @@ function NewRecipe( { recipes, setRecipes } ) {
   return (
     <div>
       <form>
-        <input></input>
+        <input type="text" placeholder='Food' name="name" value={name} className="input" onChange={handleChange}/>
       </form>
     </div>
   );
