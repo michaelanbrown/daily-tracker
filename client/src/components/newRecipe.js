@@ -45,7 +45,9 @@ function NewRecipe( { recipes, setRecipes } ) {
 
   return (
     <div>
-      
+      <form>
+        
+      </form>
     </div>
   );
 }
