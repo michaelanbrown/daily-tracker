@@ -60,6 +60,7 @@ function NewRecipe( { recipes, setRecipes } ) {
         <input type="text" placeholder='Fats' name="fats" value={fats} className="input" onChange={handleChange}/>
         <br/>
         <input type="text" placeholder='Carbohydrates' name="carbs" value={carbs} className="input" onChange={handleChange}/>
+        <br/>
       </form>
     </div>
   );
