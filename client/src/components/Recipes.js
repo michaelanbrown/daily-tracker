@@ -10,7 +10,7 @@ function Recipes( { recipes } ) {
 
     useEffect(() => {
       const mapping = recipes ? setRecipeMap(recipeFilter.map(recipe => {
-        <div key={recipe.id}>
+        return <div key={recipe.id}>
         <Link to={`${recipe.id}`}>{recipe.name}</Link>
         <Routes>
           <Route path={`recipes/${recipe.id}`} element={<RecipeShow recipes={recipes}/>}/>
@@ -19,7 +19,7 @@ function Recipes( { recipes } ) {
       setRecipeFilter(filter ? recipeFilter : recipes)
     },[recipes, recipeFilter])
 
-    console.log(recipes.map (recipe => recipe.name))
+    console.log(recipes, recipeFilter, recipeMap)
 
     function newRecipe() {
       navigate("/newrecipe")
