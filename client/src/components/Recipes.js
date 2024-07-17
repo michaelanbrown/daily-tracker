@@ -4,9 +4,9 @@ import { Route, Routes, Link, useNavigate } from "react-router-dom";
 
 function Recipes( { recipes } ) {
   const [recipeMap, setRecipeMap] = useState([])
-    const [filter, setFilter] = useState('')
-    const [recipeFilter, setRecipeFilter] = useState(recipes)
-    const navigate = useNavigate();
+  const [filter, setFilter] = useState('')
+  const [recipeFilter, setRecipeFilter] = useState(recipes)
+  const navigate = useNavigate();
 
     useEffect(() => {
       const mapping = recipes ? setRecipeMap(recipeFilter.map(recipe => {
