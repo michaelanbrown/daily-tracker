@@ -9,7 +9,7 @@ function Recipes( { recipes } ) {
     const navigate = useNavigate();
 
     useEffect(() => {
-      const mapping = recipes.length > 0 ? setRecipeMap(recipeFilter.map(recipe => {
+      const mapping = recipes ? setRecipeMap(recipeFilter.map(recipe => {
         <div key={recipe.id}>
         <Link to={`${recipe.id}`}>{recipe.name}</Link>
         <Routes>
