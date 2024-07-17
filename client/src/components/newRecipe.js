@@ -15,6 +15,10 @@ function NewRecipe( { recipes, setRecipes } ) {
     })
     const {name, calories, fats, carbs, sugars, added_sugars, protein} = formData
 
+    function handleChange(e) {
+      
+    }
+
     function addRecipe(e) {
         e.preventDefault();
         const recipe = {
