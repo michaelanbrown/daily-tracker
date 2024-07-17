@@ -54,13 +54,13 @@ function NewRecipe( { recipes, setRecipes } ) {
     <div>
       <form>
         <input type="text" placeholder='Food' name="name" value={name} className="input" onChange={handleChange}/>
-        <br/>
+          <br/>
         <input type="text" placeholder='Calories' name="calories" value={calories} className="input" onChange={handleChange}/>
-        <br/>
+          <br/>
         <input type="text" placeholder='Fats' name="fats" value={fats} className="input" onChange={handleChange}/>
-        <br/>
+          <br/>
         <input type="text" placeholder='Carbohydrates' name="carbs" value={carbs} className="input" onChange={handleChange}/>
-        <br/>
+          <br/>
       </form>
     </div>
   );
