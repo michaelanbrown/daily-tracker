@@ -19,8 +19,6 @@ function Recipes( { recipes } ) {
       setRecipeFilter(filter ? recipeFilter : recipes)
     },[recipes, recipeFilter])
 
-    console.log(recipes, recipeFilter, recipeMap)
-
     function newRecipe() {
       navigate("/newrecipe")
     }
