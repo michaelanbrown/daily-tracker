@@ -10,7 +10,7 @@ function RecipeShow( { recipes, setRecipes } ) {
   const [recipe, setRecipe] = useState({})
   const [errors, setErrors] = useState([])
   const [edit, setEdit] = useState(false)
-  const [ingredients, setIngredients]
+  const [ingredients, setIngredients] = useState([])
 
     useEffect(() => {
       fetch(`${id}`)
