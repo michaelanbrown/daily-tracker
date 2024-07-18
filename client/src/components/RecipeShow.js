@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { Route, Routes, Link } from "react-router-dom";
 
 function RecipeShow( { recipes, setRecipes } ) {
+  //within each recipe we will display a list of ingredients with a link to the ingedient
   const { id } = useParams()
   const [recipe, setRecipe] = useState({})
   const [errors, setErrors] = useState([])
