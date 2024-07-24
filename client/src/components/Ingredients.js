@@ -13,6 +13,8 @@ function Ingredients( { ingredients } ) {
       </div>
     })
 
+    console.log(ingredients)
+
   return (
     <div>
       {ingredientMap}
