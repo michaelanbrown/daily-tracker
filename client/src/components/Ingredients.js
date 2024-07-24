@@ -2,7 +2,7 @@ import React from "react";
 import IngredientShow from "./IngredientShow";
 import { Route, Routes, Link } from "react-router-dom";
 
-function Ingredients( { ingredients } ) {
+function Ingredients( { ingredients, foods } ) {
 
     const ingredientMap = ingredients.map(ingredient => {
       return <div key={ingredient.id}>
