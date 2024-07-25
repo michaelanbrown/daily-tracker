@@ -14,7 +14,7 @@ function Ingredients( { ingredients, foods } ) {
       </div>
     })
 
-    console.log(ingredients)
+    
 
   return (
     <div>
