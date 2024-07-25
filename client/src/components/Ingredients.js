@@ -5,6 +5,10 @@ import { Route, Routes, Link } from "react-router-dom";
 function Ingredients( { ingredients, foods } ) {
   //use foods to find the food name for each ingredient - check the completion
 
+  useEffect(() => {
+    
+  },[ingredients, foods])
+
     const ingredientMap = ingredients.map(ingredient => {
       return <div key={ingredient.id}>
         <Link to={`${ingredient.id}`}>{foods.filter(food => food.id === ingredient.food_id).name}</Link>
