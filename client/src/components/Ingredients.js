@@ -14,7 +14,6 @@ function Ingredients( { ingredients, foods } ) {
       </div>
     })
 
-    const foodName = foods.filter()
 
   return (
     <div>
