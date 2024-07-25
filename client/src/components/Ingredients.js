@@ -13,7 +13,7 @@ function Ingredients( { ingredients, foods } ) {
         </Routes>
       </div>
     })
-console.log(foods.filter(food => food.id === ingredient.food_id).name)
+console.log(ingredients.map(ingredient => {foods.filter(food => food.id === ingredient.food_id).name}))
 
   return (
     <div>
