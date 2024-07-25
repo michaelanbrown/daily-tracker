@@ -13,7 +13,7 @@ function Ingredients( { ingredients, foods } ) {
         </Routes>
       </div>
     })
-console.log(ingredients)
+console.log(foods)
 
   return (
     <div>
