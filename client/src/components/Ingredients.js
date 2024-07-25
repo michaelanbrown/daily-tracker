@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import IngredientShow from "./IngredientShow";
 import { Route, Routes, Link } from "react-router-dom";
 
@@ -14,8 +14,7 @@ function Ingredients( { ingredients, foods } ) {
       </div>
     })
 
-    const mapping = ingredients.map(ingredient => {foods.filter(food => food.id === ingredient.food_id).name})
-console.log(mapping)
+  
 
   return (
     <div>
