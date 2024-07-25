@@ -3,6 +3,7 @@ import IngredientShow from "./IngredientShow";
 import { Route, Routes, Link } from "react-router-dom";
 
 function Ingredients( { ingredients, foods } ) {
+  [foodName, setFoodName] = useState([])
   //use foods to find the food name for each ingredient - check the completion
 
   useEffect(() => {
