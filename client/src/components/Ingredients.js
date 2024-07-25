@@ -13,7 +13,9 @@ function Ingredients( { ingredients, foods } ) {
         </Routes>
       </div>
     })
-console.log(ingredients.map(ingredient => {foods.filter(food => food.id === ingredient.food_id).name}))
+
+    const mapping = ingredients.map(ingredient => {foods.filter(food => food.id === ingredient.food_id).name})
+console.log(mapping)
 
   return (
     <div>
