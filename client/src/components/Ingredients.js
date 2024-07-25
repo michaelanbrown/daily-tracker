@@ -7,7 +7,7 @@ function Ingredients( { ingredients, foods } ) {
 
     const ingredientMap = ingredients.map(ingredient => {
       return <div key={ingredient.id}>
-        <Link to={`${ingredient.id}`}>{ingredient.name}</Link>
+        <Link to={`${ingredient.id}`}>{foods.filter()}</Link>
         <Routes>
           <Route path={`ingredients/${ingredient.id}`} element={<IngredientShow ingredients={ingredients}/>}/>
         </Routes>
