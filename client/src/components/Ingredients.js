@@ -6,7 +6,7 @@ function Ingredients( { ingredients, setIngredients, foods, setFoods } ) {
   //use foods to find the food name for each ingredient - check the completion
 
   useEffect(() => {
-     
+     const ingredientPresent = ingredients.length !== 0 ? setIngredients(ingredients) : null
   },[ingredients, foods])
 
     const ingredientMap = ingredients.map(ingredient => {
