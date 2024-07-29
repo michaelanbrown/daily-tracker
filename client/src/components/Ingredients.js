@@ -19,6 +19,8 @@ function Ingredients( { ingredients, setIngredients, foods, setFoods } ) {
     }))
   },[ingredients, foods])
 
+  console.log(ingredientMap)
+
   return (
     <div>
       {ingredientMap}
