@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import IngredientShow from "./IngredientShow";
 import { Route, Routes, Link } from "react-router-dom";
 
-function Ingredients( { ingredients, setIngredients, foods } ) {
+function Ingredients( { ingredients, setIngredients, foods, setFoods } ) {
   //use foods to find the food name for each ingredient - check the completion
 
   useEffect(() => {
