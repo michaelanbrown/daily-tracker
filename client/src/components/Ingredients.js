@@ -9,16 +9,15 @@ function Ingredients( { ingredients, setIngredients, foods, setFoods } ) {
   useEffect(() => {
      const ingredientPresent = ingredients.length !== 0 ? setIngredients(ingredients) : null
      const foodPresent = foods.length !== 0 ? setFoods(foods) : null
-  },[ingredients, foods])
-
-    const ingredientMap = ingredients.map(ingredient => {
+     setIngredientMap(ingredients.map(ingredient => {
       return <div key={ingredient.id}>
         <Link to={`${ingredient.id}`}>{foods.filter(food => food.id === ingredient.food_id).name}</Link>
         <Routes>
           <Route path={`ingredients/${ingredient.id}`} element={<IngredientShow ingredients={ingredients}/>}/>
         </Routes>
       </div>
-    })
+    }))
+  },[ingredients, foods])
 
   return (
     <div>
