@@ -111,7 +111,7 @@ function App() {
           <Route exact path='/recipes/*' element={<Recipes recipes={recipes}/>}/>
           <Route exact path="/recipes/:id" element={<RecipeShow recipes={recipes} setRecipes={setRecipes}/>}/>
           <Route exact path='/newrecipe' element={<NewRecipe recipes={recipes} setRecipes={setRecipes}/>}/>
-          <Route exact path='/ingredients/*' element={<Ingredients ingredients={ingredients} setIngredients={setIngredients} foods={foods}/>}/>
+          <Route exact path='/ingredients/*' element={<Ingredients ingredients={ingredients} setIngredients={setIngredients} foods={foods} setFoods={setFoods}/>}/>
           <Route exact path="/ingredients/:id" element={<IngredientShow ingredients={ingredients} setIngredients={setIngredients}/>}/>
         </Routes>
       </Router>
