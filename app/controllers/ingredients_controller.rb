@@ -5,6 +5,9 @@ class IngredientsController < ApplicationController
         render json: Ingredient.all, status: :ok
     end
 
+    def show
+    end
+
     def create
         ingredient = Ingredient.create!(ingredient_params)
         recipe = Recipe.find(params[:recipe_id])
