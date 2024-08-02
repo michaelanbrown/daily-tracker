@@ -11,6 +11,8 @@ function IngredientShow( { ingredients, setIngredients } ) {
       serving_size: ingredient.serving_size
     })
 
+    console.log(ingredients)
+
     useEffect(() => {
       fetch(`${id}`)
       .then(res => {

@@ -18,8 +18,6 @@ function Ingredients( { ingredients, setIngredients } ) {
     }))
   },[ingredients])
 
-  console.log(ingredients)
-
   return (
     <div>
       {ingredientMap}
