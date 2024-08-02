@@ -10,7 +10,7 @@ function Ingredients( { ingredients, setIngredients } ) {
      const ingredientPresent = ingredients.length !== 0 ? setIngredients(ingredients) : null
      setIngredientMap(ingredients.map(ingredient => {
       return <div key={ingredient.id}>
-        <Link to={`${ingredient.id}`}>{foods.filter(food => food.id === ingredient.food_id).name}</Link>
+        <Link to={`${ingredient.id}`}>{ingredient.food.name}</Link>
         <Routes>
           <Route path={`ingredients/${ingredient.id}`} element={<IngredientShow ingredients={ingredients}/>}/>
         </Routes>
