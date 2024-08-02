@@ -8,7 +8,6 @@ function Ingredients( { ingredients, setIngredients, foods, setFoods } ) {
 
   useEffect(() => {
      const ingredientPresent = ingredients.length !== 0 ? setIngredients(ingredients) : null
-     const foodPresent = foods.length !== 0 ? setFoods(foods) : null
      setIngredientMap(ingredients.map(ingredient => {
       return <div key={ingredient.id}>
         <Link to={`${ingredient.id}`}>{foods.filter(food => food.id === ingredient.food_id).name}</Link>
@@ -19,7 +18,7 @@ function Ingredients( { ingredients, setIngredients, foods, setFoods } ) {
     }))
   },[ingredients, foods])
 
-  console.log(ingredientMap)
+  console.log(foods)
 
   return (
     <div>
