@@ -62,7 +62,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
 
   return (
     <div>
-      
+      {ingredient.name}
     </div>
   );
 }
