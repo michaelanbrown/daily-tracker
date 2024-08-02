@@ -16,7 +16,7 @@ function Ingredients( { ingredients, setIngredients, foods, setFoods } ) {
         </Routes>
       </div>
     }))
-  },[ingredients, foods])
+  },[ingredients])
 
   console.log(foods)
 
