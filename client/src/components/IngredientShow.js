@@ -64,7 +64,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
 
   return (
     <div>
-      {ingredient.name}
+      <br/>
+      <h2>Ingredient:</h2>
+      <h3>{ingredient.food.name}</h3>
     </div>
   );
 }
