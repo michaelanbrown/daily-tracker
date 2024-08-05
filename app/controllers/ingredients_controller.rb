@@ -1,8 +1,12 @@
 class IngredientsController < ApplicationController
-    before_action :find_ingredient, only: [:update]
+    before_action :find_ingredient, only: [:show, :update]
 
     def index
         render json: Ingredient.all, status: :ok
+    end
+
+    def show
+        render json: @ingredient, status: :ok
     end
 
     def create
