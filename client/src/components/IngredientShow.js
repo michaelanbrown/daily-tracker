@@ -73,6 +73,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
       <p>Carbs: {ingredient.food.carbs * ingredient.serving_size}</p>
       <p>Sugars: {ingredient.food.sugars * ingredient.serving_size}</p>
       <p>Added Sugars: {ingredient.food.added_sugars * ingredient.serving_size}</p>
+      <p>Protein: {ingredient.food.protein * ingredient.serving_size}</p>
     </div>
   );
 }
