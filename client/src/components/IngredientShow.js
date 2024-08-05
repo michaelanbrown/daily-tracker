@@ -69,6 +69,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
       <h3>{ingredient.food.name}</h3>
       <p>Brand: {ingredient.food.brand}</p>
       <p>Calories: {ingredient.food.calories * ingredient.serving_size}</p>
+      <p>Fats: {ingredient.food.fats * ingredient.serving_size}</p>
     </div>
   );
 }
