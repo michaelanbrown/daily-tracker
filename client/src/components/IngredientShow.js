@@ -67,6 +67,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
       <br/>
       <h2>Ingredient:</h2>
       <h3>{ingredient.food.name}</h3>
+      <p>Brand: {ingredient.food.brand}</p>
     </div>
   );
 }
