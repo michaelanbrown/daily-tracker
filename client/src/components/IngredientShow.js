@@ -62,6 +62,10 @@ function IngredientShow( { ingredients, setIngredients } ) {
       })
     }
 
+    function editIngredients() {
+      
+    }
+
   return (
     <div>
       <br/>
