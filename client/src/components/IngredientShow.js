@@ -55,6 +55,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
           res.json().then(serving => {
             updateIngredients(serving)
             setIngredient(serving)
+            setEdit(false)
           })
         } else {
           res.json().then(json => setErrors([...errors, json.error]))
