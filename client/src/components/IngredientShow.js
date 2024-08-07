@@ -70,7 +70,10 @@ function IngredientShow( { ingredients, setIngredients } ) {
   return (
     <div>
       <br/>
-      {edit ? null :
+      {edit ? <div>
+        
+      </div> :
+
       <div>
         <h2>Ingredient:</h2>
         <h3>{ingredient.food.name}{' '}</h3><button onClick={editIngredients}>Edit the Serving Size</button>
