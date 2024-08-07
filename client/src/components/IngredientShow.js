@@ -70,9 +70,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
   return (
     <div>
       <br/>
-      {edit ? <div>
-        
-      </div> :
+      {edit ? <form>
+
+      </form> :
 
       <div>
         <h2>Ingredient:</h2>
