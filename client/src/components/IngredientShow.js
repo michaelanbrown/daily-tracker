@@ -71,7 +71,10 @@ function IngredientShow( { ingredients, setIngredients } ) {
     <div>
       <br/>
       {edit ? <form onSubmit={editServingSize}>
-
+      
+          <br/>
+          <br/>
+        <input type="submit" className="submit" value="Edit Ingredient!" />
       </form> :
 
       <div>
