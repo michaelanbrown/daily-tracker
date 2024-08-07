@@ -63,7 +63,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
     }
 
     function editIngredients() {
-      
+      setEdit(!edit)
     }
 
   return (
