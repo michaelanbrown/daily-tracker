@@ -71,15 +71,23 @@ function IngredientShow( { ingredients, setIngredients } ) {
     <div>
       <br/>
       {edit ? <form onSubmit={editServingSize}>
-      
-          <br/>
-          <br/>
+      <h3>{ingredient.food.name}{' '}</h3><button onClick={editIngredients}>Edit the Serving Size</button>
+        <p>Brand: {ingredient.food.brand}</p>
+        <p>Calories: {ingredient.food.calories * ingredient.serving_size}</p>
+        <p>Fats: {ingredient.food.fats * ingredient.serving_size}</p>
+        <p>Carbs: {ingredient.food.carbs * ingredient.serving_size}</p>
+        <p>Sugars: {ingredient.food.sugars * ingredient.serving_size}</p>
+        <p>Added Sugars: {ingredient.food.added_sugars * ingredient.serving_size}</p>
+        <p>Protein: {ingredient.food.protein * ingredient.serving_size}</p>
+        <br/>
+        <br/>
         <input type="submit" className="submit" value="Edit Ingredient!" />
       </form> :
 
       <div>
         <h2>Ingredient:</h2>
         <h3>{ingredient.food.name}{' '}</h3><button onClick={editIngredients}>Edit the Serving Size</button>
+        <p>Seriving Size: {ingredient.serving_size}</p>
         <p>Brand: {ingredient.food.brand}</p>
         <p>Calories: {ingredient.food.calories * ingredient.serving_size}</p>
         <p>Fats: {ingredient.food.fats * ingredient.serving_size}</p>
