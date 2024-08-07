@@ -70,7 +70,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
   return (
     <div>
       <br/>
-      {edit ? <form>
+      {edit ? <form onSubmit={editServingSize}>
 
       </form> :
 
