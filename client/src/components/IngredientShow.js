@@ -65,7 +65,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
       setEdit(!edit)
     }
 
-    //need an onChange for the serving size
+    function handleChange() {
+      
+    }
 
   return (
     <div>
