@@ -65,14 +65,16 @@ function IngredientShow( { ingredients, setIngredients } ) {
       setEdit(!edit)
     }
 
-    function handleChange() {
-
+    function handleChange(e) {
+      setServing({
+        serving_size: e.target.value
+      })
     }
 
   return (
     <div>
       <br/>
-      {edit ? <form onSubmit={editServingSize}>
+      {edit && ingredient ? <form onSubmit={editServingSize}>
       <h3>{ingredient.food.name}{' '}</h3><button onClick={editIngredients}>Edit the Serving Size</button>
         <input type="text" placeholder='Serving Size' name="serving_size" value={serving.serving_size} className="input" onChange={handleChange}/>
         <p>Brand: {ingredient.food.brand}</p>
