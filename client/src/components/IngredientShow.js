@@ -5,17 +5,19 @@ import { useParams } from "react-router-dom";
 function IngredientShow( { ingredients, setIngredients } ) {
     const { id } = useParams()
     const [errors, setErrors] = useState([])
-    const [ingredient, setIngredient] = useState({})
+    const [ingredient, setIngredient] = useState(null)
     const [edit, setEdit] = useState(false)
     const [serving, setServing] = useState({
       serving_size: ingredient.serving_size
     })
 
+    //useEffect is not rendering at all
+
     useEffect(() => {
+      console.log('hello')
       fetch(`${id}`)
       .then(res => {
         if (res.ok) {
-          console.log(res)
           res.json().then(ingredient => {
             setIngredient(ingredient)
             setServing({
@@ -71,8 +73,6 @@ function IngredientShow( { ingredients, setIngredients } ) {
         serving_size: e.target.value
       })
     }
-
-    console.log(id)
 
   return (
     <div>
