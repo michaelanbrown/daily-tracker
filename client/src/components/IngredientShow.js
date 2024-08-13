@@ -32,8 +32,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
 
     useEffect(() => {
       const fetchIngredient = () => {
-        
-      }
+
+      };
+      fetchIngredient();
     },[])
 
     function updateIngredients(updatedIngredient) {
