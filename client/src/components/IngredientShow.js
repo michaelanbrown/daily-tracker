@@ -13,22 +13,22 @@ function IngredientShow( { ingredients, setIngredients } ) {
 
     // useEffect is not rendering at all
 
-    useEffect(() => {
-      fetch(`${id}`)
-      .then(res => {
-        if (res.ok) {
-          res.json().then(ingredient => {
-            setIngredient(ingredient)
-            setServing({
-              serving_size: ingredient.serving_size
-            })
-          })
-        }
-        else {
-          res.json().then(json => setErrors([...errors, json.error]))
-        }
-      })
-    }, [])
+    // useEffect(() => {
+    //   fetch(`${id}`)
+    //   .then(res => {
+    //     if (res.ok) {
+    //       res.json().then(ingredient => {
+    //         setIngredient(ingredient)
+    //         setServing({
+    //           serving_size: ingredient.serving_size
+    //         })
+    //       })
+    //     }
+    //     else {
+    //       res.json().then(json => setErrors([...errors, json.error]))
+    //     }
+    //   })
+    // }, [])
 
     function updateIngredients(updatedIngredient) {
       const updatingIngredients = ingredients.map(currentIngredient => {
