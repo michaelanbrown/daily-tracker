@@ -41,6 +41,8 @@ function IngredientShow( { ingredients, setIngredients } ) {
                 serving_size: ingredient.serving
               });
             })
+          } else {
+            
           }
         })
       };
