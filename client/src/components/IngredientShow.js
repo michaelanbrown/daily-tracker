@@ -33,6 +33,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
     useEffect(() => {
       const fetchIngredient = () => {
         fetch(`${id}`)
+        .then(res => {
+
+        })
       };
       fetchIngredient();
     },[])
