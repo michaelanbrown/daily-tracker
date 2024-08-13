@@ -11,7 +11,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
       serving_size: ingredient.serving_size
     })
 
-    // useEffect is not rendering at all
+    // useEffect is not rendering at all - check the new fix
 
     useEffect(() => {
       const fetchIngredient = () => {
