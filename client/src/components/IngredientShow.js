@@ -36,6 +36,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
         .then(res => {
           if (res.ok) {
             res.json().then(ingredient => {
+              setIngredient(ingredient);
               
             })
           }
