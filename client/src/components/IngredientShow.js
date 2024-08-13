@@ -35,7 +35,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
         fetch(`${id}`)
         .then(res => {
           if (res.ok) {
-            
+            res.json().then(ingredient => {
+              
+            })
           }
         })
       };
