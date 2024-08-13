@@ -34,7 +34,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
       const fetchIngredient = () => {
         fetch(`${id}`)
         .then(res => {
-
+          if (res.ok) {
+            
+          }
         })
       };
       fetchIngredient();
