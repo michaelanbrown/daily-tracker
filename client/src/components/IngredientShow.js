@@ -42,7 +42,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
               });
             })
           } else {
-            
+            res.json().then()
           }
         })
       };
