@@ -104,7 +104,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
         <p>Added Sugars: {ingredient.food.added_sugars * ingredient.serving_size}</p>
         <p>Protein: {ingredient.food.protein * ingredient.serving_size}</p>
       </div>}
-      {errors ? <div></div> : null}
+      { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
     </div>
   );
 }
