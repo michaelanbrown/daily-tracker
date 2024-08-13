@@ -11,10 +11,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
       serving_size: ingredient.serving_size
     })
 
-    //useEffect is not rendering at all
+    // useEffect is not rendering at all
 
     useEffect(() => {
-      console.log('hello')
       fetch(`${id}`)
       .then(res => {
         if (res.ok) {
