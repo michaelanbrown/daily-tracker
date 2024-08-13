@@ -30,6 +30,12 @@ function IngredientShow( { ingredients, setIngredients } ) {
     //   })
     // }, [])
 
+    useEffect(() => {
+      const fetchIngredient = () => {
+        
+      }
+    },[])
+
     function updateIngredients(updatedIngredient) {
       const updatingIngredients = ingredients.map(currentIngredient => {
         if (currentIngredient.id === ingredient.id) {
