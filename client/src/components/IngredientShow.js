@@ -90,6 +90,8 @@ function IngredientShow( { ingredients, setIngredients } ) {
         <br/>
         <br/>
         <input type="submit" className="submit" value="Edit Ingredient!" />
+        { errors ? <br/> : null }
+        { errors ? errors.map(error => <div key={error}>{error}</div>) : null }
       </form> :
 
       <div>
