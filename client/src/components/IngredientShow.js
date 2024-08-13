@@ -32,7 +32,7 @@ function IngredientShow( { ingredients, setIngredients } ) {
 
     useEffect(() => {
       const fetchIngredient = () => {
-
+        fetch(`${id}`)
       };
       fetchIngredient();
     },[])
