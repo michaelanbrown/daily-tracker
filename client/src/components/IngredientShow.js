@@ -78,8 +78,9 @@ function IngredientShow( { ingredients, setIngredients } ) {
   return (
     <div>
       <br/>
-      {edit && ingredient ? <form onSubmit={editServingSize}>
-      <h3>{ingredient.food.name}{' '}</h3><button onClick={editIngredients}>Edit the Serving Size</button>
+      {edit && ingredient ?
+      <form onSubmit={editServingSize}>
+        <h3>{ingredient.food.name}{' '}</h3><button onClick={editIngredients}>Edit the Serving Size</button>
         <input type="text" placeholder='Serving Size' name="serving_size" value={serving.serving_size} className="input" onChange={handleChange}/>
         <p>Brand: {ingredient.food.brand}</p>
         <p>Calories: {ingredient.food.calories * ingredient.serving_size}</p>
